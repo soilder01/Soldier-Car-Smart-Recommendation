@@ -1,0 +1,4 @@
+{"id":"500pi-compare-0229","intent":"compare","query":"埃安AION Y和阿维塔12怎么选？关注安全、辅助驾驶和使用边界。","query_index":229,"error_type":"ValueError","error":"teacher tool call validation failed: ['record.messages[0].tool_calls[2].function.arguments: invalid JSON']","elapsed_sec":22.13}
+{"id":"500pi-compare-0268","intent":"compare","query":"理想L7和尊界S800怎么选？商务兼家用，关注品牌和座舱。","query_index":268,"error_type":"length","error":"teacher response was truncated by max_tokens","elapsed_sec":137.43}
+{"id":"500pi-compare-0327","intent":"compare","query":"比亚迪宋L EV和吉利银河L7怎么选？有家充条件，关注纯电使用体验。","query_index":327,"error_type":"ValueError","error":"teacher tool call validation failed: ['record.messages[0].tool_calls[2].function.arguments: invalid JSON']","elapsed_sec":24.75}
+{"id":"500pi-compare-0390","intent":"compare","query":"吉利银河L7和问界M5怎么选？预算有限，关注综合取舍。","query_index":390,"error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 24.98万']","elapsed_sec":110.44}

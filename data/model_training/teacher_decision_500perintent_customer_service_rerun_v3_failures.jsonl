@@ -1,0 +1,1 @@
+{"id":"500pi-customer_service-0006","intent":"customer_service","query":"辅助驾驶是不是自动驾驶，高速能不能放手，请给一段克制客服回复。用户位于北京，属于线上咨询用户。","query_index":6,"error_type":"ValueError","error":"at least one teacher tool call is required","elapsed_sec":11.57}

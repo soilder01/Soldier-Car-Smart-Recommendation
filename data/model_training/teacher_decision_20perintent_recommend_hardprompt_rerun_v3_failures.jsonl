@@ -1,0 +1,2 @@
+{"id":"20pi-recommend-rerun-006","intent":"recommend","query":"25万左右增程SUV，偶尔长途，关注续航和舒适。","error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 6座']","elapsed_sec":131.5}
+{"id":"20pi-recommend-rerun-006","intent":"recommend","query":"25万左右增程SUV，偶尔长途，关注续航和舒适。","error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 6座']","elapsed_sec":132.05}

@@ -11,6 +11,20 @@ backend/config/config.*.yaml
 models/
 merged_model/
 checkpoints/
+!checkpoints/
+checkpoints/*
+!checkpoints/grpo/
+checkpoints/grpo/*
+!checkpoints/grpo/formal_v4/
+checkpoints/grpo/formal_v4/*
+!checkpoints/grpo/formal_v4/restart_1/
+checkpoints/grpo/formal_v4/restart_1/*
+!checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/
+checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/*
+!checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/checkpoint-150/
+checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/checkpoint-150/*
+!checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/checkpoint-150/adapter_model.safetensors
+!checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/checkpoint-150/adapter_config.json
 
 # envs & caches
 .venv/
@@ -39,11 +53,17 @@ data/real_world/raw/
 # big intermediate data & logs
 data/model_training/**
 !data/model_training/
+!data/model_training/sft_train.jsonl
+!data/model_training/sft_val.jsonl
+!data/model_training/teacher_decision_*.jsonl
 !data/model_training/sft_freeze/
 !data/model_training/sft_freeze/split_manifest.json
+!data/model_training/eval/
+!data/model_training/eval/grpo_final_held_out.jsonl
 !data/model_training/grpo/
 !data/model_training/grpo/reward_train_dev_manifest.json
 !data/model_training/grpo/grpo_dev_authorization_manifest.json
+!data/model_training/grpo/reward_train_expanded_v4.jsonl
 !data/model_training/grpo/reward_train_expanded_v4_manifest.json
 !data/model_training/grpo/grpo_formal_v4_authorization.json
 !data/model_training/grpo/grpo_formal_v4_preregistered_report.json
@@ -52,10 +72,16 @@ data/model_training/**
 !data/model_training/grpo/formal_v4/restart_1/
 !data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_manifest.json
 !data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_mix.jsonl
+!data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl
 !data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128_manifest.json
+!data/model_training/grpo/formal_v4/restart_1/powered_dev_recommend_sales_128.jsonl
 !data/model_training/grpo/formal_v4/restart_1/newanchor_eval_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/held_out_40_frozen_eval.jsonl
 !data/model_training/grpo/formal_v4/restart_1/held_out_40_final_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/held_out_40_final_evaluations.jsonl
 !data/model_training/grpo/formal_v4/restart_1/held_out_40_access_state.json
 !data/model_training/grpo/formal_v4/restart_1/final40_confirmation_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/final40_confirmation_evaluations.jsonl
 *.log
 /tmp/*.log

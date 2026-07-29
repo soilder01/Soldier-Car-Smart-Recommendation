@@ -1,0 +1,3 @@
+{"id":"20pi-recommend-rerun-014","intent":"recommend","query":"预算24万，老人接送和孩子通勤，关注上下车便利和空间。","error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 19.99万', 'unsupported hard claim: 18.98万', 'unsupported hard claim: 19.39万']","elapsed_sec":112.25}
+{"id":"20pi-recommend-rerun-011","intent":"recommend","query":"预算32万，家里有充电桩，想买纯电SUV，关注安全和空间。","error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 25.98万', 'unsupported hard claim: 26.39万']","elapsed_sec":138.21}
+{"id":"20pi-recommend-rerun-013","intent":"recommend","query":"预算50万，想从燃油豪华车换新能源，关注舒适和品牌。","error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 46.98万']","elapsed_sec":179.98}

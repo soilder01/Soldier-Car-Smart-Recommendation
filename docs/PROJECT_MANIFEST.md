@@ -94,3 +94,12 @@ Service parity:
   weights, checkpoints, virtual environments, or raw generated answer text.
 - `merged_model/` is retained as an audit artifact for the merge-degradation
   finding but is not the serving path and must not be committed to ordinary Git.
+
+## Frozen Benchmark Use
+
+`held_out_40_frozen_eval.jsonl`, `grpo_final_held_out.jsonl`, and the
+corresponding final-40 files are terminal frozen benchmarks for this project.
+They stayed read-only during training and were burned exactly once in terminal
+evaluation (`held_out_40_accessed=true`). Reproducers may use them only for
+terminal verification, not for training, hyperparameter selection, checkpoint
+selection, or early stopping, so the benchmark remains fair.

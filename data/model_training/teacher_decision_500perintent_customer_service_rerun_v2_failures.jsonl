@@ -1,0 +1,1 @@
+{"id":"500pi-customer_service-0254","intent":"customer_service","query":"新能源车保修政策怎么查，能不能承诺终身保修，请给一段克制客服回复。用户位于上海，属于家庭用户。","query_index":254,"error_type":"ValueError","error":"answer grounding failed: ['unsupported policy claim: 您好，关于您咨询的新能源汽车保修政策查询及终身保修相关问题：']","elapsed_sec":50.52}

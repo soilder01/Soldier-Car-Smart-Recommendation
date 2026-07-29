@@ -1,0 +1,2 @@
+{"id":"500pi-deep_search-0081","intent":"deep_search","query":"请深度调研预算15万的插混SUV，单人城市通勤场景，重点看舒适、座舱和商务接待。","query_index":81,"error_type":"ValueError","error":"answer grounding failed: ['unsupported hard claim: 7座']","elapsed_sec":102.41}
+{"id":"500pi-deep_search-0288","intent":"deep_search","query":"请深度调研预算15万的插混轿车，经常跨城场景，重点看驾驶感、动力和日常通勤。","query_index":288,"error_type":"length","error":"teacher response was truncated by max_tokens","elapsed_sec":58.71}
