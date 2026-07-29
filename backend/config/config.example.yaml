@@ -1,0 +1,20 @@
+llm:
+  api_key: ""
+  base_url: "<ARK_BASE_URL_PLACEHOLDER>"
+  chat_model: "your-chat-endpoint-id"
+  embedding_model: ""
+  temperature: 0.2
+  timeout: 60
+
+content_generation:
+  api_key: ""
+  task_url: "<ARK_BASE_URL_PLACEHOLDER>"
+  model: "your-content-generation-endpoint-id"
+  type: "seedance2.0"
+
+app:
+  watermark: "你的水印"
+  tavily_api_key: ""
+  enable_deep_search: true
+  enable_multi_agent_trace: true
+  enable_vector_database: true

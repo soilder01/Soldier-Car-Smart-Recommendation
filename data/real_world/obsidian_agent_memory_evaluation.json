@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-06-22 16:50:09",
+  "case_count": 5,
+  "passed_count": 5,
+  "pass_rate": 100.0,
+  "recommendation_case_count_before": 47,
+  "recommendation_case_count_after": 52,
+  "graph_edge_count": 494,
+  "rows": [
+    {
+      "name": "家庭SUV",
+      "passed": true,
+      "path": "08-推荐案例/推荐案例-20260622-164349-比亚迪-宋PLUS-DM-i.md",
+      "candidate_pool": "local",
+      "top_model": "比亚迪 宋PLUS DM-i",
+      "missing_sections": [],
+      "memory_sections": [
+        "画像",
+        "候选池",
+        "Top3对比",
+        "风险",
+        "跟进动作",
+        "证据"
+      ]
+    },
+    {
+      "name": "无家充",
+      "passed": true,
+      "path": "08-推荐案例/推荐案例-20260622-164432-理想-L6.md",
+      "candidate_pool": "local",
+      "top_model": "理想 L6",
+      "missing_sections": [],
+      "memory_sections": [
+        "画像",
+        "候选池",
+        "Top3对比",
+        "风险",
+        "跟进动作",
+        "证据"
+      ]
+    },
+    {
+      "name": "真实数据",
+      "passed": true,
+      "path": "08-推荐案例/推荐案例-20260622-164721-Hyundai-IONIQ-5-Base.md",
+      "candidate_pool": "real",
+      "top_model": "Hyundai IONIQ 5 Base",
+      "missing_sections": [],
+      "memory_sections": [
+        "画像",
+        "候选池",
+        "Top3对比",
+        "风险",
+        "跟进动作",
+        "证据"
+      ]
+    },
+    {
+      "name": "多人MPV",
+      "passed": true,
+      "path": "08-推荐案例/推荐案例-20260622-164820-极氪-009.md",
+      "candidate_pool": "local",
+      "top_model": "极氪 009",
+      "missing_sections": [],
+      "memory_sections": [
+        "画像",
+        "候选池",
+        "Top3对比",
+        "风险",
+        "跟进动作",
+        "证据"
+      ]
+    },
+    {
+      "name": "预算冲突",
+      "passed": true,
+      "path": "08-推荐案例/推荐案例-20260622-165009-比亚迪-宋PLUS-DM-i.md",
+      "candidate_pool": "fused",
+      "top_model": "比亚迪 宋PLUS DM-i",
+      "missing_sections": [],
+      "memory_sections": [
+        "画像",
+        "候选池",
+        "Top3对比",
+        "风险",
+        "跟进动作",
+        "证据"
+      ]
+    }
+  ]
+}

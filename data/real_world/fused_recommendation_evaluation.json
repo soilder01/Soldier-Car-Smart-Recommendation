@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-06-22 14:41:36",
+  "catalog_summary": {
+    "total": 229,
+    "local_count": 38,
+    "real_count": 191,
+    "dedup_skipped": 29,
+    "brand_count": 46,
+    "brand_distribution": [
+      [
+        "宝马",
+        42
+      ],
+      [
+        "奥迪",
+        32
+      ],
+      [
+        "大众",
+        31
+      ],
+      [
+        "现代",
+        26
+      ],
+      [
+        "标致",
+        16
+      ],
+      [
+        "雷诺",
+        7
+      ],
+      [
+        "特斯拉",
+        6
+      ],
+      [
+        "日产",
+        5
+      ],
+      [
+        "问界",
+        4
+      ],
+      [
+        "奔驰",
+        4
+      ],
+      [
+        "Daimler",
+        4
+      ],
+      [
+        "福特",
+        4
+      ],
+      [
+        "极氪",
+        3
+      ],
+      [
+        "蔚来",
+        3
+      ],
+      [
+        "雪铁龙",
+        3
+      ],
+      [
+        "比亚迪",
+        2
+      ]
+    ],
+    "vehicle_type_distribution": [
+      [
+        "轿车",
+        158
+      ],
+      [
+        "SUV",
+        59
+      ],
+      [
+        "MPV",
+        7
+      ],
+      [
+        "微型车",
+        3
+      ],
+      [
+        "猎装车",
+        1
+      ],
+      [
+        "旅行车",
+        1
+      ]
+    ]
+  },
+  "case_count": 3,
+  "passed_count": 3,
+  "pass_rate": 100.0,
+  "cases": [
+    {
+      "name": "融合池-中文家庭SUV",
+      "passed": true,
+      "checks": [
+        {
+          "name": "融合候选池规模",
+          "passed": true,
+          "actual": 229,
+          "expected": 200
+        },
+        {
+          "name": "Top8包含本地精选",
+          "passed": true,
+          "actual": [
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "real_world_enriched"
+          ],
+          "expected": "local_curated"
+        },
+        {
+          "name": "Top8包含真实扩展",
+          "passed": true,
+          "actual": [
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "local_curated",
+            "real_world_enriched"
+          ],
+          "expected": "real_world_enriched"
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "特斯拉",
+          "model": "Model Y",
+          "source": "local_curated",
+          "range": 688,
+          "score": 100
+        },
+        {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "source": "local_curated",
+          "range": 1100,
+          "score": 100
+        },
+        {
+          "brand": "理想",
+          "model": "L6",
+          "source": "local_curated",
+          "range": 1390,
+          "score": 100
+        },
+        {
+          "brand": "问界",
+          "model": "M7",
+          "source": "local_curated",
+          "range": 1300,
+          "score": 100
+        },
+        {
+          "brand": "埃安",
+          "model": "AION Y",
+          "source": "local_curated",
+          "range": 610,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "name": "融合池-豪华社交",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Top8包含目标品牌",
+          "passed": true,
+          "actual": [
+            "特斯拉",
+            "理想",
+            "问界",
+            "奔驰",
+            "宝马",
+            "奥迪",
+            "蔚来",
+            "奥迪"
+          ],
+          "expected": [
+            "宝马",
+            "奔驰",
+            "奥迪",
+            "保时捷",
+            "特斯拉"
+          ]
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "特斯拉",
+          "model": "Model 3",
+          "source": "local_curated",
+          "range": 830,
+          "score": 100
+        },
+        {
+          "brand": "理想",
+          "model": "L7",
+          "source": "local_curated",
+          "range": 1315,
+          "score": 100
+        },
+        {
+          "brand": "问界",
+          "model": "M9",
+          "source": "local_curated",
+          "range": 1402,
+          "score": 100
+        },
+        {
+          "brand": "奔驰",
+          "model": "E300L",
+          "source": "local_curated",
+          "range": 0,
+          "score": 100
+        },
+        {
+          "brand": "宝马",
+          "model": "530Li",
+          "source": "local_curated",
+          "range": 0,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "name": "融合池-有家充长续航",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Top8包含长续航",
+          "passed": true,
+          "actual": 1390,
+          "expected": 550
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "小鹏",
+          "model": "G6",
+          "source": "local_curated",
+          "range": 755,
+          "score": 94.4
+        },
+        {
+          "brand": "腾势",
+          "model": "N7",
+          "source": "local_curated",
+          "range": 702,
+          "score": 94.2
+        },
+        {
+          "brand": "智界",
+          "model": "R7",
+          "source": "local_curated",
+          "range": 802,
+          "score": 93.8
+        },
+        {
+          "brand": "极氪",
+          "model": "007",
+          "source": "local_curated",
+          "range": 870,
+          "score": 92.9
+        },
+        {
+          "brand": "智界",
+          "model": "S7",
+          "source": "local_curated",
+          "range": 855,
+          "score": 92.9
+        }
+      ]
+    }
+  ]
+}

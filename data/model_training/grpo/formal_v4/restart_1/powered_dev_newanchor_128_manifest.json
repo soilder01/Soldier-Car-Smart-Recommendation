@@ -1,0 +1,424 @@
+{
+  "artifacts": {
+    "jsonl": {
+      "path": "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl",
+      "records": 128,
+      "sha256": "e74de770e8dbc95dbbf813d87fa9b38e631941ec464f790410b2c86be41c0c2b"
+    },
+    "manifest": {
+      "path": "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128_manifest.json"
+    }
+  },
+  "candidate_index_check": {
+    "same_order_as_powered_dev": true,
+    "same_set_as_powered_dev": true
+  },
+  "counts": {
+    "per_intent": {
+      "recommend": 64,
+      "sales": 64
+    },
+    "total": 128
+  },
+  "quality_checks": {
+    "candidate_index_set_same_as_powered_dev": true,
+    "intent_counts": {
+      "recommend": 64,
+      "sales": 64
+    },
+    "recommend_anchor_drift_if_rebuilt_count": 64,
+    "recommend_anchor_drift_if_rebuilt_ratio": 1.0,
+    "recommend_rows_kept_bytewise_from_old_powered_dev": true,
+    "rows_total": 128,
+    "sales_anchor_changed_count": 64,
+    "sales_anchor_changed_ratio": 1.0,
+    "sales_claim_changed_count": 64,
+    "sales_communication_action_full_count": 64,
+    "sales_evidence_claim_count_distribution": {
+      "3": 64
+    },
+    "sales_field_changed_count": 46,
+    "sales_minimum_supported_claims_distribution": {
+      "1": 64
+    },
+    "sales_query_anchor_count_distribution": {
+      "3": 4,
+      "4": 5,
+      "5": 18,
+      "6": 9,
+      "7": 22,
+      "8": 6
+    }
+  },
+  "recommend_check": {
+    "anchor_drift_if_rebuilt_with_new_parser_count": 64,
+    "anchor_drift_if_rebuilt_with_new_parser_ratio": 1.0,
+    "drift_examples": [
+      {
+        "candidate_index": 33195,
+        "id": "powered-dev-recommend-33195",
+        "new_if_rebuilt": [
+          "智驾",
+          "座舱",
+          "预算"
+        ],
+        "old": [
+          "智驾",
+          "座舱"
+        ]
+      },
+      {
+        "candidate_index": 15928,
+        "id": "powered-dev-recommend-15928",
+        "new_if_rebuilt": [
+          "驾驶感",
+          "预算"
+        ],
+        "old": [
+          "驾驶感"
+        ]
+      },
+      {
+        "candidate_index": 29258,
+        "id": "powered-dev-recommend-29258",
+        "new_if_rebuilt": [
+          "智驾",
+          "座舱",
+          "预算",
+          "插混"
+        ],
+        "old": [
+          "智驾",
+          "座舱"
+        ]
+      },
+      {
+        "candidate_index": 37292,
+        "id": "powered-dev-recommend-37292",
+        "new_if_rebuilt": [
+          "品牌",
+          "预算",
+          "纯电"
+        ],
+        "old": [
+          "品牌"
+        ]
+      },
+      {
+        "candidate_index": 9122,
+        "id": "powered-dev-recommend-09122",
+        "new_if_rebuilt": [
+          "空间",
+          "预算",
+          "增程"
+        ],
+        "old": [
+          "空间"
+        ]
+      },
+      {
+        "candidate_index": 21824,
+        "id": "powered-dev-recommend-21824",
+        "new_if_rebuilt": [
+          "可靠性",
+          "安全",
+          "保值",
+          "预算",
+          "增程"
+        ],
+        "old": [
+          "可靠性",
+          "保值"
+        ]
+      },
+      {
+        "candidate_index": 10726,
+        "id": "powered-dev-recommend-10726",
+        "new_if_rebuilt": [
+          "预算"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      },
+      {
+        "candidate_index": 25894,
+        "id": "powered-dev-recommend-25894",
+        "new_if_rebuilt": [
+          "预算"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      }
+    ],
+    "policy": "recommend rows are kept unchanged in this newanchor eval set; parser drift is reported but not applied to recommend",
+    "rows_kept_exactly_from_old_powered_dev": true
+  },
+  "sales_rebuild_check": {
+    "anchor_change_examples": [
+      {
+        "candidate_index": 1529,
+        "id": "powered-dev-sales-01529",
+        "new": [
+          "对比",
+          "选择",
+          "核验",
+          "试驾",
+          "体验"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      },
+      {
+        "candidate_index": 4141,
+        "id": "powered-dev-sales-04141",
+        "new": [
+          "品牌",
+          "保值",
+          "市场表现",
+          "续航",
+          "补能",
+          "交付",
+          "核验"
+        ],
+        "old": [
+          "保值",
+          "品牌"
+        ]
+      },
+      {
+        "candidate_index": 886,
+        "id": "powered-dev-sales-00886",
+        "new": [
+          "品牌",
+          "高端感",
+          "座舱",
+          "交付",
+          "核验"
+        ],
+        "old": [
+          "品牌"
+        ]
+      },
+      {
+        "candidate_index": 2530,
+        "id": "powered-dev-sales-02530",
+        "new": [
+          "增程",
+          "能源类型",
+          "补能",
+          "能耗",
+          "通勤"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      },
+      {
+        "candidate_index": 3710,
+        "id": "powered-dev-sales-03710",
+        "new": [
+          "价格",
+          "权益",
+          "承诺",
+          "能耗",
+          "通勤",
+          "跟进",
+          "了解"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      },
+      {
+        "candidate_index": 4194,
+        "id": "powered-dev-sales-04194",
+        "new": [
+          "纯电",
+          "插混",
+          "能源类型",
+          "场景",
+          "能耗",
+          "通勤"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      },
+      {
+        "candidate_index": 4168,
+        "id": "powered-dev-sales-04168",
+        "new": [
+          "纯电",
+          "插混",
+          "能源类型",
+          "场景"
+        ],
+        "old": [
+          "空间",
+          "补能"
+        ]
+      },
+      {
+        "candidate_index": 2429,
+        "id": "powered-dev-sales-02429",
+        "new": [
+          "油耗",
+          "能耗",
+          "核验",
+          "续航",
+          "补能",
+          "跟进",
+          "了解"
+        ],
+        "old": [
+          "油耗"
+        ]
+      }
+    ],
+    "anchor_changed_count": 64,
+    "anchor_changed_ratio": 1.0,
+    "claim_changed_count": 64,
+    "field_change_examples": [
+      {
+        "candidate_index": 4141,
+        "id": "powered-dev-sales-04141",
+        "new": [
+          "market.monthly_sales",
+          "specs.smart_cockpit",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      },
+      {
+        "candidate_index": 886,
+        "id": "powered-dev-sales-00886",
+        "new": [
+          "market.monthly_sales",
+          "specs.smart_cockpit",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      },
+      {
+        "candidate_index": 3710,
+        "id": "powered-dev-sales-03710",
+        "new": [
+          "vehicle.price_min",
+          "vehicle.price_max",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      },
+      {
+        "candidate_index": 1777,
+        "id": "powered-dev-sales-01777",
+        "new": [
+          "vehicle.price_min",
+          "vehicle.price_max",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      },
+      {
+        "candidate_index": 924,
+        "id": "powered-dev-sales-00924",
+        "new": [
+          "market.monthly_sales",
+          "specs.smart_cockpit",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      },
+      {
+        "candidate_index": 1776,
+        "id": "powered-dev-sales-01776",
+        "new": [
+          "vehicle.price_min",
+          "vehicle.price_max",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      },
+      {
+        "candidate_index": 2733,
+        "id": "powered-dev-sales-02733",
+        "new": [
+          "specs.smart_cockpit",
+          "specs.adas_level",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "specs.smart_cockpit",
+          "vehicle.energy_type",
+          "specs.cltc_range"
+        ]
+      },
+      {
+        "candidate_index": 4004,
+        "id": "powered-dev-sales-04004",
+        "new": [
+          "market.monthly_sales",
+          "specs.smart_cockpit",
+          "vehicle.energy_type"
+        ],
+        "old": [
+          "vehicle.energy_type",
+          "specs.cltc_range",
+          "specs.fast_charge"
+        ]
+      }
+    ],
+    "field_changed_count": 46
+  },
+  "scope": {
+    "final_40_body_read": false,
+    "held_out_40_body_read": false,
+    "model_evaluated": false,
+    "reward_fn_modified": false,
+    "reward_fn_sha256": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8",
+    "secret_or_base_url_printed": false,
+    "service_started": false,
+    "training_started": false
+  },
+  "source": {
+    "old_powered_dev_path": "data/model_training/grpo/formal_v4/restart_1/powered_dev_recommend_sales_128.jsonl",
+    "old_powered_dev_sha256": "770960c0d38bc88c8277f4cdbcc07fd78fda39f5050acd304bc6912aa8e6b9fb",
+    "parser_script_path": "scripts/freeze_grpo_expanded_v4_train.py",
+    "parser_script_sha256": "a366e3a3770260303f4ec3c3aab1efb25e8bced7e2be30916cba0e6111a04dc6",
+    "rebuild_logic": "sales rows rebuilt with current scripts.freeze_grpo_expanded_v4_train.parse_concerns/fields_for_query/build_case; recommend rows retained exactly from old powered-dev file"
+  },
+  "status": "powered_dev_newanchor_128_frozen_without_model_inference"
+}

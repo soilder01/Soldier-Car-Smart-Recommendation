@@ -1,0 +1,12 @@
+# Training-only dependency manifest.
+# Task 16 must select CUDA-compatible wheels and record exact resolved versions.
+torch
+transformers
+datasets
+accelerate
+peft
+trl
+bitsandbytes
+sentencepiece
+protobuf
+PyYAML

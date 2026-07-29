@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-06-22 14:21:11",
+  "source": "open-ev-data/open-ev-data-dataset + OSkrk/Electric-vehicles-EV-Database",
+  "source_url": [
+    "https://github.com/open-ev-data/open-ev-data-dataset/archive/refs/heads/main.zip",
+    "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+  ],
+  "license_file": "https://github.com/open-ev-data/open-ev-data-dataset/blob/main/LICENCE",
+  "record_count": 227,
+  "unique_brand_count": 30,
+  "unique_model_count": 92,
+  "year_range": [
+    2010,
+    2025
+  ],
+  "brand_distribution_top20": [
+    [
+      "Audi",
+      53
+    ],
+    [
+      "BMW",
+      45
+    ],
+    [
+      "Volkswagen",
+      30
+    ],
+    [
+      "Hyundai",
+      26
+    ],
+    [
+      "Peugeot",
+      16
+    ],
+    [
+      "Renault",
+      8
+    ],
+    [
+      "VW",
+      7
+    ],
+    [
+      "Nissan",
+      5
+    ],
+    [
+      "Daimler",
+      4
+    ],
+    [
+      "Ford",
+      4
+    ],
+    [
+      "Tesla",
+      4
+    ],
+    [
+      "Citroen",
+      3
+    ],
+    [
+      "Honda",
+      2
+    ],
+    [
+      "Kia",
+      2
+    ],
+    [
+      "Porsche",
+      2
+    ],
+    [
+      "Smart",
+      2
+    ],
+    [
+      "Aston",
+      1
+    ],
+    [
+      "Chevrolet",
+      1
+    ],
+    [
+      "Faraday",
+      1
+    ],
+    [
+      "Infinity",
+      1
+    ]
+  ],
+  "vehicle_type_distribution": [
+    [
+      "轿车",
+      174
+    ],
+    [
+      "SUV",
+      43
+    ],
+    [
+      "MPV",
+      7
+    ],
+    [
+      "微型车",
+      3
+    ]
+  ],
+  "range_cycle_distribution": [
+    [
+      "wltp",
+      227
+    ]
+  ],
+  "missing_counts": {
+    "brand": 0,
+    "model": 0,
+    "model_year": 0,
+    "trim": 67,
+    "vehicle_type_raw": 94,
+    "vehicle_type": 0,
+    "energy_type": 0,
+    "markets": 33,
+    "drivetrain": 0,
+    "system_power_kw": 0,
+    "battery_kwh": 35,
+    "range_km": 2,
+    "range_cycle": 0,
+    "ac_charge_kw": 0,
+    "dc_charge_kw": 0,
+    "fast_charge_minutes_estimated": 0,
+    "source_url": 0,
+    "raw_path": 0
+  },
+  "files": {
+    "raw_archive": "data/real_world/raw/open_ev_data_dataset_main.zip",
+    "normalized_csv": "data/real_world/real_ev_specs.csv",
+    "recommender_csv": "data/real_world/real_ev_specs_for_recommender.csv"
+  }
+}

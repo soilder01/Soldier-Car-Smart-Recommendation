@@ -1,0 +1,100 @@
+{
+  "cloud_call_policy": {
+    "client": "project existing llm_client / OpenAI-compatible client",
+    "g8_realization": "8 independent n=1 chat completion calls per prompt, globally bounded concurrency allowed",
+    "mask_sensitive_ep_or_model_name_if_needed": true,
+    "no_raw_http": true,
+    "no_secret_or_base_url_plaintext_output": true,
+    "old_cloud_scores_may_not_be_reused": true
+  },
+  "dataset": {
+    "candidate_index_policy": "same candidate_index set and order as old powered-dev-128; recommend rows retained from old powered-dev, sales rows rebuilt with repaired anchors",
+    "intents": {
+      "recommend": 64,
+      "sales": 64
+    },
+    "name": "powered-dev-newanchor-128",
+    "not_directly_comparable_to_old_powered_dev_table": true,
+    "path": "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl",
+    "prompt_count": 128,
+    "reason_not_comparable": "sales intent_response_spec/evidence_claims were rebuilt after anchor parser fix; old three-way table used old frozen powered-dev case specs",
+    "sha256": "e74de770e8dbc95dbbf813d87fa9b38e631941ec464f790410b2c86be41c0c2b"
+  },
+  "evaluation_objects": [
+    {
+      "label": "step0",
+      "meaning": "GRPO-before SFT-only adapter state",
+      "type": "local_sft_baseline"
+    },
+    {
+      "label": "checkpoint-300",
+      "path": "checkpoints/grpo/formal_v4/restart_1/checkpoint-300/adapter_model.safetensors",
+      "type": "local_grpo_checkpoint"
+    },
+    {
+      "label": "sales_targeted_new_checkpoint",
+      "selection_policy_source": "sales_targeted_train_protocol.json",
+      "type": "local_continued_grpo_checkpoint"
+    },
+    {
+      "label": "cloud_seedpro_ark_ep",
+      "must_rerun_on_newanchor_exam": true,
+      "provider_masked": "SeedPro ARK ep (masked)",
+      "type": "cloud_api"
+    }
+  ],
+  "fairness_constraints": {
+    "all_four_objects_must_be_evaluated_on_this_new_exam": true,
+    "cloud_gets_no_extra_format_hint": true,
+    "same_injected_evidence_ledger": true,
+    "same_prompt": true,
+    "same_sampling_count_per_prompt": true,
+    "same_sampling_parameters": true,
+    "same_scoring_function": true,
+    "same_system_message": true
+  },
+  "mode": "four_way_same_newanchor_exam_after_sales_targeted_training",
+  "output_policy_for_future_eval": {
+    "must_include_per_prompt_fields": [
+      "prompt_id",
+      "intent",
+      "candidate_index",
+      "query_anchor_tokens",
+      "query_attribute_anchors",
+      "per_prompt_core_mean",
+      "factual_precision_mean",
+      "required_coverage_mean",
+      "gate_counts",
+      "completion_count"
+    ],
+    "must_write_new_artifacts": true,
+    "raw_cloud_answers_persisted": false,
+    "suggested_evaluations_jsonl": "data/model_training/grpo/formal_v4/restart_1/newanchor_powered_dev_evaluations.jsonl",
+    "suggested_result_json": "data/model_training/grpo/formal_v4/restart_1/newanchor_powered_dev_result.json"
+  },
+  "red_lines": {
+    "final_40_access_allowed": false,
+    "held_out_40_access_allowed": false,
+    "no_final_40_body_read": true,
+    "no_held_out_40_body_read": true,
+    "no_secret_or_base_url_plaintext_output": true,
+    "reward_fn_sha256_must_equal": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8",
+    "reward_fn_sha256_observed_before_protocol": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "sampling": {
+    "max_completion_length": 512,
+    "max_total_sequence_length": 3072,
+    "num_generations": 8,
+    "seed": 20260725,
+    "temperature": 0.8,
+    "top_p": 0.95
+  },
+  "scoring": {
+    "by_intent": "mean_core",
+    "composite": "0.5*recommend_mean_core + 0.5*sales_mean_core",
+    "core_formula": "0.6*factual_precision + 0.4*required_coverage",
+    "reward_fn_changed": false
+  },
+  "status": "newanchor_eval_protocol_frozen_before_training_or_evaluation",
+  "stop_condition": "After protocol is frozen, do not evaluate until separately authorized after sales targeted training."
+}

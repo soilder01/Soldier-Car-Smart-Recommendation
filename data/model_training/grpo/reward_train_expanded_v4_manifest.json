@@ -1,0 +1,60 @@
+{
+  "format_version": 1,
+  "status": "frozen_without_training_or_inference",
+  "purpose": "expanded formal_v4 GRPO train set and fixed dev-4 probe",
+  "selection": {
+    "seed": "grpo-expanded-v4-train",
+    "source": "candidate_index > 650 from data_synth.generate_500perintent_sft.build_queries",
+    "excluded": "GRPO final-40 normalized query SHA",
+    "target_counts": {
+      "recommend": 265,
+      "compare": 6,
+      "knowledge": 265,
+      "sales": 264
+    },
+    "balancing_note": "compare has only 6 available tail candidates after excluding final-40; all 6 are included, the remaining 794 rows are balanced across recommend/knowledge/sales."
+  },
+  "counts": {
+    "train": 800,
+    "dev": 4,
+    "train_per_intent": {
+      "compare": 6,
+      "knowledge": 265,
+      "recommend": 265,
+      "sales": 264
+    },
+    "dev_per_intent": {
+      "compare": 1,
+      "knowledge": 1,
+      "recommend": 1,
+      "sales": 1
+    }
+  },
+  "isolation": {
+    "held_out_40": {
+      "normalized_id_sha256_overlap": 0,
+      "normalized_query_sha256_overlap": 0
+    },
+    "final_40": {
+      "normalized_id_sha256_overlap": 0,
+      "normalized_query_sha256_overlap": 0
+    }
+  },
+  "knowledge_policy": {
+    "included": true,
+    "train_count": 265,
+    "known_limitation": "knowledge uses local KB anchor claims; prior signal probe found weak but nonzero anchor-bound pass evidence."
+  },
+  "artifacts": {
+    "train": {
+      "path": "data/model_training/grpo/reward_train_expanded_v4.jsonl",
+      "sha256": "284ecdabe87dd10751a9937e429027090d0a38c277d326981c5571d028ef040d",
+      "records": 800
+    },
+    "input_manifest": {
+      "path": "data/model_training/grpo/grpo_expanded_v4_input_manifest.json",
+      "sha256": "0958cea09a20021471c9b112beeb1688e1a1f3d3b36d3a447f79911cb1f5019b",
+      "records": 804
+    }
+  }
+}

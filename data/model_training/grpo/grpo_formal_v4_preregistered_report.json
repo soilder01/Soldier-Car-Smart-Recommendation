@@ -1,0 +1,177 @@
+{
+  "format_version": 1,
+  "status": "preregistered_before_formal_v4_training",
+  "run_id": "grpo-formal-v4",
+  "authorization_manifest_sha256": "9d104337dacedabf1a8e91b01215439a5ff8507a44943511aca47659e9c98e75",
+  "scientific_expectations": {
+    "expected_gain_intents": [
+      "recommend",
+      "compare",
+      "sales"
+    ],
+    "knowledge": {
+      "expected": "likely_no_improvement",
+      "pre_registered_reason": "Signal probe found 4/5 knowledge groups all-zero and only 1/5 with non-zero total reward variance.",
+      "gate_may_be_changed_to_force_gain": false
+    },
+    "concision": {
+      "expected": "no_measurable_improvement",
+      "pre_registered_reason": "Signal probe found concision=1.0 for all 160 completions and 0/20 groups with concision variance.",
+      "may_claim_grpo_improved_concision": false
+    },
+    "three_vehicle_compare": {
+      "expected": "fail_closed",
+      "case_id": "reward-compare-005",
+      "pre_registered_reason": "Current deterministic compare gate requires exactly two targets.",
+      "may_rewrite_as_success": false
+    }
+  },
+  "anti_p_hacking": {
+    "dev_metrics_may_change_any_hyperparameter": false,
+    "held_out_40_may_select_or_tune": false,
+    "final_40_may_select_or_tune": false,
+    "failed_samples_output": "*_failures.jsonl",
+    "failure_may_be_presented_as_success": false
+  },
+  "expected_abort_risk": {
+    "intent_response": "Abort only on relative degradation above 0.7953125 for two consecutive windows; baseline-level failures are training signal.",
+    "kl_p95": "formal_v1 KL0 p95 was heavy-tailed. Existing KL0-relative mean/p95 abort rules remain unchanged and must not be relaxed."
+  },
+  "terminal_evaluation_plan": {
+    "after_convergence_early_stop_or_abort": "lock or quarantine the current adapter and report first",
+    "automatic_final_40": false,
+    "final_40_evaluations_authorized_now": 0
+  },
+  "derived_from": {
+    "formal_v3_authorization_sha256": "a918021a892e51f1500958524b3ec12d150cde25088fabadf10b0f03c6f73902",
+    "formal_v3_preregistration_sha256": "e4fb947780299477044ced12ea8d30c263f4799de4f0fa79ef6845c8efa59053",
+    "allowed_change": "expanded train set, longer schedule, KL p95 monitor-only, explosive KL abort only",
+    "reward_fn_changed": false,
+    "fake_reward_gate_changed": false,
+    "held_out_final_isolation_changed": false,
+    "thresholds_reward_fake_changed": false
+  },
+  "abort_recalibration": {
+    "baseline": {
+      "source": "data/model_training/grpo/grpo_signal_probe_raw.jsonl",
+      "source_sha256": "1a0dc606c0800c0531e4c4c375375aaebd3141b0542b176bd71c3366e72da07a",
+      "population": "train_16_only_128_completions",
+      "intent_response_fail_rate": 0.6953125,
+      "zero_variance_group_ratio": 0.25,
+      "completion_length_p50": 73.5,
+      "per_intent_fail_rate": {
+        "compare": 0.8125,
+        "knowledge": 0.90625,
+        "recommend": 0.34375,
+        "sales": 0.71875
+      }
+    },
+    "intent_response": {
+      "healthy_direction": "decrease",
+      "abort": "above baseline + 0.10 for two consecutive windows",
+      "resolved_threshold": 0.7953125
+    },
+    "zero_variance": {
+      "abort": "at least baseline + 0.20 for two consecutive windows",
+      "resolved_threshold": 0.45
+    },
+    "length": {
+      "abort": "below 0.50 * baseline p50 for two consecutive windows",
+      "resolved_floor": 36.75
+    },
+    "absolute_intent_fail_10_percent_trigger_removed": true,
+    "absolute_zero_variance_50_percent_trigger_removed": true,
+    "absolute_length_64_token_floor_removed": true
+  },
+  "formal_v3_fix": {
+    "fake_reward_gate": {
+      "condition": "previous_reward_gain >= 0.08 and window_reward_gain >= 0.08 and previous_factual_gain < 0.01 and window_factual_gain < 0.01",
+      "implementation": "per_window_AND_no_cross_window_min",
+      "reward_gain_fake_min": 0.08,
+      "factual_precision_gain_required": 0.01,
+      "knowledge_handling_option": "A_exclude_knowledge_003",
+      "gain_population": [
+        "reward-recommend-002",
+        "reward-compare-004",
+        "reward-sales-004"
+      ],
+      "excluded_from_gain_population": [
+        "reward-knowledge-003"
+      ],
+      "thresholds_relaxed": false
+    },
+    "fixed_dev4_health_probe": {
+      "prompt_ids": [
+        "reward-recommend-002",
+        "reward-compare-004",
+        "reward-knowledge-003",
+        "reward-sales-004"
+      ],
+      "every_optimizer_steps": 5,
+      "no_grad": true,
+      "baseline_path": "data/model_training/grpo/grpo_formal_v3_fixed_dev4_step0_baseline.json",
+      "baseline_sha256": "4439877314e06bbea7f2b0a23551d4fa9a3e28e111c488a52270c063f848b6f4",
+      "rolling_train_windows_drive_abort": false
+    },
+    "fixed_dev4_step0_baseline": {
+      "path": "data/model_training/grpo/grpo_formal_v3_fixed_dev4_step0_baseline.json",
+      "sha256": "4439877314e06bbea7f2b0a23551d4fa9a3e28e111c488a52270c063f848b6f4",
+      "reward_mean": 0.34375,
+      "factual_precision_mean": 0.4427083333333333,
+      "fake_reward_gate": {
+        "scientific_limitation": "fake_reward_rise_without_factual_gain excludes knowledge-003; this gate's factual criterion does not cover knowledge intent.",
+        "included_prompt_ids": [
+          "reward-recommend-002",
+          "reward-compare-004",
+          "reward-sales-004"
+        ],
+        "excluded_prompt_ids": [
+          "reward-knowledge-003"
+        ],
+        "reward_mean": 0.4583333333333333,
+        "factual_precision_mean": 0.5902777777777778
+      },
+      "kl0_mean": 0.9521463882942462,
+      "kl0_p95": 5.380864143371582
+    },
+    "knowledge_scientific_limitation": "fake_reward_rise_without_factual_gain does not cover knowledge-003 factual gain under option A; knowledge remains reported in normal health metrics and checkpoint/dev diagnostics."
+  },
+  "formal_v4": {
+    "expanded_train": {
+      "train": 800,
+      "dev": 4,
+      "train_per_intent": {
+        "compare": 6,
+        "knowledge": 265,
+        "recommend": 265,
+        "sales": 264
+      },
+      "dev_per_intent": {
+        "compare": 1,
+        "knowledge": 1,
+        "recommend": 1,
+        "sales": 1
+      }
+    },
+    "expanded_train_sha256": "284ecdabe87dd10751a9937e429027090d0a38c277d326981c5571d028ef040d",
+    "expanded_input_manifest_sha256": "0958cea09a20021471c9b112beeb1688e1a1f3d3b36d3a447f79911cb1f5019b",
+    "fixed_dev4_step0_baseline_sha256": "03bc8cb271fd017e61f9fee991030908205358f8f0ff1d96fda48b19f47734ed",
+    "schedule": {
+      "max_optimizer_steps": 800,
+      "learning_rate": 2e-06,
+      "lr_scheduler": "cosine",
+      "warmup_steps": 40,
+      "health_window_steps": 50,
+      "dev_every_steps": 50
+    },
+    "kl_policy": {
+      "beta": 0.01,
+      "beta_zero_forbidden": true,
+      "kl_p95": "monitor_only",
+      "abort": {
+        "condition": "kl_mean >= max(5.0, 10*KL0_mean) for two fixed eval windows, or kl_max >=100 with length/refusal/copying symptom",
+        "beta_nonzero": true
+      }
+    }
+  }
+}

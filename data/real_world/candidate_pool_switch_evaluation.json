@@ -1,0 +1,119 @@
+{
+  "generated_at": "2026-06-22 14:45:02",
+  "case_count": 3,
+  "passed_count": 3,
+  "pass_rate": 100.0,
+  "rows": [
+    {
+      "pool": "local",
+      "passed": true,
+      "top_models": [
+        {
+          "brand": "特斯拉",
+          "model": "Model Y",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "理想",
+          "model": "L6",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "问界",
+          "model": "M7",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "埃安",
+          "model": "AION Y",
+          "score": 100,
+          "source": "local"
+        }
+      ],
+      "source_count": 1
+    },
+    {
+      "pool": "real",
+      "passed": true,
+      "top_models": [
+        {
+          "brand": "Faraday",
+          "model": "Future 91",
+          "score": 94.2,
+          "source": "real_world_enriched"
+        },
+        {
+          "brand": "VW",
+          "model": "ID Crozz2",
+          "score": 94.2,
+          "source": "real_world_enriched"
+        },
+        {
+          "brand": "Skoda",
+          "model": "E",
+          "score": 93.8,
+          "source": "real_world_enriched"
+        },
+        {
+          "brand": "Audi",
+          "model": "Q6",
+          "score": 93.2,
+          "source": "real_world_enriched"
+        },
+        {
+          "brand": "Kia",
+          "model": "Niro",
+          "score": 89.7,
+          "source": "real_world_enriched"
+        }
+      ],
+      "source_count": 1
+    },
+    {
+      "pool": "fused",
+      "passed": true,
+      "top_models": [
+        {
+          "brand": "特斯拉",
+          "model": "Model Y",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "理想",
+          "model": "L6",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "问界",
+          "model": "M7",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "Faraday",
+          "model": "Future 91",
+          "score": 92.2,
+          "source": "real_world_enriched"
+        }
+      ],
+      "source_count": 2
+    }
+  ]
+}

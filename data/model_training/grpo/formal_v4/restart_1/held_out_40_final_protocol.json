@@ -1,0 +1,79 @@
+{
+  "dataset": {
+    "construction_policy": {
+      "compare_knowledge": "report-only per-prompt trace retained; excluded from composite",
+      "recommend": "existing product-feature recommend binding logic, not sales-policy parser",
+      "sales": "fixed sales parser with strong query-bound anchors; 3 evidence claims; minimum_supported_claims=1"
+    },
+    "counts": {
+      "compare": 10,
+      "knowledge": 10,
+      "recommend": 10,
+      "sales": 10
+    },
+    "path": "data/model_training/grpo/formal_v4/restart_1/held_out_40_frozen_eval.jsonl",
+    "records": 40,
+    "sha256": "2b4a2e8dff52b9feee12bb451ce630dc0e03661c1e4b8935baf3a78df77013ea",
+    "source_path": "data/model_training/eval/held_out.jsonl",
+    "source_sha256": "964fc352d1c83fa2738042d377c8070d6e355c51a5ddbb36c1fc9a9b99771a79"
+  },
+  "metrics": {
+    "composite": "0.5*recommend_mean_core + 0.5*sales_mean_core",
+    "core": "0.6*factual_precision + 0.4*required_coverage",
+    "no_pass_fail_threshold": true,
+    "not_a_selection_run": true,
+    "required_report": [
+      "recommend",
+      "sales",
+      "composite",
+      "local ckpt-150 minus cloud deltas",
+      "local ckpt-150 minus checkpoint-300 deltas"
+    ]
+  },
+  "objects": [
+    {
+      "label": "sales_dense_v2_checkpoint_150",
+      "path": "checkpoints/grpo/formal_v4/restart_1/sales_dense_v2/checkpoint-150",
+      "role": "local representative",
+      "type": "local_adapter"
+    },
+    {
+      "label": "checkpoint-300",
+      "path": "checkpoints/grpo/formal_v4/restart_1/checkpoint-300",
+      "role": "original GRPO best anchor",
+      "type": "local_adapter"
+    },
+    {
+      "label": "cloud_seedpro_ark_ep_masked",
+      "role": "cloud endpoint recomputed on held-out-40",
+      "type": "cloud_openai_compatible"
+    }
+  ],
+  "observed_hashes": {
+    "data/model_training/eval/held_out.jsonl": "964fc352d1c83fa2738042d377c8070d6e355c51a5ddbb36c1fc9a9b99771a79",
+    "data/model_training/grpo/formal_v4/restart_1/local_vs_cloud_rule.json": "51cf3eea9f4452908920246e825b87af1100e6090f2656bbd1af2e982dec6ed2",
+    "data/model_training/grpo/formal_v4/restart_1/newanchor_eval_protocol.json": "3f53319f9f4158dd1e282cbefa9f84dcdf0e295c018023cae8d1557020a94783",
+    "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl": "e74de770e8dbc95dbbf813d87fa9b38e631941ec464f790410b2c86be41c0c2b",
+    "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_protocol.json": "b24f9dd32723087bf1c7d8224f01d350694c3f527d1a123d43130b2a5bbaeb14",
+    "data/model_training/grpo/formal_v4/restart_1/sales_targeted_train_protocol.json": "f0a1e7545e45ea142f13ed4d674d5d1fe1280915878c0645e75b559db2554f8c",
+    "training/grpo/reward_fn.py": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "purpose": "single held-out-40 terminal evaluation; not for checkpoint selection or tuning",
+  "red_lines": {
+    "cloud_must_recompute_on_held_out_40": true,
+    "frozen_inputs_read_only": true,
+    "held_out_40_accessed_before_protocol": false,
+    "no_generated_answer_text_persistence": true,
+    "reward_fn_sha256_must_equal": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "sampling": {
+    "cloud_g8_realization": "8 independent n=1 chat completion calls per prompt, global concurrency 16",
+    "max_completion_length": 512,
+    "max_total_sequence_length": 3072,
+    "num_generations": 8,
+    "seed": 20260725,
+    "temperature": 0.8,
+    "top_p": 0.95
+  },
+  "status": "frozen_before_held_out_40_final_evaluation"
+}

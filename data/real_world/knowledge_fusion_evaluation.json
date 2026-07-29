@@ -1,0 +1,74 @@
+{
+  "stage": "H1 RAG 与 Obsidian 联动增强",
+  "passed": 7,
+  "total": 7,
+  "success": true,
+  "summary": {
+    "mode": "Obsidian长期记忆 + RAG即时检索",
+    "rag_chunks": 2061,
+    "rag_documents": 12,
+    "obsidian_nodes": 492,
+    "obsidian_chunks": 2046,
+    "linked": true
+  },
+  "checks": [
+    {
+      "name": "RAG统计包含Obsidian文档数",
+      "passed": true
+    },
+    {
+      "name": "RAG统计包含Obsidian片段数",
+      "passed": true
+    },
+    {
+      "name": "Obsidian文档已被读取",
+      "passed": true
+    },
+    {
+      "name": "Obsidian片段已进入RAG",
+      "passed": true
+    },
+    {
+      "name": "知识图谱节点可读取",
+      "passed": true
+    },
+    {
+      "name": "联动状态为已联动",
+      "passed": true
+    },
+    {
+      "name": "RAG检索可命中Obsidian来源",
+      "passed": true
+    }
+  ],
+  "sample_query": "Obsidian 推荐案例 反馈复盘 Agent",
+  "sample_hits": [
+    {
+      "rank": 1,
+      "source": "08-推荐案例/推荐案例-20260722-202544-智界-R7.md",
+      "domain": "Obsidian/08-推荐案例",
+      "content": "优先邀约试驾 智界 R7，现场核验空间、座舱、底盘和辅助驾驶体验。\n- 确认客户可接受预算、金融方案、置换权益和交付周期。\n- 准备 Top 2/Top 3 备选车型报价，避免客户只看单一车型。\n## 数据证据来源\n- 融合候选池：local vehicle_database.csv + real_world enriched csv｜融合本地中文精选车型和真实公开数据补齐候选\n- Obsidian/08-推荐案例：08-推荐案例/推荐案例-20260622-191734-理想-L6.md｜---\ntitle: 推荐案例-20260622-191734-理想 L6\ntype: recommendation-case\nsource: api/agent/recommend\ncreated_at: 2026-06-22 19:17\n- Obsidian/08-推荐案例：08-推荐案例/推荐案例-20260622-191748-理想-L6.md｜---\ntitle: 推荐案例-20260622-191748-理想 L6\ntype: recommendation-case\nsource: api/agent/recommend\ncr",
+      "vector_score": 0.235,
+      "bm25_score": 0.75,
+      "score": 0.3998
+    },
+    {
+      "rank": 2,
+      "source": "08-推荐案例/推荐案例-20260722-202547-智界-R7.md",
+      "domain": "Obsidian/08-推荐案例",
+      "content": "优先邀约试驾 智界 R7，现场核验空间、座舱、底盘和辅助驾驶体验。\n- 确认客户可接受预算、金融方案、置换权益和交付周期。\n- 准备 Top 2/Top 3 备选车型报价，避免客户只看单一车型。\n## 数据证据来源\n- 融合候选池：local vehicle_database.csv + real_world enriched csv｜融合本地中文精选车型和真实公开数据补齐候选\n- Obsidian/08-推荐案例：08-推荐案例/推荐案例-20260622-191748-理想-L6.md｜---\ntitle: 推荐案例-20260622-191748-理想 L6\ntype: recommendation-case\nsource: api/agent/recommend\ncreated_at: 2026-06-22 19:17\n- Obsidian/08-推荐案例：08-推荐案例/推荐案例-20260622-191734-理想-L6.md｜---\ntitle: 推荐案例-20260622-191734-理想 L6\ntype: recommendation-case\nsource: api/agent/recommend\ncr",
+      "vector_score": 0.235,
+      "bm25_score": 0.75,
+      "score": 0.3998
+    },
+    {
+      "rank": 3,
+      "source": "08-推荐案例/推荐案例-20260722-202608-智界-R7.md",
+      "domain": "Obsidian/08-推荐案例",
+      "content": "优先邀约试驾 智界 R7，现场核验空间、座舱、底盘和辅助驾驶体验。\n- 确认客户可接受预算、金融方案、置换权益和交付周期。\n- 准备 Top 2/Top 3 备选车型报价，避免客户只看单一车型。\n## 数据证据来源\n- 融合候选池：local vehicle_database.csv + real_world enriched csv｜融合本地中文精选车型和真实公开数据补齐候选\n- Obsidian/08-推荐案例：08-推荐案例/推荐案例-20260622-191734-理想-L6.md｜---\ntitle: 推荐案例-20260622-191734-理想 L6\ntype: recommendation-case\nsource: api/agent/recommend\ncreated_at: 2026-06-22 19:17\n- Obsidian/08-推荐案例：08-推荐案例/推荐案例-20260622-191748-理想-L6.md｜---\ntitle: 推荐案例-20260622-191748-理想 L6\ntype: recommendation-case\nsource: api/agent/recommend\ncr",
+      "vector_score": 0.235,
+      "bm25_score": 0.75,
+      "score": 0.3998
+    }
+  ]
+}

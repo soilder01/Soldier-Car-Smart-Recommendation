@@ -1,0 +1,199 @@
+{
+  "summary": {
+    "generated_at": "2026-07-23 15:12:01",
+    "status": "blocked",
+    "release_allowed": false,
+    "gate_score": 66.7,
+    "passed_count": 4,
+    "gate_count": 6,
+    "blocker_count": 2,
+    "warning_count": 0,
+    "generated_at_script": "2026-07-23 15:12:01",
+    "validation_count": 7,
+    "passed_validations": 7,
+    "validation_pass_rate": 100.0
+  },
+  "validations": [
+    {
+      "name": "发布门禁项完整",
+      "passed": true,
+      "actual": 6
+    },
+    {
+      "name": "工程化就绪纳入门禁",
+      "passed": true,
+      "actual": [
+        "Agent端到端回归",
+        "人工反馈正向率",
+        "发布阻断风险",
+        "工程化就绪评分",
+        "真实数据样本量",
+        "真实数据治理评分"
+      ]
+    },
+    {
+      "name": "Agent回归纳入门禁",
+      "passed": true,
+      "actual": [
+        "Agent端到端回归",
+        "人工反馈正向率",
+        "发布阻断风险",
+        "工程化就绪评分",
+        "真实数据样本量",
+        "真实数据治理评分"
+      ]
+    },
+    {
+      "name": "真实数据治理纳入门禁",
+      "passed": true,
+      "actual": [
+        "Agent端到端回归",
+        "人工反馈正向率",
+        "发布阻断风险",
+        "工程化就绪评分",
+        "真实数据样本量",
+        "真实数据治理评分"
+      ]
+    },
+    {
+      "name": "发布结论可计算",
+      "passed": true,
+      "actual": "blocked"
+    },
+    {
+      "name": "门禁评分合理",
+      "passed": true,
+      "actual": 66.7
+    },
+    {
+      "name": "真实样本量达标",
+      "passed": true,
+      "actual": 227
+    }
+  ],
+  "release_gate": {
+    "summary": {
+      "generated_at": "2026-07-23 15:12:01",
+      "status": "blocked",
+      "release_allowed": false,
+      "gate_score": 66.7,
+      "passed_count": 4,
+      "gate_count": 6,
+      "blocker_count": 2,
+      "warning_count": 0
+    },
+    "metrics": {
+      "readiness_score": 90.9,
+      "agent_pass_rate": 100.0,
+      "governance_score": 93.8,
+      "real_record_count": 227,
+      "feedback_total": 0,
+      "feedback_positive_rate": 0.0
+    },
+    "gate_items": [
+      {
+        "name": "工程化就绪评分",
+        "passed": false,
+        "actual": 90.9,
+        "threshold": ">= 95",
+        "level": "blocker",
+        "action": "修复系统健康检查未通过项"
+      },
+      {
+        "name": "Agent端到端回归",
+        "passed": true,
+        "actual": 100.0,
+        "threshold": "= 100",
+        "level": "blocker",
+        "action": "先修复失败回归用例再发布"
+      },
+      {
+        "name": "真实数据治理评分",
+        "passed": true,
+        "actual": 93.8,
+        "threshold": ">= 90",
+        "level": "blocker",
+        "action": "处理重复、异常和缺失字段后重新治理"
+      },
+      {
+        "name": "真实数据样本量",
+        "passed": true,
+        "actual": 227,
+        "threshold": ">= 200",
+        "level": "blocker",
+        "action": "继续补充真实车型数据"
+      },
+      {
+        "name": "发布阻断风险",
+        "passed": false,
+        "actual": 1,
+        "threshold": "= 0",
+        "level": "blocker",
+        "action": "清理 P0/P1 风险后再发布"
+      },
+      {
+        "name": "人工反馈正向率",
+        "passed": true,
+        "actual": "样本不足",
+        "threshold": ">= 60% 或样本<3",
+        "level": "warning",
+        "action": "继续收集推荐反馈并复盘负反馈车型"
+      }
+    ],
+    "blockers": [
+      {
+        "name": "工程化就绪评分",
+        "passed": false,
+        "actual": 90.9,
+        "threshold": ">= 95",
+        "level": "blocker",
+        "action": "修复系统健康检查未通过项"
+      },
+      {
+        "name": "发布阻断风险",
+        "passed": false,
+        "actual": 1,
+        "threshold": "= 0",
+        "level": "blocker",
+        "action": "清理 P0/P1 风险后再发布"
+      }
+    ],
+    "warnings": [],
+    "next_actions": [
+      "修复系统健康检查未通过项",
+      "清理 P0/P1 风险后再发布"
+    ],
+    "sources": {
+      "readiness": {
+        "generated_at": "2026-07-23 15:12:00",
+        "check_count": 11,
+        "passed_count": 10,
+        "readiness_score": 90.9,
+        "vehicle_count": 38,
+        "rag_chunks": 2061
+      },
+      "agent_regression": {
+        "case_count": 4,
+        "passed": 4,
+        "warned": 0,
+        "failed": 0,
+        "pass_rate": 100.0,
+        "average_score": 100.0,
+        "generated_at": "2026-07-23 15:12:01"
+      },
+      "governance": {
+        "generated_at": "2026-07-23 15:12:01",
+        "record_count": 227,
+        "quality_score": 93.8,
+        "duplicate_group_count": 29,
+        "anomaly_record_count": 1,
+        "trusted_source_rate": 99.1,
+        "missing_field_count": 0
+      },
+      "feedback": {
+        "total": 0,
+        "positive_rate": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "generated_at": "2026-06-22 19:24:51",
+    "accepted": true,
+    "acceptance_score": 92.5,
+    "stage_score": 100.0,
+    "release_gate_score": 83.3,
+    "stage_count": 6,
+    "passed_stage_count": 6,
+    "release_gate_status": "warn",
+    "release_allowed": true,
+    "markdown_report": "data/real_world/acceptance_report.md",
+    "json_report": "data/real_world/acceptance_report.json"
+  },
+  "stages": [
+    {
+      "stage": "F 反馈策略闭环",
+      "file": "data/real_world/feedback_policy_evaluation.json",
+      "exists": true,
+      "pass_rate": 100.0,
+      "status": "pass",
+      "generated_at": "2026-06-22 17:29:48"
+    },
+    {
+      "stage": "G1 反馈策略稳定性",
+      "file": "data/real_world/feedback_policy_stability_evaluation.json",
+      "exists": true,
+      "pass_rate": 100.0,
+      "status": "pass",
+      "generated_at": "2026-06-22 17:44:50"
+    },
+    {
+      "stage": "G2 Agent端到端回归",
+      "file": "data/real_world/agent_regression_evaluation.json",
+      "exists": true,
+      "pass_rate": 100.0,
+      "status": "pass",
+      "generated_at": "2026-06-22 18:09:48"
+    },
+    {
+      "stage": "G3 真实数据治理",
+      "file": "data/real_world/real_data_governance_evaluation.json",
+      "exists": true,
+      "pass_rate": 100.0,
+      "status": "pass",
+      "generated_at": "2026-06-22 18:20:43"
+    },
+    {
+      "stage": "G4 工程化健康检查",
+      "file": "data/real_world/system_readiness_evaluation.json",
+      "exists": true,
+      "pass_rate": 100.0,
+      "status": "pass",
+      "generated_at": "2026-06-22 18:40:55"
+    },
+    {
+      "stage": "G5 发布门禁",
+      "file": "data/real_world/release_gate_evaluation.json",
+      "exists": true,
+      "pass_rate": 100.0,
+      "status": "pass",
+      "generated_at": "2026-06-22 18:57:32"
+    }
+  ],
+  "release_gate": {
+    "summary": {
+      "generated_at": "2026-06-22 19:24:51",
+      "status": "warn",
+      "release_allowed": true,
+      "gate_score": 83.3,
+      "passed_count": 5,
+      "gate_count": 6,
+      "blocker_count": 0,
+      "warning_count": 1
+    },
+    "metrics": {
+      "readiness_score": 100.0,
+      "agent_pass_rate": 100.0,
+      "governance_score": 93.8,
+      "real_record_count": 227,
+      "feedback_total": 33,
+      "feedback_positive_rate": 51.5
+    },
+    "gate_items": [
+      {
+        "name": "工程化就绪评分",
+        "passed": true,
+        "actual": 100.0,
+        "threshold": ">= 95",
+        "level": "blocker",
+        "action": "修复系统健康检查未通过项"
+      },
+      {
+        "name": "Agent端到端回归",
+        "passed": true,
+        "actual": 100.0,
+        "threshold": "= 100",
+        "level": "blocker",
+        "action": "先修复失败回归用例再发布"
+      },
+      {
+        "name": "真实数据治理评分",
+        "passed": true,
+        "actual": 93.8,
+        "threshold": ">= 90",
+        "level": "blocker",
+        "action": "处理重复、异常和缺失字段后重新治理"
+      },
+      {
+        "name": "真实数据样本量",
+        "passed": true,
+        "actual": 227,
+        "threshold": ">= 200",
+        "level": "blocker",
+        "action": "继续补充真实车型数据"
+      },
+      {
+        "name": "发布阻断风险",
+        "passed": true,
+        "actual": 0,
+        "threshold": "= 0",
+        "level": "blocker",
+        "action": "清理 P0/P1 风险后再发布"
+      },
+      {
+        "name": "人工反馈正向率",
+        "passed": false,
+        "actual": 51.5,
+        "threshold": ">= 60% 或样本<3",
+        "level": "warning",
+        "action": "继续收集推荐反馈并复盘负反馈车型"
+      }
+    ],
+    "blockers": [],
+    "warnings": [
+      {
+        "name": "人工反馈正向率",
+        "passed": false,
+        "actual": 51.5,
+        "threshold": ">= 60% 或样本<3",
+        "level": "warning",
+        "action": "继续收集推荐反馈并复盘负反馈车型"
+      }
+    ],
+    "next_actions": [
+      "继续收集推荐反馈并复盘负反馈车型"
+    ],
+    "sources": {
+      "readiness": {
+        "generated_at": "2026-06-22 19:24:50",
+        "check_count": 11,
+        "passed_count": 11,
+        "readiness_score": 100.0,
+        "vehicle_count": 38,
+        "rag_chunks": 15
+      },
+      "agent_regression": {
+        "case_count": 4,
+        "passed": 4,
+        "warned": 0,
+        "failed": 0,
+        "pass_rate": 100.0,
+        "average_score": 100.0,
+        "generated_at": "2026-06-22 19:24:51"
+      },
+      "governance": {
+        "generated_at": "2026-06-22 19:24:51",
+        "record_count": 227,
+        "quality_score": 93.8,
+        "duplicate_group_count": 29,
+        "anomaly_record_count": 1,
+        "trusted_source_rate": 99.1,
+        "missing_field_count": 0
+      },
+      "feedback": {
+        "total": 33,
+        "positive_rate": 51.5
+      }
+    }
+  },
+  "next_actions": [
+    "继续收集推荐反馈并复盘负反馈车型"
+  ]
+}

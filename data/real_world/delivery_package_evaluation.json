@@ -1,0 +1,219 @@
+{
+  "summary": {
+    "generated_at": "2026-06-22 19:15:49",
+    "deliverable": true,
+    "delivery_score": 100.0,
+    "acceptance_score": 92.5,
+    "stage_count": 6,
+    "passed_stage_count": 6,
+    "markdown_report": "data/real_world/delivery_package.md",
+    "json_report": "data/real_world/delivery_package.json",
+    "generated_at_script": "2026-06-22 19:15:49",
+    "check_count": 7,
+    "passed_checks": 7,
+    "check_pass_rate": 100.0
+  },
+  "checks": [
+    {
+      "name": "交付包JSON已生成",
+      "passed": true,
+      "actual": "/workspace/iris_2f5aee19-22c6-4002-a914-4dfcb1562ec0/Soldier-Car-Smart-Recommendation/data/real_world/delivery_package.json"
+    },
+    {
+      "name": "交付包Markdown已生成",
+      "passed": true,
+      "actual": "/workspace/iris_2f5aee19-22c6-4002-a914-4dfcb1562ec0/Soldier-Car-Smart-Recommendation/data/real_world/delivery_package.md"
+    },
+    {
+      "name": "版本说明覆盖阶段",
+      "passed": true,
+      "actual": 8
+    },
+    {
+      "name": "交付评分满分",
+      "passed": true,
+      "actual": 100.0
+    },
+    {
+      "name": "验收评分达标",
+      "passed": true,
+      "actual": 92.5
+    },
+    {
+      "name": "关键文件清单存在",
+      "passed": true,
+      "actual": 11
+    },
+    {
+      "name": "交付检查全部通过",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "delivery_package": {
+    "summary": {
+      "generated_at": "2026-06-22 19:15:49",
+      "deliverable": true,
+      "delivery_score": 100.0,
+      "acceptance_score": 92.5,
+      "stage_count": 6,
+      "passed_stage_count": 6,
+      "markdown_report": "data/real_world/delivery_package.md",
+      "json_report": "data/real_world/delivery_package.json"
+    },
+    "release_notes": [
+      {
+        "phase": "A-E",
+        "title": "基础推荐、Obsidian Vault、真实数据与 Agent 主链路",
+        "scope": "完成推荐工作台、RAG/Obsidian、真实数据采集和 Agent 编排基础能力"
+      },
+      {
+        "phase": "F",
+        "title": "反馈复盘反向影响推荐",
+        "scope": "人工反馈沉淀后参与推荐排序和解释"
+      },
+      {
+        "phase": "G1",
+        "title": "反馈策略稳定性",
+        "scope": "样本阈值、时间衰减、置信度和策略解释面板"
+      },
+      {
+        "phase": "G2",
+        "title": "Agent 端到端回归",
+        "scope": "候选池、Trace、FeedbackPolicyTool、Obsidian 写入回归"
+      },
+      {
+        "phase": "G3",
+        "title": "真实数据治理",
+        "scope": "重复、缺失、异常、来源可信度和治理动作"
+      },
+      {
+        "phase": "G4",
+        "title": "工程化健康检查",
+        "scope": "系统就绪评分、关键文件、RAG、配置和发布风险"
+      },
+      {
+        "phase": "G5",
+        "title": "Agent 发布门禁",
+        "scope": "工程就绪、回归、治理、样本和反馈统一门禁"
+      },
+      {
+        "phase": "G6",
+        "title": "自动化验收报告",
+        "scope": "汇总 F-G5 评估和门禁，生成发布前验收报告"
+      }
+    ],
+    "key_files": [
+      {
+        "path": "backend/app/services/agent_orchestrator.py",
+        "exists": true,
+        "size": 38416
+      },
+      {
+        "path": "backend/app/services/feedback_policy.py",
+        "exists": true,
+        "size": 8962
+      },
+      {
+        "path": "backend/app/services/evaluation.py",
+        "exists": true,
+        "size": 16491
+      },
+      {
+        "path": "backend/app/services/real_data_governance.py",
+        "exists": true,
+        "size": 6990
+      },
+      {
+        "path": "backend/app/services/system_readiness.py",
+        "exists": true,
+        "size": 2943
+      },
+      {
+        "path": "backend/app/services/release_gate.py",
+        "exists": true,
+        "size": 4763
+      },
+      {
+        "path": "backend/app/services/acceptance_report.py",
+        "exists": true,
+        "size": 5043
+      },
+      {
+        "path": "frontend/src/App.vue",
+        "exists": true,
+        "size": 107521
+      },
+      {
+        "path": "frontend/src/api/client.ts",
+        "exists": true,
+        "size": 6372
+      },
+      {
+        "path": "frontend/src/style.css",
+        "exists": true,
+        "size": 32679
+      },
+      {
+        "path": "data/real_world/acceptance_report.md",
+        "exists": true,
+        "size": 1232
+      }
+    ],
+    "checklist": [
+      {
+        "name": "自动化验收通过",
+        "passed": true,
+        "detail": "G6 acceptance_report accepted=true"
+      },
+      {
+        "name": "后端接口可用",
+        "passed": true,
+        "detail": "/api/system/acceptance-report、/api/system/release-gate、/api/system/readiness"
+      },
+      {
+        "name": "前端可视化入口",
+        "passed": true,
+        "detail": "系统设置页包含 G6/G5/G4 面板"
+      },
+      {
+        "name": "真实数据沉淀",
+        "passed": true,
+        "detail": "data/real_world/real_ev_specs.csv"
+      },
+      {
+        "name": "Obsidian 长期记忆",
+        "passed": true,
+        "detail": "obsidian-vault"
+      },
+      {
+        "name": "发布报告落盘",
+        "passed": true,
+        "detail": "data/real_world/acceptance_report.md"
+      }
+    ],
+    "usage_steps": [
+      "进入系统设置页，先查看 G6 自动化验收报告，再查看 G5 发布门禁和 G4 工程化健康检查。",
+      "进入 Agent 工作台输入购车需求，检查候选池选择、推荐解释、反馈策略和 Obsidian 写入。",
+      "进入真实数据页查看 200+ 真实车型样本、治理评分、重复/异常记录和融合推荐结果。",
+      "发布前执行后端编译、前端 lint、TSC、build，并确认预览页面控制台无错误。"
+    ],
+    "next_actions": [
+      "交付包已准备完成，可进行代码提交前最终 diff 审核",
+      "建议补充 README 中的阶段交付说明和本地运行步骤"
+    ],
+    "acceptance": {
+      "generated_at": "2026-06-22 19:15:49",
+      "accepted": true,
+      "acceptance_score": 92.5,
+      "stage_score": 100.0,
+      "release_gate_score": 83.3,
+      "stage_count": 6,
+      "passed_stage_count": 6,
+      "release_gate_status": "warn",
+      "release_allowed": true,
+      "markdown_report": "data/real_world/acceptance_report.md",
+      "json_report": "data/real_world/acceptance_report.json"
+    }
+  }
+}

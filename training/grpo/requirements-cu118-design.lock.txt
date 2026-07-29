@@ -1,0 +1,17 @@
+# DESIGN-ONLY dependency lock. This file does not authorize installation or training.
+# CUDA/PyTorch remain the already verified V100 cu118 build.
+torch==2.3.1+cu118
+transformers==4.46.3
+tokenizers==0.20.3
+accelerate==0.34.2
+peft==0.12.0
+trl==0.14.0
+datasets==2.21.0
+bitsandbytes==0.43.3
+numpy==1.26.4
+safetensors==0.8.0
+huggingface-hub==0.36.2
+dill==0.3.8
+fsspec==2024.6.1
+multiprocess==0.70.16
+pyarrow==25.0.0

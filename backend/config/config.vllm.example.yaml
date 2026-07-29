@@ -1,0 +1,17 @@
+llm:
+  # CHAT_API_KEY / CHAT_BASE_URL / CHAT_MODEL override these YAML values.
+  # The YAML keys remain aligned with backend/app/config.py.
+  api_key: "dummy"
+  base_url: "http://127.0.0.1:8000/v1"
+  chat_model: "qwen7b-nev"
+  temperature: 0.2
+  timeout: 60
+
+  # Reserved for a future, physically separate embedding service.
+  # Current RAG uses local TF-IDF/BM25-like retrieval and does not call it.
+  embedding_api_key: ""
+  embedding_base_url: ""
+  embedding_model: ""
+
+app:
+  tavily_api_key: ""

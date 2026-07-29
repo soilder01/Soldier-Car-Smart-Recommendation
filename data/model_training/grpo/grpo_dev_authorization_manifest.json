@@ -1,0 +1,77 @@
+{
+  "format_version": 1,
+  "status": "frozen_before_grpo_smoke",
+  "purpose": "Fail-closed authorization for the read-only uses of GRPO dev_4.",
+  "bound_split_manifest": {
+    "path": "data/model_training/grpo/reward_train_dev_manifest.json",
+    "sha256": "d30eedc42ae60ff462680bcf55eb4ca6ce798ebcb76b24ccd6a6314934ad09cb"
+  },
+  "bound_dev_artifact": {
+    "path": "data/model_training/grpo/reward_dev_4.jsonl",
+    "sha256": "bb90df011ff62cc10daf44f6eb17bbca9232d356c2695b3e2af43dcc348ae790",
+    "records": 4,
+    "ids": [
+      "reward-recommend-002",
+      "reward-compare-004",
+      "reward-knowledge-003",
+      "reward-sales-004"
+    ]
+  },
+  "dev_4_authorization": {
+    "read_only": true,
+    "gradient_updates_allowed": false,
+    "only_allowed_uses": [
+      "one_way_early_stop",
+      "abort_trigger",
+      "post_training_locked_hyperparameter_checkpoint_selection"
+    ],
+    "early_stop": {
+      "direction": "one_way_stop_only",
+      "may_only_reduce_planned_training": true,
+      "retroactive_checkpoint_rescue_allowed": false,
+      "description": "Dev may terminate the current run early. It may not be used after the fact to relabel an earlier inferior checkpoint as the best result."
+    },
+    "abort": {
+      "may_trigger_immediate_abort": true,
+      "automatic_restart_allowed": false,
+      "description": "Dev may trigger a fail-closed health abort and diagnostic flush."
+    },
+    "checkpoint_selection": {
+      "requires_training_complete": true,
+      "requires_hyperparameters_locked": true,
+      "may_change_hyperparameters": false,
+      "description": "Dev may rank already-produced checkpoints only after training is complete and every hyperparameter is irreversibly locked."
+    }
+  },
+  "hyperparameter_feedback_prohibition": {
+    "mode": "forbidden_fail_closed",
+    "dev_metrics_may_change_any_hyperparameter": false,
+    "scope": "all_hyperparameters_without_exception",
+    "statement": "No dev metric, component, gate result, trajectory, or aggregate may be fed back to change beta, learning rate, planned or maximum step count, epoch count, generation settings, optimizer settings, reward weights, reward thresholds, abort thresholds, data selection, prompt construction, or any other hyperparameter.",
+    "explicitly_forbidden_targets": [
+      "beta",
+      "learning_rate",
+      "planned_optimizer_steps",
+      "max_steps",
+      "epochs",
+      "num_generations",
+      "temperature",
+      "max_completion_length",
+      "optimizer",
+      "scheduler",
+      "gradient_accumulation",
+      "reward_weights",
+      "reward_thresholds",
+      "abort_thresholds",
+      "data_selection",
+      "prompt_construction",
+      "any_other_hyperparameter"
+    ],
+    "violation_action": "invalidate_run_forbid_checkpoint_promotion_and_require_new_authorization"
+  },
+  "p_hacking_control": {
+    "policy": "freeze_authorization_before_any_dev_computation",
+    "dev_reuse_for_tuning_allowed": false,
+    "held_out_or_final_metrics_may_replace_dev_for_tuning": false
+  }
+}

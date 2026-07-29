@@ -1,0 +1,85 @@
+{
+  "abort_policy": {
+    "kl_abort": "only if health-window KL mean >= 10 * KL0_mean",
+    "kl_p95": "monitor_only",
+    "nonfinite_abort": true,
+    "oom_abort": true
+  },
+  "expected_hashes": {
+    "checkpoints/grpo/formal_v4/restart_1/sales_targeted/checkpoint-100/adapter_model.safetensors": "13942f45d58bf04843017188bc3dc35a87a6775c0fdd513e5ed9662b5119e7ff",
+    "data/model_training/grpo/formal_v4/restart_1/newanchor_eval_protocol.json": "3f53319f9f4158dd1e282cbefa9f84dcdf0e295c018023cae8d1557020a94783",
+    "data/model_training/grpo/formal_v4/restart_1/newanchor_fourway_evaluations.jsonl": "beeb1d41c212e3d65428ae7a380b135889786d1838cbc6656976a16e4a9a79a5",
+    "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl": "e74de770e8dbc95dbbf813d87fa9b38e631941ec464f790410b2c86be41c0c2b",
+    "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_manifest.json": "627fd6d91d8ca1619f8310ffe718a1141769d9379eba0b6e9d2ff6f9b0741ed5",
+    "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_rebuild.jsonl": "741c29ab0ea4b63e2529d598f703662940f7f11358502bfa43ec402b024e4d8c",
+    "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_mix.jsonl": "292148fd54345a473ee5c22638710a5a5479465ac61e78ebfa2ceeddadcbdd43",
+    "training/grpo/reward_fn.py": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "initialization": {
+    "adapter_sha256": "13942f45d58bf04843017188bc3dc35a87a6775c0fdd513e5ed9662b5119e7ff",
+    "continue_training_not_from_scratch": true,
+    "from_checkpoint_label": "sales-targeted-checkpoint-100",
+    "path": "checkpoints/grpo/formal_v4/restart_1/sales_targeted/checkpoint-100/adapter_model.safetensors"
+  },
+  "mode": "continue_from_sales_targeted_checkpoint_100_sales_dense_v2",
+  "post_training_evaluation": {
+    "existing_fourway_path": "data/model_training/grpo/formal_v4/restart_1/newanchor_fourway_evaluations.jsonl",
+    "existing_fourway_sha256": "beeb1d41c212e3d65428ae7a380b135889786d1838cbc6656976a16e4a9a79a5",
+    "per_prompt_trace_required": true,
+    "raw_answers_persisted": false,
+    "reuse_existing_cloud_newanchor_result": true
+  },
+  "pre_registered_gate": {
+    "candidate_checkpoint_steps": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "evaluation_dataset": "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl",
+    "evaluation_protocol": "data/model_training/grpo/formal_v4/restart_1/newanchor_eval_protocol.json",
+    "failure_action": "if no checkpoint satisfies both gates, mark this round invalid; do not switch to composite selection",
+    "recommend_mean_core_must_be_at_least": 0.800018918256223,
+    "recommend_threshold_source": "checkpoint-300 recommend newanchor mean_core from frozen newanchor_fourway_evaluations.jsonl",
+    "sales_mean_core_must_be_strictly_greater_than": 0.8864,
+    "sales_threshold_source": "cloud_seedpro_ark_ep_masked sales newanchor score rounded per user instruction",
+    "selection_if_multiple_pass": "highest sales mean_core; tie earlier checkpoint step"
+  },
+  "red_lines": {
+    "do_not_modify_frozen_protocols_or_eval_sets": true,
+    "no_final_40_body_read": true,
+    "no_held_out_40_body_read": true,
+    "no_secret_or_base_url_plaintext_output": true,
+    "reward_fn_modified": false,
+    "reward_fn_sha256_must_equal": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "status": "frozen_before_sales_dense_v2_training",
+  "training_data_mixture": {
+    "path": "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_mix.jsonl",
+    "ratio_summary": "sales_dense_v2 80% + clean recommend rehearsal 20%",
+    "recommend_rehearsal_count": 128,
+    "sales_dense_count": 512,
+    "sha256": "292148fd54345a473ee5c22638710a5a5479465ac61e78ebfa2ceeddadcbdd43",
+    "total_prompts_per_logical_epoch": 640
+  },
+  "training_hyperparameters": {
+    "beta": 0.01,
+    "bf16": false,
+    "fp16": true,
+    "health_window_steps": 50,
+    "learning_rate": 2e-06,
+    "lr_scheduler": "cosine",
+    "max_completion_length": 512,
+    "max_grad_norm": 1.0,
+    "max_optimizer_steps": 200,
+    "max_prompt_length": 2560,
+    "num_generations": 8,
+    "optimizer": "paged_adamw_8bit",
+    "save_every_steps": 50,
+    "seed": 20260725,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "warmup_steps": 40,
+    "weight_decay": 0.0
+  }
+}

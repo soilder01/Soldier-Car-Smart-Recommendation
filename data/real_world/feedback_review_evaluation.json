@@ -1,0 +1,1171 @@
+{
+  "summary": {
+    "case_count": 5,
+    "passed_count": 5,
+    "pass_rate": 100.0,
+    "created_feedback_notes": 10,
+    "feedback_total_after": 12
+  },
+  "checks": [
+    {
+      "name": "构造反馈样本不少于10条",
+      "passed": true,
+      "actual": 10
+    },
+    {
+      "name": "候选池维度聚合存在",
+      "passed": true,
+      "actual": 4
+    },
+    {
+      "name": "场景风险维度聚合存在",
+      "passed": true,
+      "actual": 9
+    },
+    {
+      "name": "Agent复盘结论存在",
+      "passed": true,
+      "actual": 8
+    },
+    {
+      "name": "Obsidian复盘记录已生成",
+      "passed": true,
+      "actual": "06-迭代记录/反馈复盘-20260622-165944.md"
+    }
+  ],
+  "feedback_summary": {
+    "total": 12,
+    "positive": 7,
+    "negative": 4,
+    "neutral": 1,
+    "positive_rate": 58.3,
+    "model_rows": [
+      {
+        "model_name": "理想 L6",
+        "total": 3,
+        "positive": 3,
+        "negative": 0,
+        "neutral": 0
+      },
+      {
+        "model_name": "比亚迪 宋PLUS DM-i",
+        "total": 2,
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      {
+        "model_name": "小鹏 G6",
+        "total": 2,
+        "positive": 0,
+        "negative": 2,
+        "neutral": 0
+      },
+      {
+        "model_name": "特斯拉 Model Y",
+        "total": 1,
+        "positive": 0,
+        "negative": 1,
+        "neutral": 0
+      },
+      {
+        "model_name": "奔驰 E300L",
+        "total": 1,
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      {
+        "model_name": "问界 M7",
+        "total": 1,
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      {
+        "model_name": "Hyundai IONIQ 5",
+        "total": 1,
+        "positive": 0,
+        "negative": 1,
+        "neutral": 0
+      },
+      {
+        "model_name": "BMW iX",
+        "total": 1,
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1
+      }
+    ],
+    "pool_rows": [
+      {
+        "candidate_pool": "local",
+        "total": 5,
+        "positive": 4,
+        "negative": 1,
+        "neutral": 0,
+        "positive_rate": 80.0
+      },
+      {
+        "candidate_pool": "fused",
+        "total": 3,
+        "positive": 2,
+        "negative": 1,
+        "neutral": 0,
+        "positive_rate": 66.7
+      },
+      {
+        "candidate_pool": "unknown",
+        "total": 2,
+        "positive": 1,
+        "negative": 1,
+        "neutral": 0,
+        "positive_rate": 50.0
+      },
+      {
+        "candidate_pool": "real",
+        "total": 2,
+        "positive": 0,
+        "negative": 1,
+        "neutral": 1,
+        "positive_rate": 0.0
+      }
+    ],
+    "scene_rows": [
+      {
+        "scenario": "预算冲突",
+        "total": 1,
+        "positive": 0,
+        "negative": 1,
+        "neutral": 0,
+        "negative_rate": 100.0
+      },
+      {
+        "scenario": "预算敏感",
+        "total": 5,
+        "positive": 2,
+        "negative": 3,
+        "neutral": 0,
+        "negative_rate": 60.0
+      },
+      {
+        "scenario": "无家充补能",
+        "total": 2,
+        "positive": 1,
+        "negative": 1,
+        "neutral": 0,
+        "negative_rate": 50.0
+      },
+      {
+        "scenario": "真实数据查询",
+        "total": 2,
+        "positive": 0,
+        "negative": 1,
+        "neutral": 1,
+        "negative_rate": 50.0
+      },
+      {
+        "scenario": "未标注场景",
+        "total": 2,
+        "positive": 1,
+        "negative": 1,
+        "neutral": 0,
+        "negative_rate": 50.0
+      },
+      {
+        "scenario": "家庭SUV",
+        "total": 4,
+        "positive": 4,
+        "negative": 0,
+        "neutral": 0,
+        "negative_rate": 0.0
+      },
+      {
+        "scenario": "智驾关注",
+        "total": 2,
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0,
+        "negative_rate": 0.0
+      },
+      {
+        "scenario": "豪华社交",
+        "total": 1,
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0,
+        "negative_rate": 0.0
+      },
+      {
+        "scenario": "通用推荐",
+        "total": 1,
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0,
+        "negative_rate": 0.0
+      }
+    ],
+    "reasons": [
+      {
+        "reason": "阶段D模拟反馈：增程备选解释清楚",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：超预算风险需要更靠前提示",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：保留了豪华品牌偏好",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：座位和长途补能匹配",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：融合池给出了低预算稳定备选",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：海外数据进入国内预算场景解释不足",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：真实数据可参考但价格地域需核验",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：无家充纯电风险提示不足",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：家庭舒适性解释充分",
+        "count": 1
+      },
+      {
+        "reason": "阶段D模拟反馈：空间和补能匹配",
+        "count": 1
+      }
+    ],
+    "recent": [
+      {
+        "id": 12,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "没有家充还经常长途，纠结纯电和增程",
+        "model_name": "理想 L6",
+        "rating": "positive",
+        "reason": "阶段D模拟反馈：增程备选解释清楚",
+        "candidate_pool": "fused",
+        "scenario_tags": [
+          "无家充补能",
+          "家庭SUV"
+        ],
+        "profile": {
+          "budget_max": null,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": false,
+          "concerns": [
+            "无家充补能",
+            "家庭SUV"
+          ]
+        },
+        "recommendation": {
+          "brand": "理想",
+          "model": "L6",
+          "score": 88,
+          "candidate_pool": "fused"
+        }
+      },
+      {
+        "id": 11,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "预算 20 万但点名 Model Y",
+        "model_name": "特斯拉 Model Y",
+        "rating": "negative",
+        "reason": "阶段D模拟反馈：超预算风险需要更靠前提示",
+        "candidate_pool": "fused",
+        "scenario_tags": [
+          "预算敏感",
+          "预算冲突"
+        ],
+        "profile": {
+          "budget_max": 200000,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": null,
+          "concerns": [
+            "预算敏感",
+            "预算冲突"
+          ]
+        },
+        "recommendation": {
+          "brand": "特斯拉",
+          "model": "Model Y",
+          "score": 88,
+          "candidate_pool": "fused"
+        }
+      },
+      {
+        "id": 10,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "客户想要豪华品牌和社交形象",
+        "model_name": "奔驰 E300L",
+        "rating": "positive",
+        "reason": "阶段D模拟反馈：保留了豪华品牌偏好",
+        "candidate_pool": "local",
+        "scenario_tags": [
+          "豪华社交"
+        ],
+        "profile": {
+          "budget_max": null,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": null,
+          "concerns": [
+            "豪华社交"
+          ]
+        },
+        "recommendation": {
+          "brand": "奔驰",
+          "model": "E300L",
+          "score": 88,
+          "candidate_pool": "local"
+        }
+      },
+      {
+        "id": 9,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "多人家庭六座七座，周末长途",
+        "model_name": "问界 M7",
+        "rating": "positive",
+        "reason": "阶段D模拟反馈：座位和长途补能匹配",
+        "candidate_pool": "local",
+        "scenario_tags": [
+          "家庭SUV"
+        ],
+        "profile": {
+          "budget_max": null,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": null,
+          "concerns": [
+            "家庭SUV"
+          ]
+        },
+        "recommendation": {
+          "brand": "问界",
+          "model": "M7",
+          "score": 88,
+          "candidate_pool": "local"
+        }
+      },
+      {
+        "id": 8,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "预算 18 万以内，需要通勤省心",
+        "model_name": "比亚迪 宋PLUS DM-i",
+        "rating": "positive",
+        "reason": "阶段D模拟反馈：融合池给出了低预算稳定备选",
+        "candidate_pool": "fused",
+        "scenario_tags": [
+          "预算敏感",
+          "通用推荐"
+        ],
+        "profile": {
+          "budget_max": 180000,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": null,
+          "concerns": [
+            "预算敏感",
+            "通用推荐"
+          ]
+        },
+        "recommendation": {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "score": 88,
+          "candidate_pool": "fused"
+        }
+      },
+      {
+        "id": 7,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "真实数据里找 30 万内高续航车型",
+        "model_name": "Hyundai IONIQ 5",
+        "rating": "negative",
+        "reason": "阶段D模拟反馈：海外数据进入国内预算场景解释不足",
+        "candidate_pool": "real",
+        "scenario_tags": [
+          "真实数据查询",
+          "预算敏感"
+        ],
+        "profile": {
+          "budget_max": null,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": null,
+          "concerns": [
+            "真实数据查询",
+            "预算敏感"
+          ]
+        },
+        "recommendation": {
+          "brand": "Hyundai",
+          "model": "IONIQ 5",
+          "score": 88,
+          "candidate_pool": "real"
+        }
+      },
+      {
+        "id": 6,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "希望看海外公开数据，优先长续航 SUV",
+        "model_name": "BMW iX",
+        "rating": "neutral",
+        "reason": "阶段D模拟反馈：真实数据可参考但价格地域需核验",
+        "candidate_pool": "real",
+        "scenario_tags": [
+          "真实数据查询"
+        ],
+        "profile": {
+          "budget_max": null,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": null,
+          "concerns": [
+            "真实数据查询"
+          ]
+        },
+        "recommendation": {
+          "brand": "BMW",
+          "model": "iX",
+          "score": 88,
+          "candidate_pool": "real"
+        }
+      },
+      {
+        "id": 5,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "无家充但想买纯电 SUV，预算22万",
+        "model_name": "小鹏 G6",
+        "rating": "negative",
+        "reason": "阶段D模拟反馈：无家充纯电风险提示不足",
+        "candidate_pool": "local",
+        "scenario_tags": [
+          "无家充补能",
+          "预算敏感"
+        ],
+        "profile": {
+          "budget_max": 220000,
+          "city": "",
+          "family_size": null,
+          "has_home_charger": false,
+          "concerns": [
+            "无家充补能",
+            "预算敏感"
+          ]
+        },
+        "recommendation": {
+          "brand": "小鹏",
+          "model": "G6",
+          "score": 88,
+          "candidate_pool": "local"
+        }
+      },
+      {
+        "id": 4,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "三口之家上海通勤，有家充，预算25万，关注空间和智驾",
+        "model_name": "理想 L6",
+        "rating": "positive",
+        "reason": "阶段D模拟反馈：家庭舒适性解释充分",
+        "candidate_pool": "local",
+        "scenario_tags": [
+          "家庭SUV",
+          "智驾关注"
+        ],
+        "profile": {
+          "budget_max": 250000,
+          "city": "上海",
+          "family_size": 3,
+          "has_home_charger": true,
+          "concerns": [
+            "家庭SUV",
+            "智驾关注"
+          ]
+        },
+        "recommendation": {
+          "brand": "理想",
+          "model": "L6",
+          "score": 88,
+          "candidate_pool": "local"
+        }
+      },
+      {
+        "id": 3,
+        "created_at": "2026-06-22 16:59:44",
+        "query": "三口之家上海通勤，有家充，预算25万，关注空间和智驾",
+        "model_name": "比亚迪 宋PLUS DM-i",
+        "rating": "positive",
+        "reason": "阶段D模拟反馈：空间和补能匹配",
+        "candidate_pool": "local",
+        "scenario_tags": [
+          "家庭SUV",
+          "智驾关注",
+          "预算敏感"
+        ],
+        "profile": {
+          "budget_max": 250000,
+          "city": "上海",
+          "family_size": 3,
+          "has_home_charger": true,
+          "concerns": [
+            "家庭SUV",
+            "智驾关注",
+            "预算敏感"
+          ]
+        },
+        "recommendation": {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "score": 88,
+          "candidate_pool": "local"
+        }
+      },
+      {
+        "id": 2,
+        "created_at": "2026-06-22 13:51:42",
+        "query": "测试反馈接口",
+        "model_name": "小鹏 G6",
+        "rating": "negative",
+        "reason": "客户认为后排一般",
+        "candidate_pool": "unknown",
+        "scenario_tags": [],
+        "profile": {
+          "city": "上海"
+        },
+        "recommendation": {
+          "score": 88
+        }
+      },
+      {
+        "id": 1,
+        "created_at": "2026-06-22 13:48:39",
+        "query": "测试推荐反馈",
+        "model_name": "理想 L6",
+        "rating": "positive",
+        "reason": "推荐符合家庭场景",
+        "candidate_pool": "unknown",
+        "scenario_tags": [],
+        "profile": {
+          "city": "北京"
+        },
+        "recommendation": {
+          "score": 95
+        }
+      }
+    ]
+  },
+  "feedback_review": {
+    "summary": {
+      "generated_at": "2026-06-22 16:59:44",
+      "feedback_total": 12,
+      "positive_rate": 58.3,
+      "pool_count": 4,
+      "risky_scene_count": 5,
+      "negative_model_count": 3,
+      "insight_count": 8
+    },
+    "feedback": {
+      "total": 12,
+      "positive": 7,
+      "negative": 4,
+      "neutral": 1,
+      "positive_rate": 58.3,
+      "model_rows": [
+        {
+          "model_name": "理想 L6",
+          "total": 3,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "比亚迪 宋PLUS DM-i",
+          "total": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "小鹏 G6",
+          "total": 2,
+          "positive": 0,
+          "negative": 2,
+          "neutral": 0
+        },
+        {
+          "model_name": "特斯拉 Model Y",
+          "total": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "model_name": "奔驰 E300L",
+          "total": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "问界 M7",
+          "total": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "Hyundai IONIQ 5",
+          "total": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "model_name": "BMW iX",
+          "total": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      ],
+      "pool_rows": [
+        {
+          "candidate_pool": "local",
+          "total": 5,
+          "positive": 4,
+          "negative": 1,
+          "neutral": 0,
+          "positive_rate": 80.0
+        },
+        {
+          "candidate_pool": "fused",
+          "total": 3,
+          "positive": 2,
+          "negative": 1,
+          "neutral": 0,
+          "positive_rate": 66.7
+        },
+        {
+          "candidate_pool": "unknown",
+          "total": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0,
+          "positive_rate": 50.0
+        },
+        {
+          "candidate_pool": "real",
+          "total": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1,
+          "positive_rate": 0.0
+        }
+      ],
+      "scene_rows": [
+        {
+          "scenario": "预算冲突",
+          "total": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0,
+          "negative_rate": 100.0
+        },
+        {
+          "scenario": "预算敏感",
+          "total": 5,
+          "positive": 2,
+          "negative": 3,
+          "neutral": 0,
+          "negative_rate": 60.0
+        },
+        {
+          "scenario": "无家充补能",
+          "total": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "真实数据查询",
+          "total": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "未标注场景",
+          "total": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "家庭SUV",
+          "total": 4,
+          "positive": 4,
+          "negative": 0,
+          "neutral": 0,
+          "negative_rate": 0.0
+        },
+        {
+          "scenario": "智驾关注",
+          "total": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0,
+          "negative_rate": 0.0
+        },
+        {
+          "scenario": "豪华社交",
+          "total": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0,
+          "negative_rate": 0.0
+        },
+        {
+          "scenario": "通用推荐",
+          "total": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0,
+          "negative_rate": 0.0
+        }
+      ],
+      "reasons": [
+        {
+          "reason": "阶段D模拟反馈：增程备选解释清楚",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：超预算风险需要更靠前提示",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：保留了豪华品牌偏好",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：座位和长途补能匹配",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：融合池给出了低预算稳定备选",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：海外数据进入国内预算场景解释不足",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：真实数据可参考但价格地域需核验",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：无家充纯电风险提示不足",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：家庭舒适性解释充分",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：空间和补能匹配",
+          "count": 1
+        }
+      ],
+      "recent": [
+        {
+          "id": 12,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "没有家充还经常长途，纠结纯电和增程",
+          "model_name": "理想 L6",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：增程备选解释清楚",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "无家充补能",
+            "家庭SUV"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": false,
+            "concerns": [
+              "无家充补能",
+              "家庭SUV"
+            ]
+          },
+          "recommendation": {
+            "brand": "理想",
+            "model": "L6",
+            "score": 88,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 11,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "预算 20 万但点名 Model Y",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段D模拟反馈：超预算风险需要更靠前提示",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "预算敏感",
+            "预算冲突"
+          ],
+          "profile": {
+            "budget_max": 200000,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "预算敏感",
+              "预算冲突"
+            ]
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 88,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 10,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "客户想要豪华品牌和社交形象",
+          "model_name": "奔驰 E300L",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：保留了豪华品牌偏好",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "豪华社交"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "豪华社交"
+            ]
+          },
+          "recommendation": {
+            "brand": "奔驰",
+            "model": "E300L",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 9,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "多人家庭六座七座，周末长途",
+          "model_name": "问界 M7",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：座位和长途补能匹配",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "家庭SUV"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "家庭SUV"
+            ]
+          },
+          "recommendation": {
+            "brand": "问界",
+            "model": "M7",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 8,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "预算 18 万以内，需要通勤省心",
+          "model_name": "比亚迪 宋PLUS DM-i",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：融合池给出了低预算稳定备选",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "预算敏感",
+            "通用推荐"
+          ],
+          "profile": {
+            "budget_max": 180000,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "预算敏感",
+              "通用推荐"
+            ]
+          },
+          "recommendation": {
+            "brand": "比亚迪",
+            "model": "宋PLUS DM-i",
+            "score": 88,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 7,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "真实数据里找 30 万内高续航车型",
+          "model_name": "Hyundai IONIQ 5",
+          "rating": "negative",
+          "reason": "阶段D模拟反馈：海外数据进入国内预算场景解释不足",
+          "candidate_pool": "real",
+          "scenario_tags": [
+            "真实数据查询",
+            "预算敏感"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "真实数据查询",
+              "预算敏感"
+            ]
+          },
+          "recommendation": {
+            "brand": "Hyundai",
+            "model": "IONIQ 5",
+            "score": 88,
+            "candidate_pool": "real"
+          }
+        },
+        {
+          "id": 6,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "希望看海外公开数据，优先长续航 SUV",
+          "model_name": "BMW iX",
+          "rating": "neutral",
+          "reason": "阶段D模拟反馈：真实数据可参考但价格地域需核验",
+          "candidate_pool": "real",
+          "scenario_tags": [
+            "真实数据查询"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "真实数据查询"
+            ]
+          },
+          "recommendation": {
+            "brand": "BMW",
+            "model": "iX",
+            "score": 88,
+            "candidate_pool": "real"
+          }
+        },
+        {
+          "id": 5,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "无家充但想买纯电 SUV，预算22万",
+          "model_name": "小鹏 G6",
+          "rating": "negative",
+          "reason": "阶段D模拟反馈：无家充纯电风险提示不足",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "无家充补能",
+            "预算敏感"
+          ],
+          "profile": {
+            "budget_max": 220000,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": false,
+            "concerns": [
+              "无家充补能",
+              "预算敏感"
+            ]
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 4,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "三口之家上海通勤，有家充，预算25万，关注空间和智驾",
+          "model_name": "理想 L6",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：家庭舒适性解释充分",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "家庭SUV",
+            "智驾关注"
+          ],
+          "profile": {
+            "budget_max": 250000,
+            "city": "上海",
+            "family_size": 3,
+            "has_home_charger": true,
+            "concerns": [
+              "家庭SUV",
+              "智驾关注"
+            ]
+          },
+          "recommendation": {
+            "brand": "理想",
+            "model": "L6",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 3,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "三口之家上海通勤，有家充，预算25万，关注空间和智驾",
+          "model_name": "比亚迪 宋PLUS DM-i",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：空间和补能匹配",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "家庭SUV",
+            "智驾关注",
+            "预算敏感"
+          ],
+          "profile": {
+            "budget_max": 250000,
+            "city": "上海",
+            "family_size": 3,
+            "has_home_charger": true,
+            "concerns": [
+              "家庭SUV",
+              "智驾关注",
+              "预算敏感"
+            ]
+          },
+          "recommendation": {
+            "brand": "比亚迪",
+            "model": "宋PLUS DM-i",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 2,
+          "created_at": "2026-06-22 13:51:42",
+          "query": "测试反馈接口",
+          "model_name": "小鹏 G6",
+          "rating": "negative",
+          "reason": "客户认为后排一般",
+          "candidate_pool": "unknown",
+          "scenario_tags": [],
+          "profile": {
+            "city": "上海"
+          },
+          "recommendation": {
+            "score": 88
+          }
+        },
+        {
+          "id": 1,
+          "created_at": "2026-06-22 13:48:39",
+          "query": "测试推荐反馈",
+          "model_name": "理想 L6",
+          "rating": "positive",
+          "reason": "推荐符合家庭场景",
+          "candidate_pool": "unknown",
+          "scenario_tags": [],
+          "profile": {
+            "city": "北京"
+          },
+          "recommendation": {
+            "score": 95
+          }
+        }
+      ]
+    },
+    "insights": [
+      {
+        "type": "candidate_pool_quality",
+        "title": "候选池质量最高：local",
+        "evidence": "5 条反馈，正反馈率 80.0%。",
+        "action": "在相似画像下优先保留该候选池策略，同时继续观察样本量变化。"
+      },
+      {
+        "type": "candidate_pool_risk",
+        "title": "候选池需复盘：real",
+        "evidence": "2 条反馈，正反馈率 0.0%。",
+        "action": "检查该候选池是否存在价格字段估算、车型地域不匹配或解释不足问题。"
+      },
+      {
+        "type": "scenario_risk",
+        "title": "高风险场景：预算冲突",
+        "evidence": "1 条反馈，负反馈率 100.0%。",
+        "action": "补充该场景的风险核验话术，并在推荐报告中提前提示限制条件。"
+      },
+      {
+        "type": "scenario_risk",
+        "title": "高风险场景：预算敏感",
+        "evidence": "5 条反馈，负反馈率 60.0%。",
+        "action": "补充该场景的风险核验话术，并在推荐报告中提前提示限制条件。"
+      },
+      {
+        "type": "scenario_risk",
+        "title": "高风险场景：无家充补能",
+        "evidence": "2 条反馈，负反馈率 50.0%。",
+        "action": "补充该场景的风险核验话术，并在推荐报告中提前提示限制条件。"
+      },
+      {
+        "type": "model_review",
+        "title": "负反馈车型复盘：小鹏 G6",
+        "evidence": "正反馈 0 条，负反馈 2 条。",
+        "action": "回看该车型入选原因，判断是否需要降低权重或强化不适用说明。"
+      },
+      {
+        "type": "model_review",
+        "title": "负反馈车型复盘：特斯拉 Model Y",
+        "evidence": "正反馈 0 条，负反馈 1 条。",
+        "action": "回看该车型入选原因，判断是否需要降低权重或强化不适用说明。"
+      },
+      {
+        "type": "model_review",
+        "title": "负反馈车型复盘：Hyundai IONIQ 5",
+        "evidence": "正反馈 0 条，负反馈 1 条。",
+        "action": "回看该车型入选原因，判断是否需要降低权重或强化不适用说明。"
+      }
+    ],
+    "obsidian_note": {
+      "title": "反馈复盘-20260622-165944",
+      "path": "06-迭代记录/反馈复盘-20260622-165944.md"
+    }
+  }
+}

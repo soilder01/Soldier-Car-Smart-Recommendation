@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-06-22 14:59:50",
+  "case_count": 8,
+  "passed_count": 8,
+  "pass_rate": 100.0,
+  "rows": [
+    {
+      "name": "家庭SUV",
+      "passed": true,
+      "expected_pool": "local",
+      "selected_pool": "local",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "理想",
+          "model": "L6",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "问界",
+          "model": "M7",
+          "score": 100,
+          "source": "local"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-比亚迪-宋PLUS-DM-i.md"
+    },
+    {
+      "name": "无家充",
+      "passed": true,
+      "expected_pool": "fused",
+      "selected_pool": "fused",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "理想",
+          "model": "L6",
+          "score": 96.1,
+          "source": "local_curated"
+        },
+        {
+          "brand": "岚图",
+          "model": "FREE",
+          "score": 95.5,
+          "source": "local_curated"
+        },
+        {
+          "brand": "零跑",
+          "model": "C11",
+          "score": 93.8,
+          "source": "local_curated"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-理想-L6.md"
+    },
+    {
+      "name": "豪华社交",
+      "passed": true,
+      "expected_pool": "fused",
+      "selected_pool": "fused",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "特斯拉",
+          "model": "Model 3",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "理想",
+          "model": "L7",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "问界",
+          "model": "M9",
+          "score": 100,
+          "source": "local_curated"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-特斯拉-Model-3.md"
+    },
+    {
+      "name": "点名车型",
+      "passed": true,
+      "expected_pool": "fused",
+      "selected_pool": "fused",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "问界",
+          "model": "M5",
+          "score": 93.3,
+          "source": "local_curated"
+        },
+        {
+          "brand": "理想",
+          "model": "L6",
+          "score": 93.1,
+          "source": "local_curated"
+        },
+        {
+          "brand": "问界",
+          "model": "M7",
+          "score": 92.9,
+          "source": "local_curated"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-问界-M5.md"
+    },
+    {
+      "name": "真实数据查询",
+      "passed": true,
+      "expected_pool": "real",
+      "selected_pool": "real",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "Hyundai",
+          "model": "IONIQ 5 Base",
+          "score": 83.7,
+          "source": "real_world_enriched"
+        },
+        {
+          "brand": "Hyundai",
+          "model": "IONIQ 5 Base",
+          "score": 83.7,
+          "source": "real_world_enriched"
+        },
+        {
+          "brand": "Hyundai",
+          "model": "IONIQ 5 AWD",
+          "score": 83.6,
+          "source": "real_world_enriched"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-Hyundai-IONIQ-5-Base.md"
+    },
+    {
+      "name": "预算冲突",
+      "passed": true,
+      "expected_pool": "fused",
+      "selected_pool": "fused",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "比亚迪",
+          "model": "宋PLUS DM-i",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "埃安",
+          "model": "AION Y",
+          "score": 100,
+          "source": "local_curated"
+        },
+        {
+          "brand": "吉利",
+          "model": "银河L7",
+          "score": 100,
+          "source": "local_curated"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-比亚迪-宋PLUS-DM-i.md"
+    },
+    {
+      "name": "长续航通勤",
+      "passed": true,
+      "expected_pool": "local",
+      "selected_pool": "local",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "智界",
+          "model": "R7",
+          "score": 94.5,
+          "source": "local"
+        },
+        {
+          "brand": "小鹏",
+          "model": "G6",
+          "score": 94.4,
+          "source": "local"
+        },
+        {
+          "brand": "腾势",
+          "model": "N7",
+          "score": 94.2,
+          "source": "local"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-智界-R7.md"
+    },
+    {
+      "name": "多人MPV",
+      "passed": true,
+      "expected_pool": "local",
+      "selected_pool": "local",
+      "recommendation_count": 5,
+      "top_models": [
+        {
+          "brand": "极氪",
+          "model": "009",
+          "score": 100,
+          "source": "local"
+        },
+        {
+          "brand": "理想",
+          "model": "L7",
+          "score": 84.2,
+          "source": "local"
+        },
+        {
+          "brand": "理想",
+          "model": "L6",
+          "score": 84.0,
+          "source": "local"
+        }
+      ],
+      "trace_agents": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "ObsidianCaseWriterTool"
+      ],
+      "risk_count": 1,
+      "obsidian_path": "08-推荐案例/推荐案例-20260622-145950-极氪-009.md"
+    }
+  ]
+}

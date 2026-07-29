@@ -1,0 +1,58 @@
+model:
+  base_model_path: "models/Qwen2.5-7B-Instruct"
+  output_dir: "checkpoints/sft"
+
+data:
+  train_file: "data/model_training/sft_train.jsonl"
+  val_file: "data/model_training/sft_val.jsonl"
+  max_seq_len: 5632
+
+runtime:
+  target_gpu: "Tesla V100-SXM2-32GB"
+  isolated_environment_required: true
+  training_environment: ".venv-train"
+  service_environment: ".venv"
+  service_environment_must_remain_clean: true
+
+qlora:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_compute_dtype: "float16"
+  bnb_4bit_use_double_quant: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+train:
+  fp16: true
+  bf16: false
+  autocast_dtype: "float16"
+  learning_rate: 0.0002
+  epochs: 3
+  warmup_ratio: 0.03
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16
+  gradient_checkpointing: true
+  evaluation_strategy: "epoch"
+  save_strategy: "epoch"
+  save_total_limit: 3
+  load_best_model_at_end: true
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+  seed: 42
+
+held_out_evaluation:
+  harness_manifest: "data/model_training/eval/frozen_qwen_heldout_harness.json"
+  evaluate_once_after_checkpoint_selection: true
+  use_for_checkpoint_selection: false

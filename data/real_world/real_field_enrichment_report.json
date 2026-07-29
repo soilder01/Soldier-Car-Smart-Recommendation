@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-06-22 14:33:04",
+  "input": "data/real_world/real_ev_specs.csv",
+  "output": "data/real_world/real_ev_specs_enriched.csv",
+  "recommender_output": "data/real_world/real_ev_specs_for_recommender.csv",
+  "record_count": 227,
+  "avg_data_quality_score": 97.0,
+  "estimated_field_counts": {
+    "price": 227,
+    "seats": 227,
+    "wheelbase": 227,
+    "trunk": 227,
+    "safety": 227,
+    "adas": 227,
+    "battery_kwh": 35,
+    "range_km": 2
+  },
+  "price_band_distribution": [
+    [
+      "35-60万",
+      150
+    ],
+    [
+      "20-35万",
+      46
+    ],
+    [
+      "20万内",
+      25
+    ],
+    [
+      "60万以上",
+      6
+    ]
+  ],
+  "top_low_quality_rows": [
+    {
+      "brand": "Honda",
+      "model": "Fit",
+      "score": 62.5,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Smart",
+      "model": "ED Gen1",
+      "score": 62.5,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Daimler",
+      "model": "E Smart",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Daimler",
+      "model": "Smart ED",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Ford",
+      "model": "focus Electric",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Mahindra",
+      "model": "e20",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Mercedes",
+      "model": "B250",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Renault",
+      "model": "Fluence ZE",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Renault",
+      "model": "Kangoo ZE",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    },
+    {
+      "brand": "Renault",
+      "model": "Twizy",
+      "score": 75.0,
+      "source_url": "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    }
+  ]
+}

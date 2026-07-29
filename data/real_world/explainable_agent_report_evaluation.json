@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-06-22 16:34:25",
+  "case_count": 5,
+  "passed_count": 5,
+  "pass_rate": 100.0,
+  "rows": [
+    {
+      "name": "家庭SUV",
+      "passed": true,
+      "selected_pool": "local",
+      "recommendation_count": 5,
+      "comparison_count": 3,
+      "risk_count": 1,
+      "action_count": 3,
+      "has_llm_report": true,
+      "top_models": [
+        "比亚迪 宋PLUS DM-i",
+        "理想 L6",
+        "问界 M7"
+      ]
+    },
+    {
+      "name": "无家充",
+      "passed": true,
+      "selected_pool": "local",
+      "recommendation_count": 5,
+      "comparison_count": 3,
+      "risk_count": 1,
+      "action_count": 4,
+      "has_llm_report": false,
+      "top_models": [
+        "理想 L6",
+        "岚图 FREE",
+        "零跑 C11"
+      ]
+    },
+    {
+      "name": "真实数据",
+      "passed": true,
+      "selected_pool": "real",
+      "recommendation_count": 5,
+      "comparison_count": 3,
+      "risk_count": 1,
+      "action_count": 3,
+      "has_llm_report": true,
+      "top_models": [
+        "Hyundai IONIQ 5 Base",
+        "Hyundai IONIQ 5 Base",
+        "Hyundai IONIQ 5 AWD"
+      ]
+    },
+    {
+      "name": "多人MPV",
+      "passed": true,
+      "selected_pool": "local",
+      "recommendation_count": 5,
+      "comparison_count": 3,
+      "risk_count": 1,
+      "action_count": 3,
+      "has_llm_report": true,
+      "top_models": [
+        "极氪 009",
+        "理想 L7",
+        "理想 L6"
+      ]
+    },
+    {
+      "name": "预算冲突",
+      "passed": true,
+      "selected_pool": "fused",
+      "recommendation_count": 5,
+      "comparison_count": 3,
+      "risk_count": 1,
+      "action_count": 3,
+      "has_llm_report": true,
+      "top_models": [
+        "比亚迪 宋PLUS DM-i",
+        "埃安 AION Y",
+        "吉利 银河L7"
+      ]
+    }
+  ]
+}

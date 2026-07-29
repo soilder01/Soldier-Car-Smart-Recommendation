@@ -1,0 +1,11 @@
+{
+  "access_scope": "single terminal held-out-40 evaluation",
+  "cloud_secret_or_base_url_printed": false,
+  "completed_unix_sec": 1785229159.5926807,
+  "evaluations_jsonl": "data/model_training/grpo/formal_v4/restart_1/held_out_40_final_evaluations.jsonl",
+  "evaluations_sha256": "9816f49933fa879c5ef6cf88ad7e3274730e04c54b81a3110fd230fc1a3d8973",
+  "held_out_40_accessed": true,
+  "raw_answers_persisted": false,
+  "result_json": "data/model_training/grpo/formal_v4/restart_1/held_out_40_final_result.json",
+  "result_sha256": "822fafd3e37c0289d9a20de4b06db8b1d27c97c490efdeba46e1610a4fa9b270"
+}

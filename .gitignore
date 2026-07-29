@@ -1,0 +1,61 @@
+# secrets
+.env
+.env.*
+!.env.example
+backend/config/config.yaml
+backend/config/config.*.yaml
+!backend/config/config.example.yaml
+!backend/config/config.vllm.example.yaml
+
+# model weights / large artifacts
+models/
+merged_model/
+checkpoints/
+
+# envs & caches
+.venv/
+.venv-*/
+.venv.*/
+.envs/
+.tools/
+.cache/
+.conda/
+.pytest_cache/
+.superpowers/
+__pycache__/
+*/__pycache__/
+*.pyc
+
+# local IDE / runtime state
+.vscode/
+storage/
+backend/storage/
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+data/real_world/raw/
+*.zip
+
+# big intermediate data & logs
+data/model_training/**
+!data/model_training/
+!data/model_training/sft_freeze/
+!data/model_training/sft_freeze/split_manifest.json
+!data/model_training/grpo/
+!data/model_training/grpo/reward_train_dev_manifest.json
+!data/model_training/grpo/grpo_dev_authorization_manifest.json
+!data/model_training/grpo/reward_train_expanded_v4_manifest.json
+!data/model_training/grpo/grpo_formal_v4_authorization.json
+!data/model_training/grpo/grpo_formal_v4_preregistered_report.json
+!data/model_training/grpo/grpo_formal_v4_fixed_dev4_step0_baseline.json
+!data/model_training/grpo/formal_v4/
+!data/model_training/grpo/formal_v4/restart_1/
+!data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_manifest.json
+!data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128_manifest.json
+!data/model_training/grpo/formal_v4/restart_1/newanchor_eval_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/held_out_40_final_protocol.json
+!data/model_training/grpo/formal_v4/restart_1/held_out_40_access_state.json
+!data/model_training/grpo/formal_v4/restart_1/final40_confirmation_protocol.json
+*.log
+/tmp/*.log

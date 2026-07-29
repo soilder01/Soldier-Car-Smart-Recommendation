@@ -1,0 +1,103 @@
+{
+  "artifacts": {
+    "manifest": {
+      "path": "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_manifest.json"
+    },
+    "sales_dense_jsonl": {
+      "path": "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_rebuild.jsonl",
+      "records": 512,
+      "sha256": "741c29ab0ea4b63e2529d598f703662940f7f11358502bfa43ec402b024e4d8c"
+    },
+    "train_mix_jsonl": {
+      "path": "data/model_training/grpo/formal_v4/restart_1/sales_dense_v2_train_mix.jsonl",
+      "records": 640,
+      "sha256": "292148fd54345a473ee5c22638710a5a5479465ac61e78ebfa2ceeddadcbdd43"
+    }
+  },
+  "counts": {
+    "train_mix_per_intent": {
+      "recommend": 128,
+      "sales": 512
+    },
+    "train_mix_total": 640
+  },
+  "overlap_checks": {
+    "final_40_query_sha_overlap_manifest_only": 0,
+    "formal_train_candidate_index_overlap": 0,
+    "formal_train_query_sha_overlap": 0,
+    "held_out_40_query_sha_overlap_manifest_only": 0,
+    "powered_dev_newanchor_candidate_index_overlap": 0,
+    "powered_dev_newanchor_query_sha_overlap": 0
+  },
+  "quality_checks": {
+    "communication_action_token_full_count": 512,
+    "sales_count": 512,
+    "sales_evidence_claim_count_distribution": {
+      "5": 512
+    },
+    "sales_minimum_supported_claims_distribution": {
+      "3": 512
+    },
+    "sales_query_anchor_count_distribution": {
+      "5": 5,
+      "6": 61,
+      "7": 200,
+      "8": 199,
+      "9": 44,
+      "10": 3
+    },
+    "sales_query_attribute_anchor_count_distribution": {
+      "5": 512
+    },
+    "strict_claim_checks": {
+      "all_sales_claims_have_entity_field_value_and_anchor": true,
+      "all_sales_have_at_least_5_distinct_claim_attributes": true
+    }
+  },
+  "recipe": {
+    "qualitative_difference_from_v1": [
+      "5 distinct query-bound evidence claims per sales prompt instead of 3",
+      "minimum_supported_claims raised from 1 to 3 in data spec",
+      "sales mix ratio raised from 60% to 80%",
+      "recommend rehearsal uses clean unused prompt candidates instead of formal train rows"
+    ],
+    "recommend_rehearsal_count": 128,
+    "sales_claims_per_case": 5,
+    "sales_dense_count": 512,
+    "sales_minimum_supported_claims": 3,
+    "sales_ratio": 0.8,
+    "selection_seed": "sales-dense-v2",
+    "total_prompts_per_logical_epoch": 640,
+    "version": "sales_dense_v2"
+  },
+  "redline_hashes": {
+    "checkpoints/grpo/formal_v4/restart_1/sales_targeted/checkpoint-100/adapter_model.safetensors": "13942f45d58bf04843017188bc3dc35a87a6775c0fdd513e5ed9662b5119e7ff",
+    "data/model_training/grpo/formal_v4/restart_1/newanchor_eval_protocol.json": "3f53319f9f4158dd1e282cbefa9f84dcdf0e295c018023cae8d1557020a94783",
+    "data/model_training/grpo/formal_v4/restart_1/newanchor_fourway_evaluations.jsonl": "beeb1d41c212e3d65428ae7a380b135889786d1838cbc6656976a16e4a9a79a5",
+    "data/model_training/grpo/formal_v4/restart_1/powered_dev_newanchor_128.jsonl": "e74de770e8dbc95dbbf813d87fa9b38e631941ec464f790410b2c86be41c0c2b",
+    "training/grpo/reward_fn.py": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "scope": {
+    "cloud_called": false,
+    "final_40_body_read": false,
+    "held_out_40_body_read": false,
+    "model_loaded": false,
+    "reward_fn_modified": false,
+    "reward_fn_sha256": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "source_counts": {
+    "forbidden_source_counts": {
+      "final40_manifest_provenance": 40,
+      "formal_train": 800,
+      "heldout40_reservation_manifest_entries": 40,
+      "powered_dev_newanchor": 128,
+      "previous_sales_targeted_v1": 256,
+      "reward_visible_reservation_manifest_entries": 20
+    },
+    "recommend_clean_candidates": 40483,
+    "recommend_tail_candidates_before_exclusion": 40822,
+    "sales_clean_candidates": 3656,
+    "sales_tail_candidates_before_exclusion": 4250
+  },
+  "status": "sales_dense_v2_frozen_without_training_or_inference"
+}

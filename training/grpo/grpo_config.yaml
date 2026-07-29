@@ -1,0 +1,42 @@
+gates:
+  requires_sft_gate_passed: true
+  requires_runtime_gate_ready: true
+  requires_reward_visible_split: true
+  forbid_held_out_for_reward: true
+
+model:
+  base_model_path: "models/Qwen2.5-7B-Instruct"
+  sft_adapter_path: "checkpoints/sft"
+  output_dir: "checkpoints/grpo"
+
+data:
+  reward_visible_file: "data/model_training/eval/reward_visible.jsonl"
+  held_out_file: "data/model_training/eval/held_out.jsonl"
+  grpo_prompts_file: "data/model_training/grpo_prompts.jsonl"
+
+rollout:
+  backend: "vllm"
+  base_url: "http://127.0.0.1:8003/v1"
+  model: "qwen7b-sft"
+  num_generations: 8
+  temperature: 0.8
+  top_p: 0.95
+
+kl:
+  beta: 0.01
+  strategy: "shared_frozen_base_disable_adapter_reference"
+  variance_control: "clip-higher"
+
+memory:
+  target_gpu: "Tesla V100-SXM2-32GB"
+  single_gpu_vram_gb: 32
+  vllm_gpu_memory_utilization: "0.4-0.5"
+  fallback: "generation_training_alternating"
+
+reward:
+  answer_reward_primary: true
+  format_reward_cap: 1.0
+  tool_execution_reward_cap: 1.0
+  cache_enabled: true
+  batch_scoring_required: true
+  held_out_reward_allowed: false

@@ -1,0 +1,193 @@
+{
+  "summary": {
+    "generated_at": "2026-07-22 20:26:04",
+    "check_count": 11,
+    "passed_count": 10,
+    "readiness_score": 90.9,
+    "vehicle_count": 38,
+    "rag_chunks": 1791,
+    "generated_at_script": "2026-07-22 20:26:04",
+    "validation_count": 7,
+    "passed_validations": 7,
+    "validation_pass_rate": 100.0
+  },
+  "validation": [
+    {
+      "name": "健康检查项已生成",
+      "passed": true,
+      "actual": 11
+    },
+    {
+      "name": "就绪评分在合理区间",
+      "passed": true,
+      "actual": 90.9
+    },
+    {
+      "name": "车型库检查存在",
+      "passed": true,
+      "actual": 38
+    },
+    {
+      "name": "RAG索引检查存在",
+      "passed": true,
+      "actual": 1791
+    },
+    {
+      "name": "真实数据候选库被纳入检查",
+      "passed": true,
+      "actual": [
+        "SQLite运行库",
+        "前端构建入口",
+        "真实数据候选库",
+        "真实数据治理报告",
+        "车型主库",
+        "配置样例"
+      ]
+    },
+    {
+      "name": "配置样例被纳入检查",
+      "passed": true,
+      "actual": [
+        "SQLite运行库",
+        "前端构建入口",
+        "真实数据候选库",
+        "真实数据治理报告",
+        "车型主库",
+        "配置样例"
+      ]
+    },
+    {
+      "name": "风险列表结构可读",
+      "passed": true,
+      "actual": 3
+    }
+  ],
+  "readiness": {
+    "summary": {
+      "generated_at": "2026-07-22 20:26:04",
+      "check_count": 11,
+      "passed_count": 10,
+      "readiness_score": 90.9,
+      "vehicle_count": 38,
+      "rag_chunks": 1791
+    },
+    "checks": [
+      {
+        "name": "后端数据目录",
+        "passed": true,
+        "detail": "data"
+      },
+      {
+        "name": "车型库可读取",
+        "passed": true,
+        "detail": "38 条车型"
+      },
+      {
+        "name": "RAG索引可用",
+        "passed": true,
+        "detail": "1791 chunks"
+      },
+      {
+        "name": "LLM密钥配置",
+        "passed": false,
+        "detail": "未配置，保留规则兜底"
+      },
+      {
+        "name": "向量目录存在",
+        "passed": true,
+        "detail": "backend/storage/vector_store"
+      },
+      {
+        "name": "车型主库",
+        "passed": true,
+        "detail": "data/vehicles/vehicle_database.csv"
+      },
+      {
+        "name": "SQLite运行库",
+        "passed": true,
+        "detail": "backend/storage/nev_advisor.db"
+      },
+      {
+        "name": "配置样例",
+        "passed": true,
+        "detail": "backend/config/config.example.yaml"
+      },
+      {
+        "name": "真实数据候选库",
+        "passed": true,
+        "detail": "data/real_world/real_ev_specs.csv"
+      },
+      {
+        "name": "真实数据治理报告",
+        "passed": true,
+        "detail": "data/real_world/real_data_governance_report.json"
+      },
+      {
+        "name": "前端构建入口",
+        "passed": true,
+        "detail": "frontend/dist/index.html"
+      }
+    ],
+    "files": [
+      {
+        "name": "车型主库",
+        "path": "data/vehicles/vehicle_database.csv",
+        "exists": true,
+        "size": 9404,
+        "passed": true
+      },
+      {
+        "name": "SQLite运行库",
+        "path": "backend/storage/nev_advisor.db",
+        "exists": true,
+        "size": 40960,
+        "passed": true
+      },
+      {
+        "name": "配置样例",
+        "path": "backend/config/config.example.yaml",
+        "exists": true,
+        "size": 499,
+        "passed": true
+      },
+      {
+        "name": "真实数据候选库",
+        "path": "data/real_world/real_ev_specs.csv",
+        "exists": true,
+        "size": 45942,
+        "passed": true
+      },
+      {
+        "name": "真实数据治理报告",
+        "path": "data/real_world/real_data_governance_report.json",
+        "exists": true,
+        "size": 4933,
+        "passed": true
+      },
+      {
+        "name": "前端构建入口",
+        "path": "frontend/dist/index.html",
+        "exists": false,
+        "size": 0,
+        "passed": true
+      }
+    ],
+    "risks": [
+      {
+        "level": "P1",
+        "title": "LLM密钥未配置",
+        "action": "生产部署前通过 backend/config/config.yaml 或环境变量配置 ARK_API_KEY"
+      },
+      {
+        "level": "P2",
+        "title": "前端未构建",
+        "action": "部署前执行 npm run build"
+      },
+      {
+        "level": "P2",
+        "title": "工程化检查未满分",
+        "action": "优先修复未通过检查项后再发布"
+      }
+    ]
+  }
+}

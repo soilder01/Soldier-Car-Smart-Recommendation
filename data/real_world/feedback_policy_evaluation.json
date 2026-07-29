@@ -1,0 +1,1191 @@
+{
+  "summary": {
+    "generated_at": "2026-06-22 17:29:48",
+    "case_count": 7,
+    "passed_count": 7,
+    "pass_rate": 100.0,
+    "applied_rule_count": 2,
+    "direct_policy_models": [
+      {
+        "model": "小鹏 G6",
+        "score": 85.0,
+        "score_before_feedback": 84.0,
+        "feedback_score_delta": 1.0
+      },
+      {
+        "model": "理想 L6",
+        "score": 81.6,
+        "score_before_feedback": 82.0,
+        "feedback_score_delta": -0.4
+      },
+      {
+        "model": "特斯拉 Model Y",
+        "score": 72.0,
+        "score_before_feedback": 88.0,
+        "feedback_score_delta": -16.0
+      }
+    ],
+    "agent_top_models": [
+      {
+        "model": "理想 L6",
+        "score": 93.3,
+        "score_before_feedback": 93.7,
+        "feedback_score_delta": -0.4
+      },
+      {
+        "model": "智界 R7",
+        "score": 90.5,
+        "score_before_feedback": 94.5,
+        "feedback_score_delta": -4.0
+      },
+      {
+        "model": "腾势 N7",
+        "score": 90.4,
+        "score_before_feedback": 94.4,
+        "feedback_score_delta": -4.0
+      },
+      {
+        "model": "问界 M5",
+        "score": 89.6,
+        "score_before_feedback": 93.6,
+        "feedback_score_delta": -4.0
+      },
+      {
+        "model": "Faraday Future 91",
+        "score": 78.4,
+        "score_before_feedback": 82.4,
+        "feedback_score_delta": -4.0
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "反馈策略生成正负车型规则",
+      "passed": true,
+      "actual": [
+        "小鹏 G6",
+        "特斯拉 Model Y",
+        "理想 L6",
+        "比亚迪 宋PLUS DM-i",
+        "Hyundai IONIQ 5"
+      ]
+    },
+    {
+      "name": "策略函数可对负反馈车型降权",
+      "passed": true,
+      "actual": -16.0
+    },
+    {
+      "name": "策略函数可对正反馈车型加权",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "Agent Trace 包含 FeedbackPolicyTool",
+      "passed": true,
+      "actual": [
+        "ProfileParserTool",
+        "CandidatePoolSelectorTool",
+        "RankTool",
+        "FeedbackPolicyTool",
+        "EvidenceRetrievalTool",
+        "RiskCheckTool",
+        "LLMReportAgent",
+        "ObsidianCaseWriterTool"
+      ]
+    },
+    {
+      "name": "真实 Agent 推荐结果已被反馈策略改分",
+      "passed": true,
+      "actual": 5
+    },
+    {
+      "name": "API 返回反馈策略应用规则",
+      "passed": true,
+      "actual": 2
+    },
+    {
+      "name": "解释性报告包含反馈策略",
+      "passed": true,
+      "actual": {
+        "applied_rules": [
+          {
+            "target": "理想 L6",
+            "delta": -0.4,
+            "score_before": 93.7
+          },
+          {
+            "target": "智界 R7",
+            "delta": -4.0,
+            "score_before": 94.5
+          },
+          {
+            "target": "腾势 N7",
+            "delta": -4.0,
+            "score_before": 94.4
+          },
+          {
+            "target": "问界 M5",
+            "delta": -4.0,
+            "score_before": 93.6
+          },
+          {
+            "target": "Faraday Future 91",
+            "delta": -4.0,
+            "score_before": 82.4
+          }
+        ]
+      }
+    }
+  ],
+  "applied_rules": [
+    {
+      "target": "理想 L6",
+      "type": "model",
+      "delta": 3.6,
+      "positive": 3,
+      "negative": 0,
+      "total": 3
+    },
+    {
+      "target": "fused",
+      "type": "pool",
+      "delta": -4.0,
+      "positive_rate": 53.3,
+      "total": 15
+    }
+  ],
+  "direct_policy_rules": [
+    {
+      "target": "特斯拉 Model Y",
+      "type": "model",
+      "delta": -12.0,
+      "positive": 0,
+      "negative": 7,
+      "total": 7
+    },
+    {
+      "target": "小鹏 G6",
+      "type": "model",
+      "delta": 5.0,
+      "positive": 6,
+      "negative": 2,
+      "total": 8
+    },
+    {
+      "target": "理想 L6",
+      "type": "model",
+      "delta": 3.6,
+      "positive": 3,
+      "negative": 0,
+      "total": 3
+    },
+    {
+      "target": "fused",
+      "type": "pool",
+      "delta": -4.0,
+      "positive_rate": 53.3,
+      "total": 15
+    }
+  ],
+  "policy": {
+    "summary": {
+      "total": 24,
+      "positive": 13,
+      "negative": 10,
+      "neutral": 1,
+      "positive_rate": 54.2,
+      "model_rows": [
+        {
+          "model_name": "小鹏 G6",
+          "total": 8,
+          "positive": 6,
+          "negative": 2,
+          "neutral": 0
+        },
+        {
+          "model_name": "特斯拉 Model Y",
+          "total": 7,
+          "positive": 0,
+          "negative": 7,
+          "neutral": 0
+        },
+        {
+          "model_name": "理想 L6",
+          "total": 3,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "比亚迪 宋PLUS DM-i",
+          "total": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "奔驰 E300L",
+          "total": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "问界 M7",
+          "total": 1,
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        {
+          "model_name": "Hyundai IONIQ 5",
+          "total": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        },
+        {
+          "model_name": "BMW iX",
+          "total": 1,
+          "positive": 0,
+          "negative": 0,
+          "neutral": 1
+        }
+      ],
+      "pool_rows": [
+        {
+          "candidate_pool": "local",
+          "total": 5,
+          "positive": 4,
+          "negative": 1,
+          "neutral": 0,
+          "positive_rate": 80.0
+        },
+        {
+          "candidate_pool": "fused",
+          "total": 15,
+          "positive": 8,
+          "negative": 7,
+          "neutral": 0,
+          "positive_rate": 53.3
+        },
+        {
+          "candidate_pool": "unknown",
+          "total": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0,
+          "positive_rate": 50.0
+        },
+        {
+          "candidate_pool": "real",
+          "total": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1,
+          "positive_rate": 0.0
+        }
+      ],
+      "scene_rows": [
+        {
+          "scenario": "预算冲突",
+          "total": 1,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0,
+          "negative_rate": 100.0
+        },
+        {
+          "scenario": "预算敏感",
+          "total": 5,
+          "positive": 2,
+          "negative": 3,
+          "neutral": 0,
+          "negative_rate": 60.0
+        },
+        {
+          "scenario": "阶段F策略评估",
+          "total": 12,
+          "positive": 6,
+          "negative": 6,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "点名车型",
+          "total": 12,
+          "positive": 6,
+          "negative": 6,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "城市通勤",
+          "total": 12,
+          "positive": 6,
+          "negative": 6,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "无家充补能",
+          "total": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "真实数据查询",
+          "total": 2,
+          "positive": 0,
+          "negative": 1,
+          "neutral": 1,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "未标注场景",
+          "total": 2,
+          "positive": 1,
+          "negative": 1,
+          "neutral": 0,
+          "negative_rate": 50.0
+        },
+        {
+          "scenario": "家庭SUV",
+          "total": 4,
+          "positive": 4,
+          "negative": 0,
+          "neutral": 0,
+          "negative_rate": 0.0
+        },
+        {
+          "scenario": "智驾关注",
+          "total": 2,
+          "positive": 2,
+          "negative": 0,
+          "neutral": 0,
+          "negative_rate": 0.0
+        }
+      ],
+      "reasons": [
+        {
+          "reason": "阶段F评估：历史反馈认可通勤场景适配",
+          "count": 2
+        },
+        {
+          "reason": "阶段F评估：历史反馈认可预算匹配",
+          "count": 2
+        },
+        {
+          "reason": "阶段F评估：历史反馈认可智驾和快充解释",
+          "count": 2
+        },
+        {
+          "reason": "阶段F评估：历史反馈认为需更谨慎提示",
+          "count": 2
+        },
+        {
+          "reason": "阶段F评估：历史反馈认为预算边界下不能强推",
+          "count": 2
+        },
+        {
+          "reason": "阶段F评估：历史反馈认为该场景下价格波动和舒适性风险需降权",
+          "count": 2
+        },
+        {
+          "reason": "阶段D模拟反馈：增程备选解释清楚",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：超预算风险需要更靠前提示",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：保留了豪华品牌偏好",
+          "count": 1
+        },
+        {
+          "reason": "阶段D模拟反馈：座位和长途补能匹配",
+          "count": 1
+        }
+      ],
+      "recent": [
+        {
+          "id": 24,
+          "created_at": "2026-06-22 17:26:46",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "小鹏 G6",
+          "rating": "positive",
+          "reason": "阶段F评估：历史反馈认可通勤场景适配",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 23,
+          "created_at": "2026-06-22 17:26:46",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "小鹏 G6",
+          "rating": "positive",
+          "reason": "阶段F评估：历史反馈认可预算匹配",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 22,
+          "created_at": "2026-06-22 17:26:46",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "小鹏 G6",
+          "rating": "positive",
+          "reason": "阶段F评估：历史反馈认可智驾和快充解释",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 21,
+          "created_at": "2026-06-22 17:26:46",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段F评估：历史反馈认为需更谨慎提示",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 20,
+          "created_at": "2026-06-22 17:26:46",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段F评估：历史反馈认为预算边界下不能强推",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 19,
+          "created_at": "2026-06-22 17:26:46",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段F评估：历史反馈认为该场景下价格波动和舒适性风险需降权",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 18,
+          "created_at": "2026-06-22 17:23:14",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "小鹏 G6",
+          "rating": "positive",
+          "reason": "阶段F评估：历史反馈认可通勤场景适配",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 17,
+          "created_at": "2026-06-22 17:23:14",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "小鹏 G6",
+          "rating": "positive",
+          "reason": "阶段F评估：历史反馈认可预算匹配",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 16,
+          "created_at": "2026-06-22 17:23:14",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "小鹏 G6",
+          "rating": "positive",
+          "reason": "阶段F评估：历史反馈认可智驾和快充解释",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 15,
+          "created_at": "2026-06-22 17:23:14",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段F评估：历史反馈认为需更谨慎提示",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 14,
+          "created_at": "2026-06-22 17:23:14",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段F评估：历史反馈认为预算边界下不能强推",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 13,
+          "created_at": "2026-06-22 17:23:14",
+          "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段F评估：历史反馈认为该场景下价格波动和舒适性风险需降权",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "阶段F策略评估",
+            "点名车型",
+            "城市通勤"
+          ],
+          "profile": {
+            "budget_min": null,
+            "budget_max": 300000,
+            "city": "",
+            "family_size": null,
+            "commute_km": 45.0,
+            "long_trip_frequency": "",
+            "has_home_charger": true,
+            "preferred_type": "SUV",
+            "preferred_energy": "",
+            "preferred_brands": [],
+            "concerns": [
+              "智驾",
+              "续航",
+              "空间"
+            ],
+            "intent_level": "了解中"
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 86,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 12,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "没有家充还经常长途，纠结纯电和增程",
+          "model_name": "理想 L6",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：增程备选解释清楚",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "无家充补能",
+            "家庭SUV"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": false,
+            "concerns": [
+              "无家充补能",
+              "家庭SUV"
+            ]
+          },
+          "recommendation": {
+            "brand": "理想",
+            "model": "L6",
+            "score": 88,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 11,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "预算 20 万但点名 Model Y",
+          "model_name": "特斯拉 Model Y",
+          "rating": "negative",
+          "reason": "阶段D模拟反馈：超预算风险需要更靠前提示",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "预算敏感",
+            "预算冲突"
+          ],
+          "profile": {
+            "budget_max": 200000,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "预算敏感",
+              "预算冲突"
+            ]
+          },
+          "recommendation": {
+            "brand": "特斯拉",
+            "model": "Model Y",
+            "score": 88,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 10,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "客户想要豪华品牌和社交形象",
+          "model_name": "奔驰 E300L",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：保留了豪华品牌偏好",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "豪华社交"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "豪华社交"
+            ]
+          },
+          "recommendation": {
+            "brand": "奔驰",
+            "model": "E300L",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 9,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "多人家庭六座七座，周末长途",
+          "model_name": "问界 M7",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：座位和长途补能匹配",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "家庭SUV"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "家庭SUV"
+            ]
+          },
+          "recommendation": {
+            "brand": "问界",
+            "model": "M7",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        },
+        {
+          "id": 8,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "预算 18 万以内，需要通勤省心",
+          "model_name": "比亚迪 宋PLUS DM-i",
+          "rating": "positive",
+          "reason": "阶段D模拟反馈：融合池给出了低预算稳定备选",
+          "candidate_pool": "fused",
+          "scenario_tags": [
+            "预算敏感",
+            "通用推荐"
+          ],
+          "profile": {
+            "budget_max": 180000,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "预算敏感",
+              "通用推荐"
+            ]
+          },
+          "recommendation": {
+            "brand": "比亚迪",
+            "model": "宋PLUS DM-i",
+            "score": 88,
+            "candidate_pool": "fused"
+          }
+        },
+        {
+          "id": 7,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "真实数据里找 30 万内高续航车型",
+          "model_name": "Hyundai IONIQ 5",
+          "rating": "negative",
+          "reason": "阶段D模拟反馈：海外数据进入国内预算场景解释不足",
+          "candidate_pool": "real",
+          "scenario_tags": [
+            "真实数据查询",
+            "预算敏感"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "真实数据查询",
+              "预算敏感"
+            ]
+          },
+          "recommendation": {
+            "brand": "Hyundai",
+            "model": "IONIQ 5",
+            "score": 88,
+            "candidate_pool": "real"
+          }
+        },
+        {
+          "id": 6,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "希望看海外公开数据，优先长续航 SUV",
+          "model_name": "BMW iX",
+          "rating": "neutral",
+          "reason": "阶段D模拟反馈：真实数据可参考但价格地域需核验",
+          "candidate_pool": "real",
+          "scenario_tags": [
+            "真实数据查询"
+          ],
+          "profile": {
+            "budget_max": null,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": null,
+            "concerns": [
+              "真实数据查询"
+            ]
+          },
+          "recommendation": {
+            "brand": "BMW",
+            "model": "iX",
+            "score": 88,
+            "candidate_pool": "real"
+          }
+        },
+        {
+          "id": 5,
+          "created_at": "2026-06-22 16:59:44",
+          "query": "无家充但想买纯电 SUV，预算22万",
+          "model_name": "小鹏 G6",
+          "rating": "negative",
+          "reason": "阶段D模拟反馈：无家充纯电风险提示不足",
+          "candidate_pool": "local",
+          "scenario_tags": [
+            "无家充补能",
+            "预算敏感"
+          ],
+          "profile": {
+            "budget_max": 220000,
+            "city": "",
+            "family_size": null,
+            "has_home_charger": false,
+            "concerns": [
+              "无家充补能",
+              "预算敏感"
+            ]
+          },
+          "recommendation": {
+            "brand": "小鹏",
+            "model": "G6",
+            "score": 88,
+            "candidate_pool": "local"
+          }
+        }
+      ]
+    },
+    "model_rules": {
+      "小鹏 G6": {
+        "delta": 5.0,
+        "positive": 6,
+        "negative": 2,
+        "total": 8
+      },
+      "特斯拉 Model Y": {
+        "delta": -12.0,
+        "positive": 0,
+        "negative": 7,
+        "total": 7
+      },
+      "理想 L6": {
+        "delta": 3.6,
+        "positive": 3,
+        "negative": 0,
+        "total": 3
+      },
+      "比亚迪 宋PLUS DM-i": {
+        "delta": 2.4,
+        "positive": 2,
+        "negative": 0,
+        "total": 2
+      },
+      "Hyundai IONIQ 5": {
+        "delta": -6.0,
+        "positive": 0,
+        "negative": 1,
+        "total": 1
+      }
+    },
+    "pool_rules": {
+      "fused": {
+        "delta": -4.0,
+        "positive_rate": 53.3,
+        "total": 15
+      },
+      "unknown": {
+        "delta": -4.0,
+        "positive_rate": 50.0,
+        "total": 2
+      },
+      "real": {
+        "delta": -4.0,
+        "positive_rate": 0.0,
+        "total": 2
+      }
+    },
+    "risky_scenes": [
+      {
+        "scenario": "预算冲突",
+        "total": 1,
+        "positive": 0,
+        "negative": 1,
+        "neutral": 0,
+        "negative_rate": 100.0
+      },
+      {
+        "scenario": "预算敏感",
+        "total": 5,
+        "positive": 2,
+        "negative": 3,
+        "neutral": 0,
+        "negative_rate": 60.0
+      },
+      {
+        "scenario": "阶段F策略评估",
+        "total": 12,
+        "positive": 6,
+        "negative": 6,
+        "neutral": 0,
+        "negative_rate": 50.0
+      },
+      {
+        "scenario": "点名车型",
+        "total": 12,
+        "positive": 6,
+        "negative": 6,
+        "neutral": 0,
+        "negative_rate": 50.0
+      },
+      {
+        "scenario": "城市通勤",
+        "total": 12,
+        "positive": 6,
+        "negative": 6,
+        "neutral": 0,
+        "negative_rate": 50.0
+      }
+    ]
+  }
+}

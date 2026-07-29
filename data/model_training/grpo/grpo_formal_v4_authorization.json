@@ -1,0 +1,279 @@
+{
+  "format_version": 1,
+  "status": "authorized_once_before_formal_grpo_v4_training",
+  "run_id": "grpo-formal-v4",
+  "authorization_gate": {
+    "reward_fn": {
+      "path": "training/grpo/reward_fn.py",
+      "sha256": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+    },
+    "split": {
+      "train_path": "data/model_training/grpo/reward_train_expanded_v4.jsonl",
+      "train_sha256": "284ecdabe87dd10751a9937e429027090d0a38c277d326981c5571d028ef040d",
+      "dev_path": "data/model_training/grpo/reward_dev_4.jsonl",
+      "dev_sha256": "bb90df011ff62cc10daf44f6eb17bbca9232d356c2695b3e2af43dcc348ae790",
+      "manifest_path": "data/model_training/grpo/reward_train_expanded_v4_manifest.json",
+      "manifest_sha256": "a73090359bf8d23378648a40f8087e688bcd58082d9a15ab9f62daedf0d93d77"
+    },
+    "dev_authorization": {
+      "path": "data/model_training/grpo/grpo_dev_authorization_manifest.json",
+      "sha256": "30631cad7a8733739eafef6d285e4e0b3f007e38c1e898c064ebbf0432315bff"
+    },
+    "training_environment": {
+      "path": "/data00/home/yanhongliang/workspace/Agentic_Agent/.venv-grpo",
+      "must_equal_sys_prefix": true
+    },
+    "model_loading": {
+      "local_files_only": true,
+      "trust_remote_code": false
+    },
+    "all_five_elements_required": true,
+    "failure_action": "refuse_start_and_write_authorization_failure_record"
+  },
+  "frozen_inputs": {
+    "signal_probe_input_manifest_sha256": "bf1f894cc90c3eb503e08dcd06b661315388262f11a413ea2e00fd0604d161ef",
+    "signal_probe_report_sha256": "c46ad5d631dfef6143f1bdedf1cbc39956388db452962ab45cc3090fa0fb0a39",
+    "sft_adapter_model_sha256": "c55ec155f08e21125d9cf0383c9a6ee066f61d31d3a0e9285eb72a8fc4d17800",
+    "sft_adapter_config_sha256": "ec3f1c5de4da14fa695ccc65ba1f27083c34df32e0c71722c0c78166441bb8b9",
+    "requirements_lock_sha256": "e09e0dac47a8d15a88716fe2fc58e985a776b06832ea66d8051a2440545ce774",
+    "formal_v3_step0_baseline_sha256": "4439877314e06bbea7f2b0a23551d4fa9a3e28e111c488a52270c063f848b6f4",
+    "diag6_final_sha256": "82f260695eac5f068bdc637e071d258341c9dae4b5fd3f001c76ec8d3763138e",
+    "expanded_v4_train_sha256": "284ecdabe87dd10751a9937e429027090d0a38c277d326981c5571d028ef040d",
+    "expanded_v4_manifest_sha256": "a73090359bf8d23378648a40f8087e688bcd58082d9a15ab9f62daedf0d93d77",
+    "expanded_v4_input_manifest_sha256": "0958cea09a20021471c9b112beeb1688e1a1f3d3b36d3a447f79911cb1f5019b",
+    "formal_v4_step0_baseline_sha256": "03bc8cb271fd017e61f9fee991030908205358f8f0ff1d96fda48b19f47734ed"
+  },
+  "training_config": {
+    "train_prompts": 800,
+    "dev_prompts": 4,
+    "planned_sweeps": null,
+    "max_optimizer_steps": 800,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 2e-06,
+    "optimizer": "adamw_torch",
+    "lr_scheduler": "cosine",
+    "warmup_steps": 40,
+    "weight_decay": 0.0,
+    "max_grad_norm": 1.0,
+    "num_generations": 8,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_prompt_length": 2560,
+    "max_completion_length": 512,
+    "max_total_sequence_length": 3072,
+    "fp16": true,
+    "bf16": false,
+    "gradient_checkpointing": true,
+    "gradient_checkpointing_use_reentrant": false,
+    "beta": 0.01,
+    "reference": "shared_nf4_base_disable_adapter_no_second_model",
+    "rollout_update_order": "stock_trl_sequential_same_process",
+    "seed": 20260725,
+    "save_every_steps": 100,
+    "dev_every_steps": 50,
+    "health_window_steps": 50,
+    "output_dir": "checkpoints/grpo/formal_v4"
+  },
+  "data_policy": {
+    "gradient_updates_only": "data/model_training/grpo/reward_train_expanded_v4.jsonl",
+    "dev_gradient_allowed": false,
+    "dev_only_uses": [
+      "one_way_early_stop",
+      "abort_trigger",
+      "post_training_locked_hyperparameter_checkpoint_selection"
+    ],
+    "dev_may_change_hyperparameters": false,
+    "held_out_40_allowed": false,
+    "final_40_allowed_during_training_or_selection": false
+  },
+  "early_stop": {
+    "metric": "dev_grounding_core",
+    "grounding_core": "0.6*factual_precision+0.4*required_coverage",
+    "min_delta": 0.01,
+    "patience_dev_evaluations": 2,
+    "direction": "one_way_stop_only"
+  },
+  "health_and_abort": {
+    "step_log_every": 1,
+    "window_steps": 5,
+    "thresholds": {
+      "non_finite_or_oom": "immediate",
+      "protocol_pass_rate_immediate_below": 0.9,
+      "protocol_pass_rate_two_windows_below": 0.95,
+      "reward_gain_fake_min": 0.08,
+      "factual_precision_gain_required": 0.01,
+      "factual_precision_drop_two_windows": 0.03,
+      "factual_precision_drop_immediate": 0.08,
+      "concision_or_penalty_share_max": 0.6,
+      "empty_or_refusal_rate_immediate_above": 0.1,
+      "length_explosion_p95_above": 486,
+      "nonfact_copy_immediate_with_length_above": 0.6,
+      "low_unique_group_ratio_threshold": 0.25,
+      "low_unique_groups_share_above": 0.5,
+      "distinct_2_two_windows_below": 0.1,
+      "zero_variance_std_below": 0.0001,
+      "kl_mean_two_windows": "max(KL0_mean+0.05,1.5*KL0_mean)",
+      "kl_mean_immediate": "max(KL0_mean+0.10,2.0*KL0_mean)",
+      "kl_p95_two_windows": "monitor_only",
+      "dev_grounding_core_drop_two_evals": 0.05,
+      "data_or_evidence_sha_drift": "immediate",
+      "relative_baseline": {
+        "source": "data/model_training/grpo/grpo_signal_probe_raw.jsonl",
+        "source_sha256": "1a0dc606c0800c0531e4c4c375375aaebd3141b0542b176bd71c3366e72da07a",
+        "population": "train_16_only_128_completions",
+        "intent_response_fail_rate": 0.6953125,
+        "zero_variance_group_ratio": 0.25,
+        "completion_length_p50": 73.5,
+        "per_intent_fail_rate": {
+          "compare": 0.8125,
+          "knowledge": 0.90625,
+          "recommend": 0.34375,
+          "sales": 0.71875
+        }
+      },
+      "intent_response_fail_rate_abort": {
+        "condition": "window_fail_rate > baseline + 0.10",
+        "resolved_threshold": 0.7953125,
+        "consecutive_windows": 2,
+        "absolute_10_percent_trigger_removed": true
+      },
+      "zero_variance_group_ratio_abort": {
+        "two_window_condition": "ratio >= baseline + 0.20 for two consecutive windows",
+        "two_window_resolved_threshold": 0.45,
+        "full_sweep_immediate_condition": "ratio >= baseline + 0.50 for one complete train sweep",
+        "full_sweep_resolved_threshold": 0.75,
+        "absolute_50_percent_trigger_removed": true
+      },
+      "length_collapse_abort": {
+        "condition": "p50 < 0.50 * baseline_p50",
+        "resolved_floor": 36.75,
+        "consecutive_windows": 2,
+        "absolute_64_token_floor_removed": true
+      },
+      "fake_reward_rise_without_factual_precision": {
+        "condition": "previous_reward_gain >= 0.08 and window_reward_gain >= 0.08 and previous_factual_gain < 0.01 and window_factual_gain < 0.01",
+        "implementation": "per_window_AND_no_cross_window_min",
+        "reward_gain_fake_min": 0.08,
+        "factual_precision_gain_required": 0.01,
+        "knowledge_handling_option": "A_exclude_knowledge_003",
+        "gain_population": [
+          "reward-recommend-002",
+          "reward-compare-004",
+          "reward-sales-004"
+        ],
+        "excluded_from_gain_population": [
+          "reward-knowledge-003"
+        ],
+        "thresholds_relaxed": false
+      },
+      "fixed_dev4_health_probe": {
+        "prompt_ids": [
+          "reward-recommend-002",
+          "reward-compare-004",
+          "reward-knowledge-003",
+          "reward-sales-004"
+        ],
+        "every_optimizer_steps": 5,
+        "no_grad": true,
+        "baseline_path": "data/model_training/grpo/grpo_formal_v3_fixed_dev4_step0_baseline.json",
+        "baseline_sha256": "4439877314e06bbea7f2b0a23551d4fa9a3e28e111c488a52270c063f848b6f4",
+        "rolling_train_windows_drive_abort": false
+      },
+      "kl_explosive_abort": {
+        "condition": "kl_mean >= max(5.0, 10*KL0_mean) for two fixed eval windows, or kl_max >=100 with length/refusal/copying symptom",
+        "beta_nonzero": true
+      }
+    },
+    "abort_action": {
+      "stop": true,
+      "flush_diagnostics": true,
+      "quarantine_current_checkpoint": true,
+      "resume_allowed": false,
+      "automatic_hyperparameter_change": false,
+      "automatic_restart": false
+    },
+    "unchanged_abort_classes": [
+      "reward_rises_without_factual_precision",
+      "factual_precision_regression",
+      "kl_relative_to_kl0",
+      "protocol_pass_rate",
+      "non_finite_or_oom",
+      "length_explosion",
+      "diversity_collapse",
+      "data_or_evidence_sha_drift",
+      "dev_reverse_divergence"
+    ],
+    "abort_classes_v4": [
+      "non_finite_or_oom",
+      "protocol_pass_rate",
+      "fake_reward_rise_without_factual_precision",
+      "kl_explosive_divergence",
+      "data_or_evidence_sha_drift"
+    ],
+    "monitor_only_v4": [
+      "kl_p95_two_windows",
+      "kl_max_spike_without_behavioral_symptom",
+      "zero_variance_group_share",
+      "length_distribution",
+      "intent_response_fail_rate"
+    ]
+  },
+  "checkpoint_selection_after_training_only": [
+    "all_dev_protocol_intent_and_critical_gates_pass",
+    "max_dev_grounding_core",
+    "lower_mean_kl",
+    "earlier_step"
+  ],
+  "terminal_evaluation": {
+    "automatic_final_40_after_training": false,
+    "reason": "Stop and report to user before the one authorized final-40 evaluation."
+  },
+  "derived_from": {
+    "formal_v3_authorization_sha256": "a918021a892e51f1500958524b3ec12d150cde25088fabadf10b0f03c6f73902",
+    "formal_v3_preregistration_sha256": "e4fb947780299477044ced12ea8d30c263f4799de4f0fa79ef6845c8efa59053",
+    "allowed_change": "expanded train set, longer schedule, KL p95 monitor-only, explosive KL abort only",
+    "reward_fn_changed": false,
+    "fake_reward_gate_changed": false,
+    "held_out_final_isolation_changed": false,
+    "thresholds_reward_fake_changed": false
+  },
+  "fixed_dev4_probe_step0_baseline": {
+    "path": "data/model_training/grpo/grpo_formal_v4_fixed_dev4_step0_baseline.json",
+    "sha256": "03bc8cb271fd017e61f9fee991030908205358f8f0ff1d96fda48b19f47734ed",
+    "computed_before_optimizer_step": true,
+    "optimizer_step_performed": false,
+    "prompt_ids": [
+      "reward-recommend-002",
+      "reward-compare-004",
+      "reward-knowledge-003",
+      "reward-sales-004"
+    ],
+    "generation_parameters": {
+      "num_generations": 8,
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "max_prompt_length": 2560,
+      "max_completion_length": 512,
+      "max_total_sequence_length": 3072,
+      "fp16": true,
+      "bf16": false,
+      "seed": 20260725,
+      "beta": 0.01,
+      "reference": "shared_nf4_base_disable_adapter_no_second_model"
+    },
+    "fake_reward_gate": {
+      "scientific_limitation": "fake_reward_rise_without_factual_gain excludes knowledge-003; this gate's factual criterion does not cover knowledge intent.",
+      "included_prompt_ids": [
+        "reward-recommend-002",
+        "reward-compare-004",
+        "reward-sales-004"
+      ],
+      "excluded_prompt_ids": [
+        "reward-knowledge-003"
+      ],
+      "reward_mean": 0.4583333333333333,
+      "factual_precision_mean": 0.5902777777777778
+    }
+  }
+}

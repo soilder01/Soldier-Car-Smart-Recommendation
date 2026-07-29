@@ -1,0 +1,291 @@
+{
+  "summary": {
+    "generated_at": "2026-06-22 18:20:43",
+    "record_count": 227,
+    "quality_score": 93.8,
+    "duplicate_group_count": 29,
+    "anomaly_record_count": 1,
+    "trusted_source_rate": 99.1,
+    "missing_field_count": 0,
+    "generated_at_script": "2026-06-22 18:20:43",
+    "check_count": 7,
+    "passed_checks": 7,
+    "check_pass_rate": 100.0
+  },
+  "checks": [
+    {
+      "name": "治理报告已生成",
+      "passed": true,
+      "actual": "/workspace/iris_2f5aee19-22c6-4002-a914-4dfcb1562ec0/Soldier-Car-Smart-Recommendation/data/real_world/real_data_governance_report.json"
+    },
+    {
+      "name": "记录数不少于200",
+      "passed": true,
+      "actual": 227
+    },
+    {
+      "name": "重复检测存在",
+      "passed": true,
+      "actual": 29
+    },
+    {
+      "name": "异常检测存在",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "来源可信度已计算",
+      "passed": true,
+      "actual": 99.1
+    },
+    {
+      "name": "治理动作已生成",
+      "passed": true,
+      "actual": 2
+    },
+    {
+      "name": "治理评分合理",
+      "passed": true,
+      "actual": 93.8
+    }
+  ],
+  "governance": {
+    "summary": {
+      "generated_at": "2026-06-22 18:20:43",
+      "record_count": 227,
+      "quality_score": 93.8,
+      "duplicate_group_count": 29,
+      "anomaly_record_count": 1,
+      "trusted_source_rate": 99.1,
+      "missing_field_count": 0
+    },
+    "duplicates": [
+      {
+        "key": "audi|a6 e-tron|2024|base",
+        "count": 2,
+        "brand": "Audi",
+        "model": "A6 e-tron",
+        "model_year": "2024",
+        "trim": "Base"
+      },
+      {
+        "key": "audi|a6 e-tron|2025|base",
+        "count": 2,
+        "brand": "Audi",
+        "model": "A6 e-tron",
+        "model_year": "2025",
+        "trim": "Base"
+      },
+      {
+        "key": "audi|q4 e-tron|2023|40",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2023",
+        "trim": "40"
+      },
+      {
+        "key": "audi|q4 e-tron|2023|50",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2023",
+        "trim": "50"
+      },
+      {
+        "key": "audi|q4 e-tron|2023|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2023",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q4 e-tron|2024|40",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2024",
+        "trim": "40"
+      },
+      {
+        "key": "audi|q4 e-tron|2024|50",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2024",
+        "trim": "50"
+      },
+      {
+        "key": "audi|q4 e-tron|2024|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2024",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q4 e-tron|2025|40",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2025",
+        "trim": "40"
+      },
+      {
+        "key": "audi|q4 e-tron|2025|50",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2025",
+        "trim": "50"
+      },
+      {
+        "key": "audi|q4 e-tron|2025|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q4 e-tron",
+        "model_year": "2025",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q6 e-tron|2024|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q6 e-tron",
+        "model_year": "2024",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q6 e-tron|2025|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q6 e-tron",
+        "model_year": "2025",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q8 e-tron|2023|50",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2023",
+        "trim": "50"
+      },
+      {
+        "key": "audi|q8 e-tron|2023|55",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2023",
+        "trim": "55"
+      },
+      {
+        "key": "audi|q8 e-tron|2023|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2023",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q8 e-tron|2024|50",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2024",
+        "trim": "50"
+      },
+      {
+        "key": "audi|q8 e-tron|2024|55",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2024",
+        "trim": "55"
+      },
+      {
+        "key": "audi|q8 e-tron|2024|quattro",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2024",
+        "trim": "quattro"
+      },
+      {
+        "key": "audi|q8 e-tron|2025|50",
+        "count": 2,
+        "brand": "Audi",
+        "model": "Q8 e-tron",
+        "model_year": "2025",
+        "trim": "50"
+      }
+    ],
+    "missing_fields": [],
+    "anomalies": [
+      {
+        "brand": "Citroen",
+        "model": "C  Zero",
+        "model_year": "2010",
+        "issues": [
+          {
+            "field": "battery_kwh",
+            "level": "medium",
+            "message": "电池容量 14.5kWh 异常"
+          }
+        ]
+      }
+    ],
+    "source_trust": {
+      "levels": {
+        "high": 117,
+        "medium": 108,
+        "low": 2
+      },
+      "top_domains": [
+        [
+          "raw.githubusercontent.com",
+          65
+        ],
+        [
+          "audi.com",
+          51
+        ],
+        [
+          "bmw.com",
+          42
+        ],
+        [
+          "volkswagen.de",
+          30
+        ],
+        [
+          "hyundai.com",
+          24
+        ],
+        [
+          "peugeot.com",
+          13
+        ],
+        [
+          "unknown",
+          2
+        ]
+      ]
+    },
+    "actions": [
+      {
+        "priority": "P1",
+        "title": "合并重复车型版本",
+        "evidence": "发现 29 组重复 key",
+        "action": "按 brand/model/year/trim 聚合，保留来源可信度最高记录"
+      },
+      {
+        "priority": "P2",
+        "title": "核验异常参数",
+        "evidence": "发现 1 条疑似异常记录",
+        "action": "对续航、电池、快充、价格异常值加人工核验标记"
+      }
+    ]
+  }
+}

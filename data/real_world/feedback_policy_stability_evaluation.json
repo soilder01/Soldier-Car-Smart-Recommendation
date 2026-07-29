@@ -1,0 +1,421 @@
+{
+  "summary": {
+    "generated_at": "2026-06-22 17:44:50",
+    "case_count": 8,
+    "passed_count": 8,
+    "pass_rate": 100.0,
+    "model_rule_count": 3,
+    "pool_rule_count": 2,
+    "agent_applied_rule_count": 2
+  },
+  "checks": [
+    {
+      "name": "策略声明车型样本阈值",
+      "passed": true,
+      "actual": {
+        "min_model_samples": 3,
+        "min_pool_samples": 5,
+        "uses_recency_decay": true,
+        "uses_confidence": true,
+        "model_delta_cap": 10.0,
+        "pool_delta_cap": 3.0
+      }
+    },
+    {
+      "name": "策略声明候选池样本阈值",
+      "passed": true,
+      "actual": {
+        "min_model_samples": 3,
+        "min_pool_samples": 5,
+        "uses_recency_decay": true,
+        "uses_confidence": true,
+        "model_delta_cap": 10.0,
+        "pool_delta_cap": 3.0
+      }
+    },
+    {
+      "name": "策略启用时间衰减",
+      "passed": true,
+      "actual": {
+        "min_model_samples": 3,
+        "min_pool_samples": 5,
+        "uses_recency_decay": true,
+        "uses_confidence": true,
+        "model_delta_cap": 10.0,
+        "pool_delta_cap": 3.0
+      }
+    },
+    {
+      "name": "策略启用置信度",
+      "passed": true,
+      "actual": {
+        "min_model_samples": 3,
+        "min_pool_samples": 5,
+        "uses_recency_decay": true,
+        "uses_confidence": true,
+        "model_delta_cap": 10.0,
+        "pool_delta_cap": 3.0
+      }
+    },
+    {
+      "name": "车型规则包含置信度和原因",
+      "passed": true,
+      "actual": [
+        {
+          "delta": 4.9,
+          "direction": "boost",
+          "confidence": 0.97,
+          "positive": 9,
+          "negative": 2,
+          "neutral": 0,
+          "total": 11,
+          "weighted_positive": 9.0,
+          "weighted_negative": 2.0,
+          "sample_threshold": 3,
+          "latest_feedback_at": "2026-06-22 17:44:05",
+          "reason": "样本11条，近期加权正反馈9.0/负反馈2.0，置信度0.97"
+        },
+        {
+          "delta": -7.4,
+          "direction": "penalty",
+          "confidence": 0.93,
+          "positive": 0,
+          "negative": 10,
+          "neutral": 0,
+          "total": 10,
+          "weighted_positive": 0.0,
+          "weighted_negative": 10.0,
+          "sample_threshold": 3,
+          "latest_feedback_at": "2026-06-22 17:44:05",
+          "reason": "样本10条，近期加权正反馈0.0/负反馈10.0，置信度0.93"
+        },
+        {
+          "delta": 4.3,
+          "direction": "boost",
+          "confidence": 0.54,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 0,
+          "total": 3,
+          "weighted_positive": 3.0,
+          "weighted_negative": 0.0,
+          "sample_threshold": 3,
+          "latest_feedback_at": "2026-06-22 16:59:44",
+          "reason": "样本3条，近期加权正反馈3.0/负反馈0.0，置信度0.54"
+        }
+      ]
+    },
+    {
+      "name": "候选池规则满足样本阈值",
+      "passed": true,
+      "actual": {
+        "fused": {
+          "delta": -3.0,
+          "direction": "penalty",
+          "confidence": 1.0,
+          "positive_rate": 50.0,
+          "positive": 12,
+          "negative": 12,
+          "neutral": 0,
+          "total": 24,
+          "sample_threshold": 5,
+          "latest_feedback_at": "2026-06-22 17:44:05",
+          "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+        },
+        "local": {
+          "delta": 1.5,
+          "direction": "boost",
+          "confidence": 0.7,
+          "positive_rate": 80.0,
+          "positive": 4,
+          "negative": 1,
+          "neutral": 0,
+          "total": 5,
+          "sample_threshold": 5,
+          "latest_feedback_at": "2026-06-22 16:59:44",
+          "reason": "候选池样本5条，加权正反馈率80.0%，置信度0.7"
+        }
+      }
+    },
+    {
+      "name": "正负反馈可稳定影响直接策略",
+      "passed": true,
+      "actual": [
+        {
+          "brand": "小鹏",
+          "model": "G6",
+          "score": 85.9,
+          "reasons": [
+            "原始推荐",
+            "反馈策略加权：样本11条，近期加权正反馈9.0/负反馈2.0，置信度0.97"
+          ],
+          "cautions": [
+            "候选池反馈降权：候选池样本24条，加权正反馈率50.0%，置信度1.0"
+          ],
+          "score_before_feedback": 84.0,
+          "feedback_score_delta": 1.9,
+          "feedback_policy_rules": [
+            {
+              "target": "小鹏 G6",
+              "type": "model",
+              "delta": 4.9,
+              "direction": "boost",
+              "confidence": 0.97,
+              "positive": 9,
+              "negative": 2,
+              "neutral": 0,
+              "total": 11,
+              "weighted_positive": 9.0,
+              "weighted_negative": 2.0,
+              "sample_threshold": 3,
+              "latest_feedback_at": "2026-06-22 17:44:05",
+              "reason": "样本11条，近期加权正反馈9.0/负反馈2.0，置信度0.97"
+            },
+            {
+              "target": "fused",
+              "type": "pool",
+              "delta": -3.0,
+              "direction": "penalty",
+              "confidence": 1.0,
+              "positive_rate": 50.0,
+              "positive": 12,
+              "negative": 12,
+              "neutral": 0,
+              "total": 24,
+              "sample_threshold": 5,
+              "latest_feedback_at": "2026-06-22 17:44:05",
+              "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+            }
+          ]
+        },
+        {
+          "brand": "特斯拉",
+          "model": "Model Y",
+          "score": 77.6,
+          "reasons": [
+            "原始推荐"
+          ],
+          "cautions": [
+            "反馈策略降权：样本10条，近期加权正反馈0.0/负反馈10.0，置信度0.93",
+            "候选池反馈降权：候选池样本24条，加权正反馈率50.0%，置信度1.0"
+          ],
+          "score_before_feedback": 88.0,
+          "feedback_score_delta": -10.4,
+          "feedback_policy_rules": [
+            {
+              "target": "特斯拉 Model Y",
+              "type": "model",
+              "delta": -7.4,
+              "direction": "penalty",
+              "confidence": 0.93,
+              "positive": 0,
+              "negative": 10,
+              "neutral": 0,
+              "total": 10,
+              "weighted_positive": 0.0,
+              "weighted_negative": 10.0,
+              "sample_threshold": 3,
+              "latest_feedback_at": "2026-06-22 17:44:05",
+              "reason": "样本10条，近期加权正反馈0.0/负反馈10.0，置信度0.93"
+            },
+            {
+              "target": "fused",
+              "type": "pool",
+              "delta": -3.0,
+              "direction": "penalty",
+              "confidence": 1.0,
+              "positive_rate": 50.0,
+              "positive": 12,
+              "negative": 12,
+              "neutral": 0,
+              "total": 24,
+              "sample_threshold": 5,
+              "latest_feedback_at": "2026-06-22 17:44:05",
+              "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+            }
+          ]
+        },
+        {
+          "brand": "样本不足",
+          "model": "测试车",
+          "score": 77.0,
+          "reasons": [
+            "原始推荐"
+          ],
+          "cautions": [
+            "候选池反馈降权：候选池样本24条，加权正反馈率50.0%，置信度1.0"
+          ],
+          "score_before_feedback": 80.0,
+          "feedback_score_delta": -3.0,
+          "feedback_policy_rules": [
+            {
+              "target": "fused",
+              "type": "pool",
+              "delta": -3.0,
+              "direction": "penalty",
+              "confidence": 1.0,
+              "positive_rate": 50.0,
+              "positive": 12,
+              "negative": 12,
+              "neutral": 0,
+              "total": 24,
+              "sample_threshold": 5,
+              "latest_feedback_at": "2026-06-22 17:44:05",
+              "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "真实 Agent 链路返回可解释策略",
+      "passed": true,
+      "actual": [
+        {
+          "target": "理想 L6",
+          "type": "model",
+          "delta": 4.3,
+          "direction": "boost",
+          "confidence": 0.54,
+          "positive": 3,
+          "negative": 0,
+          "neutral": 0,
+          "total": 3,
+          "weighted_positive": 3.0,
+          "weighted_negative": 0.0,
+          "sample_threshold": 3,
+          "latest_feedback_at": "2026-06-22 16:59:44",
+          "reason": "样本3条，近期加权正反馈3.0/负反馈0.0，置信度0.54"
+        },
+        {
+          "target": "fused",
+          "type": "pool",
+          "delta": -3.0,
+          "direction": "penalty",
+          "confidence": 1.0,
+          "positive_rate": 50.0,
+          "positive": 12,
+          "negative": 12,
+          "neutral": 0,
+          "total": 24,
+          "sample_threshold": 5,
+          "latest_feedback_at": "2026-06-22 17:44:05",
+          "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+        }
+      ]
+    }
+  ],
+  "policy_stability": {
+    "min_model_samples": 3,
+    "min_pool_samples": 5,
+    "uses_recency_decay": true,
+    "uses_confidence": true,
+    "model_delta_cap": 10.0,
+    "pool_delta_cap": 3.0
+  },
+  "model_rules": {
+    "小鹏 G6": {
+      "delta": 4.9,
+      "direction": "boost",
+      "confidence": 0.97,
+      "positive": 9,
+      "negative": 2,
+      "neutral": 0,
+      "total": 11,
+      "weighted_positive": 9.0,
+      "weighted_negative": 2.0,
+      "sample_threshold": 3,
+      "latest_feedback_at": "2026-06-22 17:44:05",
+      "reason": "样本11条，近期加权正反馈9.0/负反馈2.0，置信度0.97"
+    },
+    "特斯拉 Model Y": {
+      "delta": -7.4,
+      "direction": "penalty",
+      "confidence": 0.93,
+      "positive": 0,
+      "negative": 10,
+      "neutral": 0,
+      "total": 10,
+      "weighted_positive": 0.0,
+      "weighted_negative": 10.0,
+      "sample_threshold": 3,
+      "latest_feedback_at": "2026-06-22 17:44:05",
+      "reason": "样本10条，近期加权正反馈0.0/负反馈10.0，置信度0.93"
+    },
+    "理想 L6": {
+      "delta": 4.3,
+      "direction": "boost",
+      "confidence": 0.54,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "total": 3,
+      "weighted_positive": 3.0,
+      "weighted_negative": 0.0,
+      "sample_threshold": 3,
+      "latest_feedback_at": "2026-06-22 16:59:44",
+      "reason": "样本3条，近期加权正反馈3.0/负反馈0.0，置信度0.54"
+    }
+  },
+  "pool_rules": {
+    "fused": {
+      "delta": -3.0,
+      "direction": "penalty",
+      "confidence": 1.0,
+      "positive_rate": 50.0,
+      "positive": 12,
+      "negative": 12,
+      "neutral": 0,
+      "total": 24,
+      "sample_threshold": 5,
+      "latest_feedback_at": "2026-06-22 17:44:05",
+      "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+    },
+    "local": {
+      "delta": 1.5,
+      "direction": "boost",
+      "confidence": 0.7,
+      "positive_rate": 80.0,
+      "positive": 4,
+      "negative": 1,
+      "neutral": 0,
+      "total": 5,
+      "sample_threshold": 5,
+      "latest_feedback_at": "2026-06-22 16:59:44",
+      "reason": "候选池样本5条，加权正反馈率80.0%，置信度0.7"
+    }
+  },
+  "agent_applied_rules": [
+    {
+      "target": "理想 L6",
+      "type": "model",
+      "delta": 4.3,
+      "direction": "boost",
+      "confidence": 0.54,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "total": 3,
+      "weighted_positive": 3.0,
+      "weighted_negative": 0.0,
+      "sample_threshold": 3,
+      "latest_feedback_at": "2026-06-22 16:59:44",
+      "reason": "样本3条，近期加权正反馈3.0/负反馈0.0，置信度0.54"
+    },
+    {
+      "target": "fused",
+      "type": "pool",
+      "delta": -3.0,
+      "direction": "penalty",
+      "confidence": 1.0,
+      "positive_rate": 50.0,
+      "positive": 12,
+      "negative": 12,
+      "neutral": 0,
+      "total": 24,
+      "sample_threshold": 5,
+      "latest_feedback_at": "2026-06-22 17:44:05",
+      "reason": "候选池样本24条，加权正反馈率50.0%，置信度1.0"
+    }
+  ]
+}

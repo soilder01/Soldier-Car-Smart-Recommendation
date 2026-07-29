@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "case_count": 8,
+    "passed_count": 8,
+    "pass_rate": 100.0
+  },
+  "checks": [
+    {
+      "name": "默认进入 Agent 工作台",
+      "passed": true,
+      "evidence": "active 默认 recommend"
+    },
+    {
+      "name": "智能推荐作为主入口",
+      "passed": true,
+      "evidence": "navs 首项为 Agent 工作台"
+    },
+    {
+      "name": "工作台展示当前候选池",
+      "passed": true,
+      "evidence": "agentWorkspaceStats 包含候选池"
+    },
+    {
+      "name": "工作台展示工具调用",
+      "passed": true,
+      "evidence": "agentWorkspaceStats 包含 Trace 步数"
+    },
+    {
+      "name": "工作台展示推荐证据",
+      "passed": true,
+      "evidence": "agentWorkspaceStats 包含证据条数"
+    },
+    {
+      "name": "工作台展示 Obsidian 沉淀结果",
+      "passed": true,
+      "evidence": "agentWorkspaceStats 包含长期记忆"
+    },
+    {
+      "name": "辅助页面收束为二级入口",
+      "passed": true,
+      "evidence": "辅助能力入口存在"
+    },
+    {
+      "name": "Agent Trace 可视化清晰",
+      "passed": true,
+      "evidence": "使用独立 Trace Flow 样式"
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "generated_at": "2026-06-22 14:35:08",
+  "case_count": 4,
+  "passed_count": 4,
+  "pass_rate": 100.0,
+  "data": {
+    "generated_at": "2026-06-22 14:21:11",
+    "source": "open-ev-data/open-ev-data-dataset + OSkrk/Electric-vehicles-EV-Database",
+    "source_url": [
+      "https://github.com/open-ev-data/open-ev-data-dataset/archive/refs/heads/main.zip",
+      "https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv"
+    ],
+    "license_file": "https://github.com/open-ev-data/open-ev-data-dataset/blob/main/LICENCE",
+    "record_count": 227,
+    "unique_brand_count": 30,
+    "unique_model_count": 92,
+    "year_range": [
+      2010,
+      2025
+    ],
+    "brand_distribution_top20": [
+      [
+        "Audi",
+        53
+      ],
+      [
+        "BMW",
+        45
+      ],
+      [
+        "Volkswagen",
+        30
+      ],
+      [
+        "Hyundai",
+        26
+      ],
+      [
+        "Peugeot",
+        16
+      ],
+      [
+        "Renault",
+        8
+      ],
+      [
+        "VW",
+        7
+      ],
+      [
+        "Nissan",
+        5
+      ],
+      [
+        "Daimler",
+        4
+      ],
+      [
+        "Ford",
+        4
+      ],
+      [
+        "Tesla",
+        4
+      ],
+      [
+        "Citroen",
+        3
+      ],
+      [
+        "Honda",
+        2
+      ],
+      [
+        "Kia",
+        2
+      ],
+      [
+        "Porsche",
+        2
+      ],
+      [
+        "Smart",
+        2
+      ],
+      [
+        "Aston",
+        1
+      ],
+      [
+        "Chevrolet",
+        1
+      ],
+      [
+        "Faraday",
+        1
+      ],
+      [
+        "Infinity",
+        1
+      ]
+    ],
+    "vehicle_type_distribution": [
+      [
+        "轿车",
+        174
+      ],
+      [
+        "SUV",
+        43
+      ],
+      [
+        "MPV",
+        7
+      ],
+      [
+        "微型车",
+        3
+      ]
+    ],
+    "range_cycle_distribution": [
+      [
+        "wltp",
+        227
+      ]
+    ],
+    "missing_counts": {
+      "brand": 0,
+      "model": 0,
+      "model_year": 0,
+      "trim": 67,
+      "vehicle_type_raw": 94,
+      "vehicle_type": 0,
+      "energy_type": 0,
+      "markets": 33,
+      "drivetrain": 0,
+      "system_power_kw": 0,
+      "battery_kwh": 35,
+      "range_km": 2,
+      "range_cycle": 0,
+      "ac_charge_kw": 0,
+      "dc_charge_kw": 0,
+      "fast_charge_minutes_estimated": 0,
+      "source_url": 0,
+      "raw_path": 0
+    },
+    "files": {
+      "raw_archive": "data/real_world/raw/open_ev_data_dataset_main.zip",
+      "normalized_csv": "data/real_world/real_ev_specs.csv",
+      "recommender_csv": "data/real_world/real_ev_specs_for_recommender.csv"
+    }
+  },
+  "vehicle_type_distribution": [
+    [
+      "轿车",
+      174
+    ],
+    [
+      "SUV",
+      43
+    ],
+    [
+      "MPV",
+      7
+    ],
+    [
+      "微型车",
+      3
+    ]
+  ],
+  "cases": [
+    {
+      "name": "真实样本-长续航纯电通勤",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Top1分数达标",
+          "passed": true,
+          "actual": 84.4,
+          "expected": 70
+        },
+        {
+          "name": "Top5包含长续航车型",
+          "passed": true,
+          "actual": 650,
+          "expected": 450
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "Faraday",
+          "model": "Future 91",
+          "type": "SUV",
+          "range": 650,
+          "score": 84.4
+        },
+        {
+          "brand": "Lucid",
+          "model": "Air",
+          "type": "轿车",
+          "range": 650,
+          "score": 82.9
+        },
+        {
+          "brand": "VW",
+          "model": "ID Crozz2",
+          "type": "SUV",
+          "range": 500,
+          "score": 82.3
+        },
+        {
+          "brand": "Skoda",
+          "model": "E",
+          "type": "SUV",
+          "range": 500,
+          "score": 81.9
+        },
+        {
+          "brand": "Audi",
+          "model": "Q6",
+          "type": "SUV",
+          "range": 500,
+          "score": 81.3
+        }
+      ]
+    },
+    {
+      "name": "真实样本-家庭SUV",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Top1分数达标",
+          "passed": true,
+          "actual": 95.5,
+          "expected": 70
+        },
+        {
+          "name": "Top5包含目标车型",
+          "passed": true,
+          "actual": [
+            "SUV",
+            "SUV",
+            "SUV",
+            "SUV",
+            "SUV"
+          ],
+          "expected": "SUV"
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "Audi",
+          "model": "Q6",
+          "type": "SUV",
+          "range": 500,
+          "score": 95.5
+        },
+        {
+          "brand": "VW",
+          "model": "ID Crozz2",
+          "type": "SUV",
+          "range": 500,
+          "score": 95.5
+        },
+        {
+          "brand": "Faraday",
+          "model": "Future 91",
+          "type": "SUV",
+          "range": 650,
+          "score": 95.4
+        },
+        {
+          "brand": "Skoda",
+          "model": "E",
+          "type": "SUV",
+          "range": 500,
+          "score": 95.4
+        },
+        {
+          "brand": "Kia",
+          "model": "Niro",
+          "type": "SUV",
+          "range": 455,
+          "score": 95.1
+        }
+      ]
+    },
+    {
+      "name": "真实样本-多人家庭MPV",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Top1分数达标",
+          "passed": true,
+          "actual": 100,
+          "expected": 65
+        },
+        {
+          "name": "Top10包含目标车型",
+          "passed": true,
+          "actual": [
+            "MPV",
+            "MPV",
+            "MPV",
+            "MPV",
+            "MPV",
+            "MPV",
+            "MPV",
+            "SUV",
+            "SUV",
+            "SUV"
+          ],
+          "expected": "MPV"
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "Daimler",
+          "model": "EQV",
+          "type": "MPV",
+          "range": 405,
+          "score": 100
+        },
+        {
+          "brand": "VW",
+          "model": "ID Buzz",
+          "type": "MPV",
+          "range": 500,
+          "score": 98.2
+        },
+        {
+          "brand": "Renault",
+          "model": "Kangoo ZE",
+          "type": "MPV",
+          "range": 220,
+          "score": 95.3
+        },
+        {
+          "brand": "Merceds",
+          "model": "Vito E cell",
+          "type": "MPV",
+          "range": 130,
+          "score": 90.1
+        },
+        {
+          "brand": "Citroen",
+          "model": "Berlingo",
+          "type": "MPV",
+          "range": 110,
+          "score": 89.0
+        }
+      ]
+    },
+    {
+      "name": "真实样本-豪华社交形象",
+      "passed": true,
+      "checks": [
+        {
+          "name": "Top1分数达标",
+          "passed": true,
+          "actual": 84.0,
+          "expected": 70
+        },
+        {
+          "name": "Top5包含目标品牌带",
+          "passed": true,
+          "actual": [
+            "Hyundai",
+            "Hyundai",
+            "Hyundai",
+            "Audi",
+            "Kia"
+          ],
+          "expected": [
+            "Audi",
+            "BMW",
+            "Porsche",
+            "Tesla"
+          ]
+        }
+      ],
+      "top_recommendations": [
+        {
+          "brand": "Hyundai",
+          "model": "IONIQ 5 Base",
+          "type": "SUV",
+          "range": 507,
+          "score": 84.0
+        },
+        {
+          "brand": "Hyundai",
+          "model": "IONIQ 5 Base",
+          "type": "SUV",
+          "range": 507,
+          "score": 83.8
+        },
+        {
+          "brand": "Hyundai",
+          "model": "IONIQ 5 AWD",
+          "type": "SUV",
+          "range": 480,
+          "score": 83.7
+        },
+        {
+          "brand": "Audi",
+          "model": "Q6",
+          "type": "SUV",
+          "range": 500,
+          "score": 83.6
+        },
+        {
+          "brand": "Kia",
+          "model": "Niro",
+          "type": "SUV",
+          "range": 455,
+          "score": 83.6
+        }
+      ]
+    }
+  ]
+}

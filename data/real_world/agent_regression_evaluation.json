@@ -1,0 +1,593 @@
+{
+  "summary": {
+    "case_count": 4,
+    "passed": 4,
+    "warned": 0,
+    "failed": 0,
+    "pass_rate": 100.0,
+    "average_score": 100.0,
+    "generated_at": "2026-07-23 15:11:45",
+    "generated_at_script": "2026-07-23 15:11:45",
+    "check_count": 6,
+    "passed_checks": 6,
+    "check_pass_rate": 100.0
+  },
+  "checks": [
+    {
+      "name": "端到端用例不少于4条",
+      "passed": true,
+      "actual": 4
+    },
+    {
+      "name": "Agent回归通过率达到100%",
+      "passed": true,
+      "actual": 100.0
+    },
+    {
+      "name": "所有用例覆盖候选池选择",
+      "passed": true,
+      "actual": [
+        "local",
+        "fused",
+        "real",
+        "fused"
+      ]
+    },
+    {
+      "name": "所有用例覆盖FeedbackPolicyTool",
+      "passed": true,
+      "actual": [
+        [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ]
+      ]
+    },
+    {
+      "name": "所有用例写入Obsidian长期记忆",
+      "passed": true,
+      "actual": [
+        "08-推荐案例/推荐案例-20260723-151145-比亚迪-宋PLUS-DM-i.md",
+        "08-推荐案例/推荐案例-20260723-151145-理想-L6.md",
+        "08-推荐案例/推荐案例-20260723-151145-Hyundai-IONIQ-5-Base.md",
+        "08-推荐案例/推荐案例-20260723-151145-智界-R7.md"
+      ]
+    },
+    {
+      "name": "回归报告写入Obsidian",
+      "passed": true,
+      "actual": "07-测试样例/Agent端到端回归评估-20260723-151145.md"
+    }
+  ],
+  "agent_regression": {
+    "summary": {
+      "case_count": 4,
+      "passed": 4,
+      "warned": 0,
+      "failed": 0,
+      "pass_rate": 100.0,
+      "average_score": 100.0,
+      "generated_at": "2026-07-23 15:11:45"
+    },
+    "cases": [
+      {
+        "id": "agent-family-local",
+        "name": "Agent家庭通勤本地池",
+        "query": "预算25万以内，三口之家，上海通勤每天50公里，有家充，关注续航、空间和智驾，推荐新能源SUV",
+        "status": "pass",
+        "score": 100.0,
+        "passed_count": 11,
+        "check_count": 11,
+        "selected_pool": "local",
+        "top_models": [
+          "比亚迪 宋PLUS DM-i",
+          "理想 L6",
+          "问界 M7",
+          "埃安 AION Y",
+          "零跑 C11"
+        ],
+        "trace_agents": [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        "feedback_policy_rules": [],
+        "obsidian_note": {
+          "path": "08-推荐案例/推荐案例-20260723-151145-比亚迪-宋PLUS-DM-i.md",
+          "title": "推荐案例-20260723-151145-比亚迪 宋PLUS DM-i",
+          "top_model": "比亚迪 宋PLUS DM-i",
+          "candidate_pool": "local",
+          "memory_sections": [
+            "画像",
+            "候选池",
+            "Top3对比",
+            "风险",
+            "跟进动作",
+            "证据"
+          ]
+        },
+        "checks": [
+          {
+            "name": "候选池选择",
+            "passed": true,
+            "expected": "local",
+            "actual": "local",
+            "message": "候选池符合预期"
+          },
+          {
+            "name": "推荐结果非空",
+            "passed": true,
+            "expected": "至少1条",
+            "actual": 5,
+            "message": "推荐结果已返回"
+          },
+          {
+            "name": "Obsidian写入",
+            "passed": true,
+            "expected": "存在路径",
+            "actual": "08-推荐案例/推荐案例-20260723-151145-比亚迪-宋PLUS-DM-i.md",
+            "message": "已沉淀长期记忆"
+          },
+          {
+            "name": "反馈策略结构",
+            "passed": true,
+            "expected": "包含stability",
+            "actual": {
+              "min_model_samples": 3,
+              "min_pool_samples": 5,
+              "uses_recency_decay": true,
+              "uses_confidence": true,
+              "model_delta_cap": 10.0,
+              "pool_delta_cap": 3.0
+            },
+            "message": "反馈策略稳定性元信息存在"
+          },
+          {
+            "name": "Trace包含ProfileParserTool",
+            "passed": true,
+            "expected": "ProfileParserTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含CandidatePoolSelectorTool",
+            "passed": true,
+            "expected": "CandidatePoolSelectorTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含RankTool",
+            "passed": true,
+            "expected": "RankTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含FeedbackPolicyTool",
+            "passed": true,
+            "expected": "FeedbackPolicyTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含EvidenceRetrievalTool",
+            "passed": true,
+            "expected": "EvidenceRetrievalTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含RiskCheckTool",
+            "passed": true,
+            "expected": "RiskCheckTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含ObsidianCaseWriterTool",
+            "passed": true,
+            "expected": "ObsidianCaseWriterTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          }
+        ],
+        "failed_checks": [],
+        "diagnosis": "Agent端到端链路稳定"
+      },
+      {
+        "id": "agent-no-home-fused",
+        "name": "Agent无家充复杂场景",
+        "query": "没有家充，预算30万，四口之家，日常通勤和周末长途怎么选新能源车",
+        "status": "pass",
+        "score": 100.0,
+        "passed_count": 9,
+        "check_count": 9,
+        "selected_pool": "fused",
+        "top_models": [
+          "理想 L6",
+          "岚图 FREE",
+          "零跑 C11",
+          "长安 深蓝S7",
+          "Daimler EQV"
+        ],
+        "trace_agents": [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        "feedback_policy_rules": [],
+        "obsidian_note": {
+          "path": "08-推荐案例/推荐案例-20260723-151145-理想-L6.md",
+          "title": "推荐案例-20260723-151145-理想 L6",
+          "top_model": "理想 L6",
+          "candidate_pool": "fused",
+          "memory_sections": [
+            "画像",
+            "候选池",
+            "Top3对比",
+            "风险",
+            "跟进动作",
+            "证据"
+          ]
+        },
+        "checks": [
+          {
+            "name": "候选池选择",
+            "passed": true,
+            "expected": "fused",
+            "actual": "fused",
+            "message": "候选池符合预期"
+          },
+          {
+            "name": "推荐结果非空",
+            "passed": true,
+            "expected": "至少1条",
+            "actual": 5,
+            "message": "推荐结果已返回"
+          },
+          {
+            "name": "Obsidian写入",
+            "passed": true,
+            "expected": "存在路径",
+            "actual": "08-推荐案例/推荐案例-20260723-151145-理想-L6.md",
+            "message": "已沉淀长期记忆"
+          },
+          {
+            "name": "反馈策略结构",
+            "passed": true,
+            "expected": "包含stability",
+            "actual": {
+              "min_model_samples": 3,
+              "min_pool_samples": 5,
+              "uses_recency_decay": true,
+              "uses_confidence": true,
+              "model_delta_cap": 10.0,
+              "pool_delta_cap": 3.0
+            },
+            "message": "反馈策略稳定性元信息存在"
+          },
+          {
+            "name": "Trace包含ProfileParserTool",
+            "passed": true,
+            "expected": "ProfileParserTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含CandidatePoolSelectorTool",
+            "passed": true,
+            "expected": "CandidatePoolSelectorTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含RankTool",
+            "passed": true,
+            "expected": "RankTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含FeedbackPolicyTool",
+            "passed": true,
+            "expected": "FeedbackPolicyTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含RiskCheckTool",
+            "passed": true,
+            "expected": "RiskCheckTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          }
+        ],
+        "failed_checks": [],
+        "diagnosis": "Agent端到端链路稳定"
+      },
+      {
+        "id": "agent-real-world",
+        "name": "Agent真实数据扩展池",
+        "query": "基于真实公开数据和欧洲海外车型规格，帮我看 Tesla、BMW、Audi 电动车怎么选",
+        "status": "pass",
+        "score": 100.0,
+        "passed_count": 9,
+        "check_count": 9,
+        "selected_pool": "real",
+        "top_models": [
+          "Hyundai IONIQ 5 Base",
+          "Hyundai IONIQ 5 Base",
+          "Hyundai IONIQ 5 AWD",
+          "Hyundai IONIQ 5 AWD",
+          "Hyundai Kona Electric Long Range"
+        ],
+        "trace_agents": [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        "feedback_policy_rules": [],
+        "obsidian_note": {
+          "path": "08-推荐案例/推荐案例-20260723-151145-Hyundai-IONIQ-5-Base.md",
+          "title": "推荐案例-20260723-151145-Hyundai IONIQ 5 Base",
+          "top_model": "Hyundai IONIQ 5 Base",
+          "candidate_pool": "real",
+          "memory_sections": [
+            "画像",
+            "候选池",
+            "Top3对比",
+            "风险",
+            "跟进动作",
+            "证据"
+          ]
+        },
+        "checks": [
+          {
+            "name": "候选池选择",
+            "passed": true,
+            "expected": "real",
+            "actual": "real",
+            "message": "候选池符合预期"
+          },
+          {
+            "name": "推荐结果非空",
+            "passed": true,
+            "expected": "至少1条",
+            "actual": 5,
+            "message": "推荐结果已返回"
+          },
+          {
+            "name": "Obsidian写入",
+            "passed": true,
+            "expected": "存在路径",
+            "actual": "08-推荐案例/推荐案例-20260723-151145-Hyundai-IONIQ-5-Base.md",
+            "message": "已沉淀长期记忆"
+          },
+          {
+            "name": "反馈策略结构",
+            "passed": true,
+            "expected": "包含stability",
+            "actual": {
+              "min_model_samples": 3,
+              "min_pool_samples": 5,
+              "uses_recency_decay": true,
+              "uses_confidence": true,
+              "model_delta_cap": 10.0,
+              "pool_delta_cap": 3.0
+            },
+            "message": "反馈策略稳定性元信息存在"
+          },
+          {
+            "name": "Trace包含ProfileParserTool",
+            "passed": true,
+            "expected": "ProfileParserTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含CandidatePoolSelectorTool",
+            "passed": true,
+            "expected": "CandidatePoolSelectorTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含RankTool",
+            "passed": true,
+            "expected": "RankTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含FeedbackPolicyTool",
+            "passed": true,
+            "expected": "FeedbackPolicyTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含EvidenceRetrievalTool",
+            "passed": true,
+            "expected": "EvidenceRetrievalTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          }
+        ],
+        "failed_checks": [],
+        "diagnosis": "Agent端到端链路稳定"
+      },
+      {
+        "id": "agent-explicit-compare",
+        "name": "Agent点名车型对比",
+        "query": "特斯拉 Model Y 和小鹏 G6 怎么选，预算30万，主要城市通勤，关注智驾、续航和空间",
+        "status": "pass",
+        "score": 100.0,
+        "passed_count": 9,
+        "check_count": 9,
+        "selected_pool": "fused",
+        "top_models": [
+          "智界 R7",
+          "腾势 N7",
+          "理想 L6",
+          "问界 M5",
+          "Faraday Future 91"
+        ],
+        "trace_agents": [
+          "ProfileParserTool",
+          "CandidatePoolSelectorTool",
+          "RankTool",
+          "FeedbackPolicyTool",
+          "EvidenceRetrievalTool",
+          "RiskCheckTool",
+          "LLMReportAgent",
+          "ObsidianCaseWriterTool"
+        ],
+        "feedback_policy_rules": [],
+        "obsidian_note": {
+          "path": "08-推荐案例/推荐案例-20260723-151145-智界-R7.md",
+          "title": "推荐案例-20260723-151145-智界 R7",
+          "top_model": "智界 R7",
+          "candidate_pool": "fused",
+          "memory_sections": [
+            "画像",
+            "候选池",
+            "Top3对比",
+            "风险",
+            "跟进动作",
+            "证据"
+          ]
+        },
+        "checks": [
+          {
+            "name": "候选池选择",
+            "passed": true,
+            "expected": "fused",
+            "actual": "fused",
+            "message": "候选池符合预期"
+          },
+          {
+            "name": "推荐结果非空",
+            "passed": true,
+            "expected": "至少1条",
+            "actual": 5,
+            "message": "推荐结果已返回"
+          },
+          {
+            "name": "Obsidian写入",
+            "passed": true,
+            "expected": "存在路径",
+            "actual": "08-推荐案例/推荐案例-20260723-151145-智界-R7.md",
+            "message": "已沉淀长期记忆"
+          },
+          {
+            "name": "反馈策略结构",
+            "passed": true,
+            "expected": "包含stability",
+            "actual": {
+              "min_model_samples": 3,
+              "min_pool_samples": 5,
+              "uses_recency_decay": true,
+              "uses_confidence": true,
+              "model_delta_cap": 10.0,
+              "pool_delta_cap": 3.0
+            },
+            "message": "反馈策略稳定性元信息存在"
+          },
+          {
+            "name": "Trace包含ProfileParserTool",
+            "passed": true,
+            "expected": "ProfileParserTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含CandidatePoolSelectorTool",
+            "passed": true,
+            "expected": "CandidatePoolSelectorTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含RankTool",
+            "passed": true,
+            "expected": "RankTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含FeedbackPolicyTool",
+            "passed": true,
+            "expected": "FeedbackPolicyTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          },
+          {
+            "name": "Trace包含ObsidianCaseWriterTool",
+            "passed": true,
+            "expected": "ObsidianCaseWriterTool",
+            "actual": "ProfileParserTool、CandidatePoolSelectorTool、RankTool、FeedbackPolicyTool、EvidenceRetrievalTool、RiskCheckTool、LLMReportAgent、ObsidianCaseWriterTool",
+            "message": "Trace命中"
+          }
+        ],
+        "failed_checks": [],
+        "diagnosis": "Agent端到端链路稳定"
+      }
+    ],
+    "obsidian_note": {
+      "title": "Agent端到端回归评估-20260723-151145",
+      "path": "07-测试样例/Agent端到端回归评估-20260723-151145.md"
+    }
+  }
+}

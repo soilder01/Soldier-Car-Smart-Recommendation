@@ -1,0 +1,76 @@
+{
+  "format_version": 1,
+  "status": "frozen_without_training_or_inference",
+  "source": {
+    "path": "data/model_training/eval/reward_visible.jsonl",
+    "sha256": "98117983647ab5f3618f96831612bca7984af09db85ef434485f42901b391c5e",
+    "records": 20
+  },
+  "selection": {
+    "seed": "grpo-reward-split-v1",
+    "algorithm": "Within each intent, select the row with the lowest SHA256(seed:intent:normalized_id:normalized_query) as dev; all other rows are train.",
+    "records": [
+      {
+        "intent": "recommend",
+        "dev_id": "reward-recommend-002",
+        "selection_sha256": "132faa5d58dc0d943feb79fc0690aa44df7e232c33c7d5f0372ea370a15596cf",
+        "normalized_id_sha256": "3c56ec4c36df9d604f4d1944518b9c13e3d7d678370a7b98347aa92fe900710e",
+        "normalized_query_sha256": "29a9ab33e9ef4fc6a7f3fae2a4a1ca2f13f60c11cdfde2fd9ab913ffaa11a857"
+      },
+      {
+        "intent": "compare",
+        "dev_id": "reward-compare-004",
+        "selection_sha256": "3c683d3916fb1774ca3960187974627907febda5d0e7f928be48b035949c5c14",
+        "normalized_id_sha256": "c5e0867fa0a31e236df4744ab8a71001870cf6da6631f3af9fc6155183ae6cac",
+        "normalized_query_sha256": "49251a35fcd5bba4756d320d2c2640286c679728b11349e424a212489f0319d8"
+      },
+      {
+        "intent": "knowledge",
+        "dev_id": "reward-knowledge-003",
+        "selection_sha256": "20b2754e93d695c8423e9d5ec186d774c45e0aa9cc57c7ec71fafa6185833c1a",
+        "normalized_id_sha256": "319f83c174ee5545060495030fac6a0279cc4ebf09d97834cd1ae800195f7c59",
+        "normalized_query_sha256": "cf8f9bd7ce60cb2009c16b665226e586e1d4a015aa6d539891617ce6d25472d9"
+      },
+      {
+        "intent": "sales",
+        "dev_id": "reward-sales-004",
+        "selection_sha256": "4457267f343ac1f77b12a090d8f5946a5a3f7d4a06a9462d49da312b363a8008",
+        "normalized_id_sha256": "508ccccae67df8f48e784774a3b5e7ab7da97d065cb10eccd34721c40931b59e",
+        "normalized_query_sha256": "7dbb40845ae42e2540d69c515f39436eac402087c65f2ee4758d43efa63d0624"
+      }
+    ]
+  },
+  "counts": {
+    "train": 16,
+    "dev": 4,
+    "train_per_intent": {
+      "compare": 4,
+      "knowledge": 4,
+      "recommend": 4,
+      "sales": 4
+    },
+    "dev_per_intent": {
+      "compare": 1,
+      "knowledge": 1,
+      "recommend": 1,
+      "sales": 1
+    }
+  },
+  "gradient_policy": {
+    "train_16": "eligible_for_gradient_updates",
+    "dev_4": "evaluation_and_early_stopping_only_no_gradient"
+  },
+  "union_contract": "train and dev are disjoint by normalized ID/query SHA and their union exactly reconstructs frozen reward-visible 20",
+  "artifacts": {
+    "train": {
+      "path": "data/model_training/grpo/reward_train_16.jsonl",
+      "sha256": "0390c0ee32156c02c84b08d0bc96191b0a7040a57fcaab969112f998b4539cc7",
+      "records": 16
+    },
+    "dev": {
+      "path": "data/model_training/grpo/reward_dev_4.jsonl",
+      "sha256": "bb90df011ff62cc10daf44f6eb17bbca9232d356c2695b3e2af43dcc348ae790",
+      "records": 4
+    }
+  }
+}

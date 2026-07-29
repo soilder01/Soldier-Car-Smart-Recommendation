@@ -1,0 +1,236 @@
+{
+  "format_version": 1,
+  "status": "frozen_before_formal_v4_training_no_optimizer_step",
+  "run_id": "grpo-formal-v4",
+  "source": "fixed_dev4_no_grad_probe_step0",
+  "prompt_ids": [
+    "reward-recommend-002",
+    "reward-compare-004",
+    "reward-knowledge-003",
+    "reward-sales-004"
+  ],
+  "prompt_id_set_is_fixed_dev4": true,
+  "generation_parameters": {
+    "num_generations": 8,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_prompt_length": 2560,
+    "max_completion_length": 512,
+    "max_total_sequence_length": 3072,
+    "fp16": true,
+    "bf16": false,
+    "seed": 20260725,
+    "beta": 0.01,
+    "reference": "shared_nf4_base_disable_adapter_no_second_model"
+  },
+  "reward_mean": 0.34375,
+  "factual_precision_mean": 0.4427083333333333,
+  "required_coverage_mean": 0.5,
+  "source_integrity_mean": 0.5,
+  "concision_mean": 1.0,
+  "reward_mean_by_intent": {
+    "compare": 0.5,
+    "knowledge": 0.0,
+    "recommend": 0.125,
+    "sales": 0.75
+  },
+  "factual_precision_mean_by_intent": {
+    "compare": 0.5,
+    "knowledge": 0.0,
+    "recommend": 0.5208333333333333,
+    "sales": 0.75
+  },
+  "intent_response_fail_rate": 0.65625,
+  "per_intent_fail_rate": {
+    "compare": 0.5,
+    "knowledge": 1.0,
+    "recommend": 0.875,
+    "sales": 0.25
+  },
+  "zero_variance_group_ratio": 0.25,
+  "completion_length_p50": 73.0,
+  "kl0_mean": 0.9521463882942462,
+  "kl0_p95": 5.380864143371582,
+  "fake_reward_gate": {
+    "scientific_limitation": "fake_reward_rise_without_factual_gain excludes knowledge-003; this gate's factual criterion does not cover knowledge intent.",
+    "included_prompt_ids": [
+      "reward-recommend-002",
+      "reward-compare-004",
+      "reward-sales-004"
+    ],
+    "excluded_prompt_ids": [
+      "reward-knowledge-003"
+    ],
+    "reward_mean": 0.4583333333333333,
+    "factual_precision_mean": 0.5902777777777778
+  },
+  "case_results": [
+    {
+      "id": "reward-recommend-002",
+      "intent": "recommend",
+      "reward_mean": 0.125,
+      "reward_std": 0.3535533905932738,
+      "zero_variance": false,
+      "factual_precision_mean": 0.5208333333333333,
+      "required_coverage_mean": 0.75,
+      "source_integrity_mean": 0.75,
+      "concision_mean": 1.0,
+      "duplicate_claim_ratio_mean": 0.05,
+      "nonfact_copy_ratio_mean": 0.12277975296752593,
+      "verbosity_over_budget_ratio_mean": 0.0,
+      "protocol_pass_rate": 1.0,
+      "intent_response_fail_rate": 0.875,
+      "critical_grounding_pass_rate": 0.375,
+      "non_answer_pass_rate": 1.0,
+      "empty_rate": 0.0,
+      "refusal_rate": 0.0,
+      "completion_lengths": [
+        46,
+        51,
+        76,
+        61,
+        49,
+        69,
+        44,
+        54
+      ],
+      "unique_ratio": 1.0,
+      "distinct_2": 0.38930163447251115,
+      "distinct_4": 0.6027397260273972,
+      "completely_duplicate": false,
+      "gate_counts": {
+        "unsupported_target_value": 5,
+        "decision_not_bound_to_evidence_candidate": 2,
+        "passed": 1
+      },
+      "all_finite": true
+    },
+    {
+      "id": "reward-compare-004",
+      "intent": "compare",
+      "reward_mean": 0.5,
+      "reward_std": 0.5345224838248488,
+      "zero_variance": false,
+      "factual_precision_mean": 0.5,
+      "required_coverage_mean": 0.5,
+      "source_integrity_mean": 0.5,
+      "concision_mean": 1.0,
+      "duplicate_claim_ratio_mean": 0.0,
+      "nonfact_copy_ratio_mean": 0.07664141559963455,
+      "verbosity_over_budget_ratio_mean": 0.0,
+      "protocol_pass_rate": 1.0,
+      "intent_response_fail_rate": 0.5,
+      "critical_grounding_pass_rate": 1.0,
+      "non_answer_pass_rate": 1.0,
+      "empty_rate": 0.0,
+      "refusal_rate": 0.0,
+      "completion_lengths": [
+        59,
+        78,
+        32,
+        62,
+        92,
+        79,
+        86,
+        86
+      ],
+      "unique_ratio": 1.0,
+      "distinct_2": 0.3289665211062591,
+      "distinct_4": 0.533532041728763,
+      "completely_duplicate": false,
+      "gate_counts": {
+        "missing_query_bound_claim_for_target": 4,
+        "passed": 4
+      },
+      "all_finite": true
+    },
+    {
+      "id": "reward-knowledge-003",
+      "intent": "knowledge",
+      "reward_mean": 0.0,
+      "reward_std": 0.0,
+      "zero_variance": true,
+      "factual_precision_mean": 0.0,
+      "required_coverage_mean": 0.0,
+      "source_integrity_mean": 0.0,
+      "concision_mean": 1.0,
+      "duplicate_claim_ratio_mean": 0.0,
+      "nonfact_copy_ratio_mean": 0.007977387588753581,
+      "verbosity_over_budget_ratio_mean": 0.0,
+      "protocol_pass_rate": 1.0,
+      "intent_response_fail_rate": 1.0,
+      "critical_grounding_pass_rate": 1.0,
+      "non_answer_pass_rate": 1.0,
+      "empty_rate": 0.0,
+      "refusal_rate": 0.0,
+      "completion_lengths": [
+        85,
+        90,
+        84,
+        126,
+        141,
+        106,
+        98,
+        116
+      ],
+      "unique_ratio": 1.0,
+      "distinct_2": 0.43720565149136575,
+      "distinct_4": 0.6923688394276629,
+      "completely_duplicate": false,
+      "gate_counts": {
+        "insufficient_anchor_bound_claims": 8
+      },
+      "all_finite": true
+    },
+    {
+      "id": "reward-sales-004",
+      "intent": "sales",
+      "reward_mean": 0.75,
+      "reward_std": 0.4629100498862757,
+      "zero_variance": false,
+      "factual_precision_mean": 0.75,
+      "required_coverage_mean": 0.75,
+      "source_integrity_mean": 0.75,
+      "concision_mean": 1.0,
+      "duplicate_claim_ratio_mean": 0.0,
+      "nonfact_copy_ratio_mean": 0.01152274148403983,
+      "verbosity_over_budget_ratio_mean": 0.0,
+      "protocol_pass_rate": 1.0,
+      "intent_response_fail_rate": 0.25,
+      "critical_grounding_pass_rate": 1.0,
+      "non_answer_pass_rate": 1.0,
+      "empty_rate": 0.0,
+      "refusal_rate": 0.0,
+      "completion_lengths": [
+        123,
+        64,
+        101,
+        70,
+        65,
+        67,
+        51,
+        55
+      ],
+      "unique_ratio": 1.0,
+      "distinct_2": 0.45791245791245794,
+      "distinct_4": 0.6948571428571428,
+      "completely_duplicate": false,
+      "gate_counts": {
+        "passed": 6,
+        "insufficient_query_bound_claims": 2
+      },
+      "all_finite": true
+    }
+  ],
+  "frozen_hashes": {
+    "source_authorization_sha256": "a918021a892e51f1500958524b3ec12d150cde25088fabadf10b0f03c6f73902",
+    "expanded_v4_input_manifest_sha256": "0958cea09a20021471c9b112beeb1688e1a1f3d3b36d3a447f79911cb1f5019b",
+    "sft_adapter_model_sha256": "c55ec155f08e21125d9cf0383c9a6ee066f61d31d3a0e9285eb72a8fc4d17800",
+    "sft_adapter_config_sha256": "ec3f1c5de4da14fa695ccc65ba1f27083c34df32e0c71722c0c78166441bb8b9",
+    "reward_fn_sha256": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8"
+  },
+  "cuda_peak_reserved_mib": 10582.0,
+  "optimizer_step_performed": false,
+  "loss_backward_performed": false,
+  "checkpoint_created": false
+}

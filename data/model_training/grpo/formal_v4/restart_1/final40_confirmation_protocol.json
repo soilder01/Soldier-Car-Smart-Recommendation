@@ -1,0 +1,69 @@
+{
+  "status": "final40_confirmation_protocol_frozen_before_final40_access",
+  "mode": "one_time_final40_unbiased_confirmation",
+  "created_after_powered_dev_selection": true,
+  "preflight_red_lines": {
+    "reward_fn_sha256_must_equal": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8",
+    "reward_fn_sha256_observed_before_protocol": "325ad44feb83ec37c35babfed4bddb928cf400788e07735eb4631fc4af6962c8",
+    "final_40_accessed_before_protocol": false,
+    "held_out_40_accessed_before_protocol": false,
+    "frozen_hashes_zero_change_before_protocol": true,
+    "powered_dev_selected_checkpoint": "checkpoints/grpo/formal_v4/restart_1/checkpoint-300/adapter_model.safetensors",
+    "powered_dev_selected_label": "checkpoint-300"
+  },
+  "evaluation_objects": [
+    {
+      "label": "step0",
+      "meaning": "GRPO-before SFT-only adapter state"
+    },
+    {
+      "label": "checkpoint-300",
+      "path": "checkpoints/grpo/formal_v4/restart_1/checkpoint-300/adapter_model.safetensors"
+    }
+  ],
+  "forbidden_final40_objects": [
+    "checkpoint-100",
+    "checkpoint-200"
+  ],
+  "metric": {
+    "name": "dev_grounding_core",
+    "formula": "0.6*factual_precision + 0.4*required_coverage",
+    "scoring_logic_changed": false,
+    "reward_fn_changed": false
+  },
+  "one_time_policy": {
+    "final_40_access": "exactly_once_for_this_confirmation",
+    "set_final_40_accessed_true_after_evaluation": true,
+    "rerun_allowed": false,
+    "selection_change_allowed": false,
+    "checkpoint_selection_on_final40_allowed": false,
+    "checkpoint_modified": false,
+    "training_restarted": false,
+    "new_checkpoint_written": false
+  },
+  "held_out_40_policy": {
+    "access_allowed_this_round": false,
+    "held_out_40_accessed_must_remain": false
+  },
+  "confirmation_scope": {
+    "primary_intents": [
+      "recommend",
+      "sales"
+    ],
+    "report_only_intents": {
+      "knowledge": {
+        "participates_in_confirmation": false,
+        "participates_in_sorting": false,
+        "ground_truth_scope": "local_kb",
+        "data_limited": true
+      },
+      "compare": {
+        "participates_in_confirmation": false,
+        "participates_in_sorting": false,
+        "data_limited": true
+      }
+    }
+  },
+  "frozen_protocol_text": "评估对象 = {step0, checkpoint-300} 二者；度量 = dev_grounding_core = 0.6*factual_precision + 0.4*required_coverage (评分不变); 一次性、评完置 final_40_accessed=true 、不重跑、不改选点；held-out-40 本轮零访问；recommend/sales 为主口径，knowledge/compare report-only。",
+  "stop_condition": "After final40_confirmation_result.json is written, stop and report deltas and confirmation conclusion."
+}

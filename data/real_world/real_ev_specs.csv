@@ -1,0 +1,228 @@
+﻿brand,model,model_year,trim,vehicle_type_raw,vehicle_type,energy_type,markets,drivetrain,system_power_kw,battery_kwh,range_km,range_cycle,ac_charge_kw,dc_charge_kw,fast_charge_minutes_estimated,source_url,raw_path
+Audi,A6 e-tron,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,350,94.9,700,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/a6_e_tron/2024/a6_e_tron.json
+Audi,A6 e-tron,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,350,94.9,700,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/a6_e_tron/2024/a6_e_tron_avant.json
+Audi,A6 e-tron,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,350,94.9,700,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/a6_e_tron/2025/a6_e_tron.json
+Audi,A6 e-tron,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,350,94.9,700,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/a6_e_tron/2025/a6_e_tron_avant.json
+Audi,e-tron GT,2023,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,390,85.0,488,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/e_tron_gt/2023/e_tron_gt.json
+Audi,e-tron GT,2023,RS,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,440,85.0,472,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/e_tron_gt/2023/e_tron_gt_rs.json
+Audi,e-tron GT,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,390,85.0,488,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/e_tron_gt/2024/e_tron_gt.json
+Audi,e-tron GT,2024,RS,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,440,85.0,472,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/e_tron_gt/2024/e_tron_gt_rs.json
+Audi,e-tron GT,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,390,85.0,488,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/e_tron_gt/2025/e_tron_gt.json
+Audi,e-tron GT,2025,RS,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,440,85.0,472,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/e_tron_gt/2025/e_tron_gt_rs.json
+Audi,Q4 e-tron,2023,40,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,125,48.0,341,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2023/q4_e_tron.json
+Audi,Q4 e-tron,2023,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,73.0,520,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2023/q4_e_tron_50.json
+Audi,Q4 e-tron,2023,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,220,73.0,488,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2023/q4_e_tron_quattro.json
+Audi,Q4 e-tron,2023,40,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,125,48.0,349,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2023/q4_e_tron_sportback.json
+Audi,Q4 e-tron,2023,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,73.0,534,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2023/q4_e_tron_sportback_50.json
+Audi,Q4 e-tron,2023,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,220,73.0,502,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2023/q4_e_tron_sportback_quattro.json
+Audi,Q4 e-tron,2024,40,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,125,48.0,341,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2024/q4_e_tron.json
+Audi,Q4 e-tron,2024,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,73.0,520,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2024/q4_e_tron_50.json
+Audi,Q4 e-tron,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,220,73.0,488,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2024/q4_e_tron_quattro.json
+Audi,Q4 e-tron,2024,40,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,125,48.0,349,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2024/q4_e_tron_sportback.json
+Audi,Q4 e-tron,2024,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,73.0,534,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2024/q4_e_tron_sportback_50.json
+Audi,Q4 e-tron,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,220,73.0,502,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2024/q4_e_tron_sportback_quattro.json
+Audi,Q4 e-tron,2025,40,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,125,48.0,341,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2025/q4_e_tron.json
+Audi,Q4 e-tron,2025,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,73.0,520,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2025/q4_e_tron_50.json
+Audi,Q4 e-tron,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,220,73.0,488,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2025/q4_e_tron_quattro.json
+Audi,Q4 e-tron,2025,40,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,125,48.0,349,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2025/q4_e_tron_sportback.json
+Audi,Q4 e-tron,2025,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,73.0,534,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2025/q4_e_tron_sportback_50.json
+Audi,Q4 e-tron,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,220,73.0,502,wltp,11.0,125,32,https://www.audi.com,open-ev-data-dataset-main/src/audi/q4_e_tron/2025/q4_e_tron_sportback_quattro.json
+Audi,Q6 e-tron,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,285,94.9,625,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/q6_e_tron/2024/q6_e_tron.json
+Audi,Q6 e-tron,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,285,94.9,640,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/q6_e_tron/2024/q6_e_tron_sportback.json
+Audi,Q6 e-tron,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,285,94.9,625,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/q6_e_tron/2025/q6_e_tron.json
+Audi,Q6 e-tron,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,285,94.9,640,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/q6_e_tron/2025/q6_e_tron_sportback.json
+Audi,Q6 e-tron,2025,SQ6,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,380,94.9,598,wltp,11.0,270,18,https://www.audi.com,open-ev-data-dataset-main/src/audi/q6_e_tron/2025/q6_e_tron_sq6.json
+Audi,Q8 e-tron,2023,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,230,89.0,491,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2023/q8_e_tron.json
+Audi,Q8 e-tron,2023,55,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,582,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2023/q8_e_tron_55.json
+Audi,Q8 e-tron,2023,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,582,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2023/q8_e_tron_quattro.json
+Audi,Q8 e-tron,2023,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,230,89.0,505,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2023/q8_e_tron_sportback.json
+Audi,Q8 e-tron,2023,55,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,600,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2023/q8_e_tron_sportback_55.json
+Audi,Q8 e-tron,2023,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,600,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2023/q8_e_tron_sportback_quattro.json
+Audi,Q8 e-tron,2024,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,230,89.0,491,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2024/q8_e_tron.json
+Audi,Q8 e-tron,2024,55,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,582,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2024/q8_e_tron_55.json
+Audi,Q8 e-tron,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,582,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2024/q8_e_tron_quattro.json
+Audi,Q8 e-tron,2024,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,230,89.0,505,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2024/q8_e_tron_sportback.json
+Audi,Q8 e-tron,2024,55,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,600,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2024/q8_e_tron_sportback_55.json
+Audi,Q8 e-tron,2024,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,600,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2024/q8_e_tron_sportback_quattro.json
+Audi,Q8 e-tron,2025,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,230,89.0,491,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2025/q8_e_tron.json
+Audi,Q8 e-tron,2025,55,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,582,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2025/q8_e_tron_55.json
+Audi,Q8 e-tron,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,582,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2025/q8_e_tron_quattro.json
+Audi,Q8 e-tron,2025,50,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,230,89.0,505,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2025/q8_e_tron_sportback.json
+Audi,Q8 e-tron,2025,55,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,600,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2025/q8_e_tron_sportback_55.json
+Audi,Q8 e-tron,2025,quattro,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,300,100.0,600,wltp,11.0,150,25,https://www.audi.com,open-ev-data-dataset-main/src/audi/q8_e_tron/2025/q8_e_tron_sportback_quattro.json
+BMW,i4,2023,eDrive40,passenger_car,轿车,纯电,US|DE,rwd,250,81.3,590,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2023/i4.json
+BMW,i4,2023,eDrive35,passenger_car,轿车,纯电,,rwd,210,66.0,483,wltp,11.0,180,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2023/i4_edrive35.json
+BMW,i4,2023,eDrive40,passenger_car,轿车,纯电,,rwd,250,81.3,590,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2023/i4_edrive40.json
+BMW,i4,2023,M50,passenger_car,轿车,纯电,,awd,400,81.3,510,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2023/i4_m50.json
+BMW,i4,2024,eDrive40,passenger_car,轿车,纯电,US|DE|GB|FR,rwd,250,81.3,590,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2024/i4.json
+BMW,i4,2024,eDrive35,passenger_car,轿车,纯电,,rwd,210,67.1,483,wltp,11.0,180,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2024/i4_edrive35.json
+BMW,i4,2024,eDrive40,passenger_car,轿车,纯电,,rwd,250,81.3,590,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2024/i4_edrive40.json
+BMW,i4,2024,M50,passenger_car,轿车,纯电,,awd,400,81.3,516,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2024/i4_m50.json
+BMW,i4,2024,xDrive40,passenger_car,轿车,纯电,,awd,295,81.3,549,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2024/i4_xdrive40.json
+BMW,i4,2025,eDrive40,passenger_car,轿车,纯电,US|DE|GB|FR|PT,rwd,250,81.3,598,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2025/i4.json
+BMW,i4,2025,eDrive35,passenger_car,轿车,纯电,US|DE,rwd,210,67.1,492,wltp,11.0,180,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2025/i4_edrive35.json
+BMW,i4,2025,eDrive40,passenger_car,轿车,纯电,,rwd,250,81.3,598,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2025/i4_edrive40.json
+BMW,i4,2025,M50,passenger_car,轿车,纯电,,awd,400,81.3,521,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2025/i4_m50.json
+BMW,i4,2025,xDrive40,passenger_car,轿车,纯电,,awd,295,81.3,557,wltp,11.0,207,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i4/2025/i4_xdrive40.json
+BMW,i5,2024,eDrive40,passenger_car,轿车,纯电,US|DE,rwd,250,81.2,582,wltp,11.0,205,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i5/2024/i5.json
+BMW,i5,2024,M60,passenger_car,轿车,纯电,,awd,442,81.2,512,wltp,11.0,205,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i5/2024/i5_m60.json
+BMW,i5,2025,eDrive40,passenger_car,轿车,纯电,US|DE|GB|FR,rwd,250,81.2,582,wltp,11.0,205,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i5/2025/i5.json
+BMW,i5,2025,M60,passenger_car,轿车,纯电,,awd,442,81.2,512,wltp,11.0,205,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i5/2025/i5_m60.json
+BMW,i7,2023,xDrive60,passenger_car,轿车,纯电,US|DE,awd,400,101.7,625,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i7/2023/i7.json
+BMW,i7,2023,M70,passenger_car,轿车,纯电,,awd,485,101.7,560,wltp,22.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i7/2023/i7_m70.json
+BMW,i7,2024,xDrive60,passenger_car,轿车,纯电,US|DE|GB|FR|CN,awd,400,101.7,625,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i7/2024/i7.json
+BMW,i7,2024,M70,passenger_car,轿车,纯电,,awd,485,101.7,560,wltp,22.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i7/2024/i7_m70.json
+BMW,i7,2025,xDrive60,passenger_car,轿车,纯电,US|DE|GB|FR|CN,awd,400,101.7,625,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i7/2025/i7.json
+BMW,i7,2025,M70,passenger_car,轿车,纯电,,awd,485,101.7,560,wltp,22.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/i7/2025/i7_m70.json
+BMW,iX,2023,xDrive50,suv,SUV,纯电,US|DE|GB|FR,awd,385,105.2,630,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2023/ix.json
+BMW,iX,2023,M60,suv,SUV,纯电,,awd,455,105.2,561,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2023/ix_m60.json
+BMW,iX,2023,xDrive40,suv,SUV,纯电,US|DE|GB,awd,240,71.0,425,wltp,11.0,150,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2023/ix_xdrive40.json
+BMW,iX,2023,xDrive50,suv,SUV,纯电,,awd,385,105.2,630,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2023/ix_xdrive50.json
+BMW,iX,2024,xDrive50,suv,SUV,纯电,US|DE|GB|FR|PT|IT|CN|JP|BR,awd,385,105.2,629,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2024/ix.json
+BMW,iX,2024,M60,suv,SUV,纯电,US|DE|GB|FR,awd,455,105.2,563,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2024/ix_m60.json
+BMW,iX,2024,xDrive40,suv,SUV,纯电,US|DE|GB|FR,awd,240,71.0,425,wltp,11.0,150,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2024/ix_xdrive40.json
+BMW,iX,2024,xDrive50,suv,SUV,纯电,US|DE|GB|FR|PT|IT|CN,awd,385,105.2,629,wltp,11.0,195,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix/2024/ix_xdrive50.json
+BMW,iX,2025,xDrive50,suv,SUV,纯电,US|DE|GB|FR|PT|IT|CN|JP|BR,awd,385,105.2,630,wltp,11.0,195,25,https://www.bmw.com/en/models/bmw-i/ix/bmw-ix-highlights.html,open-ev-data-dataset-main/src/bmw/ix/2025/ix.json
+BMW,iX,2025,M60,suv,SUV,纯电,US|DE|GB|FR|PT|IT|CN|JP,awd,455,105.2,561,wltp,11.0,195,25,https://www.bmw.com/en/models/bmw-i/ix/bmw-ix-highlights.html,open-ev-data-dataset-main/src/bmw/ix/2025/ix_m60.json
+BMW,iX,2025,xDrive50,suv,SUV,纯电,US|DE|GB|FR|PT|IT|CN|JP,awd,385,105.2,630,wltp,11.0,195,25,https://www.bmw.com/en/models/bmw-i/ix/bmw-ix-highlights.html,open-ev-data-dataset-main/src/bmw/ix/2025/ix_xdrive50.json
+BMW,iX1,2023,xDrive30,suv,SUV,纯电,DE|GB,awd,230,64.7,438,wltp,11.0,130,32,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix1/2023/ix1.json
+BMW,iX1,2024,xDrive30,suv,SUV,纯电,US|DE|GB,awd,230,64.7,438,wltp,11.0,130,32,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix1/2024/ix1.json
+BMW,iX1,2025,xDrive30,suv,SUV,纯电,US|DE|GB|FR|CN,awd,230,64.7,438,wltp,11.0,130,32,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix1/2025/ix1.json
+BMW,iX2,2024,xDrive30,suv,SUV,纯电,DE|GB,awd,230,64.7,449,wltp,11.0,130,32,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix2/2024/ix2.json
+BMW,iX2,2025,xDrive30,suv,SUV,纯电,DE|GB|FR,awd,230,64.7,449,wltp,11.0,130,32,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix2/2025/ix2.json
+BMW,iX3,2023,iX3,suv,SUV,纯电,DE|GB|CN,rwd,210,74.0,461,wltp,11.0,155,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix3/2023/ix3.json
+BMW,iX3,2024,iX3,suv,SUV,纯电,DE|GB|CN,rwd,210,74.0,461,wltp,11.0,155,25,https://www.bmw.com,open-ev-data-dataset-main/src/bmw/ix3/2024/ix3.json
+Hyundai,IONIQ 5,2023,Base,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,168,72.6,507,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2023/ioniq_5.json
+Hyundai,IONIQ 5,2023,AWD,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,239,72.6,480,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2023/ioniq_5_awd.json
+Hyundai,IONIQ 5,2024,Base,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,168,72.6,507,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2024/ioniq_5.json
+Hyundai,IONIQ 5,2024,AWD,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,239,72.6,480,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2024/ioniq_5_awd.json
+Hyundai,IONIQ 5,2024,N,suv,SUV,纯电,US|DE|GB|FR|PT|IT|JP,awd,448,78.0,350,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2024/ioniq_5_n.json
+Hyundai,IONIQ 5,2025,Base,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,168,72.6,507,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2025/ioniq_5.json
+Hyundai,IONIQ 5,2025,AWD,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,239,72.6,480,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2025/ioniq_5_awd.json
+Hyundai,IONIQ 5,2025,N,suv,SUV,纯电,US|DE|GB|FR|PT|IT|JP,awd,448,78.0,350,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_5/2025/ioniq_5_n.json
+Hyundai,IONIQ 6,2023,Standard Range,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,111,50.0,429,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2023/ioniq_6.json
+Hyundai,IONIQ 6,2023,AWD,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,239,72.6,583,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2023/ioniq_6_awd.json
+Hyundai,IONIQ 6,2023,Long Range,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,168,72.6,614,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2023/ioniq_6_long_range.json
+Hyundai,IONIQ 6,2024,Standard Range,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,111,50.0,429,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2024/ioniq_6.json
+Hyundai,IONIQ 6,2024,AWD,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,239,72.6,583,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2024/ioniq_6_awd.json
+Hyundai,IONIQ 6,2024,Long Range,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,168,72.6,614,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2024/ioniq_6_long_range.json
+Hyundai,IONIQ 6,2025,Standard Range,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,111,50.0,429,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2025/ioniq_6.json
+Hyundai,IONIQ 6,2025,AWD,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,239,72.6,583,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2025/ioniq_6_awd.json
+Hyundai,IONIQ 6,2025,Long Range,passenger_car,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,168,72.6,614,wltp,11.0,220,25,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_6/2025/ioniq_6_long_range.json
+Hyundai,IONIQ 9,2025,Long Range AWD,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,awd,283,99.5,620,wltp,11.0,350,18,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/ioniq_9/2025/ioniq_9.json
+Hyundai,Kona Electric,2023,Standard Range,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,100,36.0,305,wltp,7.2,100,32,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/kona_electric/2023/kona_electric.json
+Hyundai,Kona Electric,2023,Long Range,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,150,58.0,484,wltp,7.2,100,32,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/kona_electric/2023/kona_electric_long_range.json
+Hyundai,Kona Electric,2024,Standard Range,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,100,36.0,305,wltp,7.2,100,32,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/kona_electric/2024/kona_electric.json
+Hyundai,Kona Electric,2024,Long Range,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,150,58.0,484,wltp,7.2,100,32,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/kona_electric/2024/kona_electric_long_range.json
+Hyundai,Kona Electric,2025,Standard Range,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,100,36.0,305,wltp,7.2,100,32,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/kona_electric/2025/kona_electric.json
+Hyundai,Kona Electric,2025,Long Range,suv,SUV,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,150,58.0,484,wltp,7.2,100,32,https://www.hyundai.com,open-ev-data-dataset-main/src/hyundai/kona_electric/2025/kona_electric_long_range.json
+Peugeot,e-2008,2023,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,100,46.0,345,wltp,11.0,100,32,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_2008/2023/e_2008.json
+Peugeot,e-2008,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,115,50.0,406,wltp,11.0,100,32,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_2008/2024/e_2008.json
+Peugeot,e-2008,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,115,50.0,406,wltp,11.0,100,32,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_2008/2025/e_2008.json
+Peugeot,e-208,2023,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,100,46.0,362,wltp,11.0,100,32,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_208/2023/e_208.json
+Peugeot,e-208,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,115,50.0,400,wltp,11.0,100,32,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_208/2024/e_208.json
+Peugeot,e-208,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,115,50.0,410,wltp,11.0,100,32,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_208/2025/e_208.json
+Peugeot,e-3008,2023,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,525,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_3008/2023/e_3008.json
+Peugeot,e-3008,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,525,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_3008/2024/e_3008.json
+Peugeot,e-3008,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,525,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_3008/2025/e_3008.json
+Peugeot,e-408,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,453,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_408/2024/e_408.json
+Peugeot,e-408,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,453,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_408/2025/e_408.json
+Peugeot,e-5008,2024,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,500,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_5008/2024/e_5008.json
+Peugeot,e-5008,2025,Base,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,fwd,157,70.0,500,wltp,11.0,160,25,https://www.peugeot.com,open-ev-data-dataset-main/src/peugeot/e_5008/2025/e_5008.json
+Volkswagen,ID.3,2023,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,58.0,428,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2023/id_3.json
+Volkswagen,ID.3,2023,PRO S,,轿车,纯电,,rwd,150,77.0,559,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2023/id_3_pro_s.json
+Volkswagen,ID.3,2024,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,58.0,428,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2024/id_3.json
+Volkswagen,ID.3,2024,GTX,,轿车,纯电,,awd,240,77.0,600,wltp,11.0,175,25,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2024/id_3_gtx.json
+Volkswagen,ID.3,2024,PRO S,,轿车,纯电,,rwd,150,77.0,559,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2024/id_3_pro_s.json
+Volkswagen,ID.3,2025,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,58.0,428,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2025/id_3.json
+Volkswagen,ID.3,2025,GTX,,轿车,纯电,,awd,240,77.0,600,wltp,11.0,175,25,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2025/id_3_gtx.json
+Volkswagen,ID.3,2025,PRO S,,轿车,纯电,,rwd,150,77.0,559,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_3/2025/id_3_pro_s.json
+Volkswagen,ID.4,2023,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,520,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_4/2023/id_4.json
+Volkswagen,ID.4,2023,GTX,,轿车,纯电,,awd,220,77.0,480,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_4/2023/id_4_gtx.json
+Volkswagen,ID.4,2024,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,520,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_4/2024/id_4.json
+Volkswagen,ID.4,2024,GTX,,轿车,纯电,,awd,220,77.0,480,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_4/2024/id_4_gtx.json
+Volkswagen,ID.4,2025,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,520,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_4/2025/id_4.json
+Volkswagen,ID.4,2025,GTX,,轿车,纯电,,awd,220,77.0,480,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_4/2025/id_4_gtx.json
+Volkswagen,ID.5,2023,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,520,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_5/2023/id_5.json
+Volkswagen,ID.5,2023,GTX,,轿车,纯电,,awd,220,77.0,480,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_5/2023/id_5_gtx.json
+Volkswagen,ID.5,2024,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,520,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_5/2024/id_5.json
+Volkswagen,ID.5,2024,GTX,,轿车,纯电,,awd,220,77.0,480,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_5/2024/id_5_gtx.json
+Volkswagen,ID.5,2025,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,520,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_5/2025/id_5.json
+Volkswagen,ID.5,2025,GTX,,轿车,纯电,,awd,220,77.0,480,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_5/2025/id_5_gtx.json
+Volkswagen,ID.7,2024,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,210,86.0,700,wltp,11.0,175,25,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_7/2024/id_7.json
+Volkswagen,ID.7,2024,Tour,,轿车,纯电,,rwd,210,86.0,700,wltp,11.0,175,25,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_7/2024/id_7_tour.json
+Volkswagen,ID.7,2025,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,210,86.0,700,wltp,11.0,175,25,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_7/2025/id_7.json
+Volkswagen,ID.7,2025,Tour,,轿车,纯电,,rwd,210,86.0,700,wltp,11.0,175,25,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_7/2025/id_7_tour.json
+Volkswagen,ID. Buzz,2023,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,423,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_buzz/2023/id_buzz.json
+Volkswagen,ID. Buzz,2023,Cargo,,轿车,纯电,,rwd,150,77.0,423,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_buzz/2023/id_buzz_cargo.json
+Volkswagen,ID. Buzz,2024,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,423,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_buzz/2024/id_buzz.json
+Volkswagen,ID. Buzz,2024,Cargo,,轿车,纯电,,rwd,150,77.0,423,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_buzz/2024/id_buzz_cargo.json
+Volkswagen,ID. Buzz,2025,PRO,,轿车,纯电,US|BR|DE|GB|FR|PT|IT|CN|JP,rwd,150,77.0,423,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_buzz/2025/id_buzz.json
+Volkswagen,ID. Buzz,2025,Cargo,,轿车,纯电,,rwd,150,77.0,423,wltp,11.0,135,32,https://www.volkswagen.de,open-ev-data-dataset-main/src/volkswagen/id_buzz/2025/id_buzz_cargo.json
+Aston,Martin RapidE,2019,,empty,轿车,纯电,EU|Global,未知,0,65.0,320,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Audi,E tron s,2020,,SUV,SUV,纯电,EU|Global,未知,0,86.0,362,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Audi,Q6,2018,,SUV,SUV,纯电,EU|Global,未知,0,0,500,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+BMW,i3,2016,,hatchback,轿车,纯电,EU|Global,未知,0,0,130,wltp,11.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+BMW,i3 2.0,2017,,hatchback,轿车,纯电,EU|Global,未知,0,42.0,140,wltp,11.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+BMW,Mini E,2019,,hatchback,轿车,纯电,EU|Global,未知,0,33.0,250,wltp,11.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Chevrolet,Bolt,2016,,Sedan,轿车,纯电,EU|Global,未知,0,30.0,380,wltp,7.2,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Citroen,E Mehari,2016,,hatchback,轿车,纯电,EU|Global,未知,0,30.0,200,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Citroen,Berlingo,2010,,Van,MPV,纯电,EU|Global,未知,0,0,110,wltp,2.3,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Citroen,C  Zero,2010,,hatchback,轿车,纯电,EU|Global,未知,0,14.5,130,wltp,3.7,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Daimler,E Smart,2015,,empty,轿车,纯电,EU|Global,未知,0,0,120,wltp,22.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Daimler,Smart ED,2015,,empty,轿车,纯电,EU|Global,未知,0,0,110,wltp,22.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Daimler,EQC,2019,,empty,轿车,纯电,EU|Global,未知,0,0,414,wltp,11.0,110,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Daimler,EQV,2021,,Van,MPV,纯电,EU|Global,未知,0,90.0,405,wltp,11.0,110,32,https:www.automobile_propre.comvoituresmercedes_eqvautonomie,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Faraday,Future 91,2018,,SUV,SUV,纯电,EU|Global,未知,0,0,650,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Ford,focus Electric,2016,,hatchback,轿车,纯电,EU|Global,未知,0,0,207,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Ford,Focus Electric,2013,,Sedan,轿车,纯电,EU|Global,未知,0,34.0,165,wltp,6.6,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Ford,Model E,2019,,empty,轿车,纯电,EU|Global,未知,0,0,500,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Ford,Mustang Mach E,2020,,Sedan,轿车,纯电,EU|Global,未知,0,85.0,600,wltp,7.2,115,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Honda,Fit,2016,,Sedan,轿车,纯电,EU|Global,未知,0,0,0,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Honda,E,2020,,hatchback,轿车,纯电,EU|Global,未知,0,0,220,wltp,6.6,100,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Hyundai,Esuv,2018,,empty,轿车,纯电,EU|Global,未知,0,0,320,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Hyundai,Ioniq,2016,,Sedan,轿车,纯电,EU|Global,未知,0,40.0,140,wltp,7.2,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Infinity,LE,2017,,empty,轿车,纯电,EU|Global,未知,0,0,200,wltp,0,100,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Jaguar,i Pace,2017,,Sedan,轿车,纯电,EU|Global,未知,0,0,450,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Kia,Niro,2018,,SUV,SUV,纯电,EU|Global,未知,0,64.0,455,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Kia,Soul,2018,,hatchback,轿车,纯电,EU|Global,未知,0,30.0,150,wltp,7.0,80,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Lucid,Air,2020,,Sedan,轿车,纯电,EU|Global,未知,0,0,650,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Mahindra,e20,2016,,hatchback,轿车,纯电,EU|Global,未知,0,0,110,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Mazda,MX 30,2020,,SUV,SUV,纯电,EU|Global,未知,0,36.0,200,wltp,6.6,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Mercedes,B250,2016,,empty,轿车,纯电,EU|Global,未知,0,0,140,wltp,11.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Merceds,Vito E cell,2016,,Van,MPV,纯电,EU|Global,未知,0,36.0,130,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Mitsubishi,i MiEV,2010,,hatchback,轿车,纯电,EU|Global,未知,0,16.0,110,wltp,7.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Nissan,e NV200,2014,,Van,MPV,纯电,EU|Global,未知,0,0,110,wltp,7.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Nissan,Leaf 1.0,2011,,hatchback,轿车,纯电,EU|Global,未知,0,30.0,120,wltp,0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Nissan,Leaf 1.1,2012,,hatchback,轿车,纯电,EU|Global,未知,0,0,130,wltp,7.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Nissan,Leaf 2.0,2017,,empty,轿车,纯电,EU|Global,未知,0,0,300,wltp,6.6,100,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Nissan,Leaf 3.0,2015,,hatchback,轿车,纯电,EU|Global,未知,0,30.0,120,wltp,6.6,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Opel,Ampera e,2017,,hatchback,轿车,纯电,EU|Global,未知,0,0,190,wltp,7.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Peugeot,e 208,2020,,empty,轿车,纯电,EU|Global,未知,0,0,340,wltp,7.0,100,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Peugeot,iOn,2010,,hatchback,轿车,纯电,EU|Global,未知,0,16.0,110,wltp,0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Peugeot,Partner,2013,,Van,MPV,纯电,EU|Global,未知,0,0,110,wltp,0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Porsche,Mission E,2019,,Sedan,轿车,纯电,EU|Global,未知,0,0,500,wltp,7.5,350,18,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Porsche,Taycan Turbo,2019,,Sedan,轿车,纯电,EU|Global,未知,0,90.0,450,wltp,22.0,270,18,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,Fluence ZE,2016,,Sedan,轿车,纯电,EU|Global,未知,0,0,130,wltp,22.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,Kangoo ZE,2016,,Van,MPV,纯电,EU|Global,未知,0,0,220,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,Twizy,2016,,Micro,微型车,纯电,EU|Global,未知,0,0,90,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,ZOE,2013,,empty,轿车,纯电,EU|Global,未知,0,0,200,wltp,22.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,ZOE,2013,,empty,轿车,纯电,EU|Global,未知,0,0,130,wltp,22.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,ZOE ZE,2013,,hatchback,轿车,纯电,EU|Global,未知,0,0,400,wltp,43.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,Megane eVision,2021,,Hatchback,轿车,纯电,EU|Global,未知,0,60.0,450,wltp,22.0,130,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Renault,Twingo ZE,2020,,Hatchback,轿车,纯电,EU|Global,未知,0,21.0,190,wltp,22.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Skoda,E,2019,,SUV,SUV,纯电,EU|Global,未知,0,83.0,500,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Smart,ED Gen1,2016,,Micro,微型车,纯电,EU|Global,未知,0,0,0,wltp,7.5,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Smart,ForTwo,2018,,micro,微型车,纯电,EU|Global,未知,0,18.0,135,wltp,22.0,0,60,https:www.automobile_propre.comvoituressmart_electriqueautonomie,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Tesla,model S,2016,,empty,轿车,纯电,EU|Global,未知,0,0,450,wltp,11.0,0,60,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Tesla,model 3,2017,,Sedan,轿车,纯电,EU|Global,未知,0,0,350,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Tesla,model X,2015,,SUV,SUV,纯电,EU|Global,未知,0,90.0,450,wltp,16.5,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Tesla,S,2013,,Sedan,轿车,纯电,EU|Global,未知,0,100.0,450,wltp,22.0,60,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+Volvo,XC40,2019,,SUV,SUV,纯电,EU|Global,未知,0,78.0,500,wltp,3.7,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,ID Buzz,2022,,Van,MPV,纯电,EU|Global,未知,0,110.0,500,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,e Golf,2016,,hatchback,轿车,纯电,EU|Global,未知,0,0,130,wltp,7.0,50,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,e golf 1.1,2017,,Sedan,轿车,纯电,EU|Global,未知,0,32.0,230,wltp,7.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,e UP!,2016,,hatchback,轿车,纯电,EU|Global,未知,0,23.0,110,wltp,7.0,40,45,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,ID.3,2020,,hatchback_,轿车,纯电,EU|Global,未知,0,77.0,330,wltp,7.2,100,32,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,ID.4,2020,,SUV,SUV,纯电,EU|Global,未知,0,77.0,500,wltp,11.0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
+VW,ID Crozz2,2019,,SUV,SUV,纯电,EU|Global,未知,0,0,500,wltp,0,150,25,https://raw.githubusercontent.com/OSkrk/Electric-vehicles-EV-Database/master/Data/EVs_data_base.csv,OSkrk/Electric-vehicles-EV-Database/Data/EVs_data_base.csv
