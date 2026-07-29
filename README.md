@@ -1,4 +1,4 @@
-# Agentic Agent: 新能源车多 Agent 本地微调闭环
+# 新能源车多 Agent 本地微调闭环
 
 本项目把新能源汽车推荐、销售话术和复合对比问答链路，从云端 OpenAI-compatible API 迁移到本地微调的 Qwen2.5-7B-Instruct 模型，并完成数据合成、SFT、GRPO/RLVR、冻结评估、OpenAI 兼容服务化和后端切换。
 
